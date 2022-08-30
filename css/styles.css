@@ -1,0 +1,22 @@
+
+
+header {
+    background: linear-gradient(135deg,#2a0800, #775144, #c09891, #bea8a7, #f4dbd8);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #775144;
+
+    background-size: 400%;
+    animation: anim 4s infinite alternate;
+}
+
+@keyframes anim {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100%;
+    }
+}
