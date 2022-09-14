@@ -1,10 +1,23 @@
 
-
+/* Header for Main Page */
 header {
     background: linear-gradient(135deg,#2a0800, #775144, #c09891, #bea8a7, #f4dbd8);
     padding: 30px;
     text-align: center;
     font-size: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #775144;
+
+    background-size: 400%;
+    animation: anim 4s infinite alternate;
+}
+
+footer {
+    background: linear-gradient(135deg,#2a0800, #775144, #c09891, #bea8a7, #f4dbd8);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 10px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #775144;
 
@@ -18,5 +31,54 @@ header {
     }
     to {
         background-position: 100%;
+    }
+}
+
+/* Body for Main Page */
+* {
+    box-sizing: border-box;
+  }
+  
+  .menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+  
+  .menu a {
+    background-color: #bea8a7;
+    padding: 15px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .menu a:hover {
+    background-color: #775144;
+    color: white;
+
+  }
+  
+  .main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+  }
+  
+  .right {
+    background-color: #bea8a7;
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin: 7px 00px 0px 0px;
+    text-align: center;     
+  }
+  
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
     }
 }
