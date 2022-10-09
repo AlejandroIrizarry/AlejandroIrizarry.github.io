@@ -1,16 +1,31 @@
 
 html {
-  background-color:rgb(255, 255, 255);
+  background-color:rgb(201, 201, 201);
 }
-/* Header for Main Page */
-.animation, .menu {
+
+* {
+  box-sizing: border-box;
+}
+
+/* Animations */ 
+.animation {
   animation: anim 4s infinite alternate;
 }
 
+@keyframes anim {
+  from {
+      background-position: 0%;
+  }
+  to {
+      background-position: 100%;
+  }
+}
+
+/* Header */
 header, footer {
-  background: linear-gradient(135deg,#7fe7f7, #a8f0f0, #c0e9e7, #76ecd2, #d9f7f3);
+  background: linear-gradient(135deg,#24292a, #212f2f, #000000, #161717, #171717);
   background-size: 400%;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Geneva, Verdana, sans-serif;
   color: #2a393a;
 }
 
@@ -20,79 +35,87 @@ header {
     font-size: 35px;
 }
 
+/* Footer */
 footer {
-    padding: 20px;
-    margin-top: 20px;
+    padding: 10px;
+    margin-top: 10px;
     text-align: center;
     font-size: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/
+    height: 5%;
 }
 
-a {
-  text-decoration: none;
+footer > div{
+  font-size: 150%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-@keyframes anim {
-    from {
-        background-position: 0%;
-    }
-    to {
-        background-position: 100%;
-    }
-}
-
-/* Body for Main Page */
-* {
-    box-sizing: border-box;
-  }
+/* Body */
   
   .menu {
-    background: linear-gradient(135deg,#7fe7f7, #a8f0f0, #c0e9e7, #76ecd2, #d9f7f3);
-    border-radius: 25px;
+    background: linear-gradient(135deg,#24292a, #212f2f, #000000, #161717, #171717);
+    border-radius: 0px 25px 25px 0px;
     background-size: 400%;
     float: left;
     width: 20%;
+    height: 540px;
     text-align: center;
     margin: 10px 0px 10px 0px;
   }
   
   .menu a {
-    padding: 15px;
+    padding: 5vh;
     display: block;
     width: 100%;
-    color: white;
+    height: 25%;
+    color: #4f6462;
     border-radius: 25px 10px;
+    
   }
 
   .menu a:hover {
-    background-color: #237f85;
+    background-color: #232b2a;
     color: white;
-
   }
   
   .main {
     float: left;
     width: 60%;
     padding: 0 20px;
+    color: #4f6462;
+  }
+
+  .main > h2 , h3 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 110%;
   }
   
   .right {
-    background-color: #c0e9e7;
+    background: linear-gradient(135deg,#24292a, #212f2f, #000000, #161717, #171717);
+    background-size: 400%;
+    border-radius: 25px 0px 0px 25px;
     float: left;
     width: 20%;
     padding: 15px;
     margin: 7px 00px 0px 0px;
     text-align: center;     
+    color: #4f6462;
   }
   
   @media only screen and (max-width: 620px) {
     /* For mobile phones: */
     .menu, .main, .right {
       width: 100%;
+      height: 1%;
       border-radius: 0px;
+      margin-bottom: 10px;
     }
 }
 
-/* Images */
+/* Author Image Container */
 
 .container {
   position: relative;
@@ -101,7 +124,7 @@ a {
   margin-right: auto;
   border-radius: 5px;
   border-color: #2a393a;
-  box-shadow: 2px 0.5px 8px 5px #c0e9e73a, 2px 1.5px 9px 6px #c0e9e781;
+  box-shadow: 2px 0.5px 8px 5px #4399993a, 2px 1.5px 4px 2px #283030;
   margin-bottom: 35px;
 }
 
@@ -119,7 +142,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(135deg,#7fe7f7, #a8f0f0, #c0e9e7, #76ecd2, #d9f7f3);
+  background: linear-gradient(135deg,#24292a, #212f2f, #000000, #161717, #171717);
   animation: anim 4s infinite alternate;
   background-size: 400%;
   overflow: hidden;
@@ -134,8 +157,8 @@ a {
 }
 
 .text {
-  white-space: wrap; 
-  color: rgb(48, 71, 92);
+  white-space: nowrap; 
+  color: rgb(47, 59, 60);
   font-size: 20px;
   position: absolute;
   overflow: hidden;
@@ -144,3 +167,56 @@ a {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .text {
+    font-size: 100%;
+  }
+}
+
+/* Typewriter Animation Effect */
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(41, 52, 54); /* The typwriter cursor */
+  white-space: wrap;
+  letter-spacing: .20em; /* Adjust as needed */
+  animation: 
+    typing 5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@media only screen and (min-width: 620px) {
+  
+  .typewriter {
+    white-space: nowrap;
+  }
+
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(156, 235, 215) }
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+a:visited { 
+  text-decoration: none; 
+  color: rgb(47, 59, 60); 
+ }
+
+ #more {
+  color: rgb(156, 235, 215);
+ }
