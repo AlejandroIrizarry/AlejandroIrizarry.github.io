@@ -1,11 +1,26 @@
 
 html {
-  background-color:rgb(201, 201, 201);
+  background-color:rgb(255, 255, 255);
 }
 
-* {
+*, ::after, ::before {
   box-sizing: border-box;
 }
+
+::selection {
+  color: white;
+  background: rgb(125, 120, 115);
+}
+
+body {
+  font-family: Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
 
 /* Animations */ 
 .animation {
@@ -22,119 +37,73 @@ html {
 }
 
 /* Header */
-header, footer {
-  background: linear-gradient(135deg,#24292a, #212f2f, #000000, #161717, #171717);
-  background-size: 400%;
-  font-family: Geneva, Verdana, sans-serif;
-  color: #2a393a;
-}
-
 header {
     padding: 30px;
     text-align: center;
     font-size: 35px;
+    background: linear-gradient(135deg,#9d9993e5, #e3dbc3, #434038, #bfb7a6, #e8ddd4);
+    background-size: 400%;
+    color: white;
 }
 
 /* Footer */
 footer {
-    padding: 10px;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    /* Height of the footer*/
-    height: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 70px;
+  margin-top: 1.5rem;
+  font-size: 10px;
+  width: 100%;
+  background:rgb(230, 219, 204);
+  color: black;
 }
 
-footer > div{
+.socials-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-icons img {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
+footer > div {
   font-size: 150%;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Body */
-  
-  .menu {
-    background: linear-gradient(135deg,#24292a, #212f2f, #000000, #161717, #171717);
-    border-radius: 0px 25px 25px 0px;
-    background-size: 400%;
-    float: left;
-    width: 20%;
-    height: 540px;
-    text-align: center;
-    margin: 10px 0px 10px 0px;
-  }
-  
-  .menu a {
-    padding: 5vh;
-    display: block;
-    width: 100%;
-    height: 25%;
-    color: #4f6462;
-    border-radius: 25px 10px;
-    
-  }
-
-  .menu a:hover {
-    background-color: #232b2a;
-    color: white;
-  }
-  
-  .main {
-    float: left;
-    width: 60%;
-    padding: 0 20px;
-    color: #4f6462;
-  }
-
-  .main > h2 , h3 {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 110%;
-  }
-  
-  .right {
-    background: linear-gradient(135deg,#24292a, #212f2f, #000000, #161717, #171717);
-    background-size: 400%;
-    border-radius: 25px 0px 0px 25px;
-    float: left;
-    width: 20%;
-    padding: 15px;
-    margin: 7px 00px 0px 0px;
-    text-align: center;     
-    color: #4f6462;
-  }
-  
-  @media only screen and (max-width: 620px) {
-    /* For mobile phones: */
-    .menu, .main, .right {
-      width: 100%;
-      height: 1%;
-      border-radius: 0px;
-      margin-bottom: 10px;
-    }
-}
 
 /* Author Image Container */
 
-.container {
+.authorContainer {
   position: relative;
-  width: 30%;
+  width: 50%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
-  border-color: #2a393a;
-  box-shadow: 2px 0.5px 8px 5px #4399993a, 2px 1.5px 4px 2px #283030;
+  border-color: #ffffff;
+  box-shadow: 2px 0.5px 8px 5px #e1e1e1, 2px 1.5px 4px 2px #ffedad;
   margin-bottom: 35px;
+  border-radius: 100px;
+  margin: 0 8% 0 3.5%;
 }
 
 .authorImage {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 5px;
+  border-radius: 100px;
 }
 
 .overlay {
@@ -142,24 +111,24 @@ footer > div{
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(135deg,#24292a, #212f2f, #000000, #161717, #171717);
-  animation: anim 4s infinite alternate;
+  background: linear-gradient(135deg,#9d9993, #e3dbc3, #434038, #bfb7a6, #e8ddd4);
+  /* animation: anim 4s infinite alternate; */
   background-size: 400%;
   overflow: hidden;
   width: 0;
   height: 100%;
   transition: .5s ease;
-  border-radius: 5px;
+  border-radius: 100px;
 }
 
-.container:hover .overlay {
+.authorContainer:hover .overlay {
   width: 100%;
 }
 
-.text {
+.authorText {
   white-space: nowrap; 
-  color: rgb(47, 59, 60);
-  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -168,23 +137,26 @@ footer > div{
   -ms-transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .text {
-    font-size: 100%;
-  }
-}
 
 /* Typewriter Animation Effect */
 
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(41, 52, 54); /* The typwriter cursor */
+  border-right: .15em solid rgb(230, 219, 204); /* The typwriter cursor */
   white-space: wrap;
   letter-spacing: .20em; /* Adjust as needed */
+  font-size: 130%;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
   animation: 
     typing 5s steps(40, end),
     blink-caret .75s step-end infinite;
+    
 }
 
 @media only screen and (min-width: 620px) {
@@ -204,19 +176,497 @@ footer > div{
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: rgb(156, 235, 215) }
+  50% { border-color: #c5c1b0 }
 }
 
 /* Links */
 a {
-  text-decoration: none;
+    text-decoration: none;
+    transition: all 0.5s;
 }
 
 a:visited { 
   text-decoration: none; 
-  color: rgb(47, 59, 60); 
+  color: rgb(0, 234, 255); 
  }
 
- #more {
-  color: rgb(156, 235, 215);
+ /* Timeline Styling */
+
+ /* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #00000092;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(0, 0, 0);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.tl_container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.tl_container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(125, 120, 115);
+  border: 4px solid #000000;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.tl_content:hover {
+  background-color: rgb(189, 189, 189)
+
+}
+
+/* Place the container to the left */
+.tl_left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.tl_right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.tl_left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.tl_right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.tl_right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.tl_content {
+  padding: 20px 30px;
+  background-color: rgb(149, 142, 142);
+  position: relative;
+  border-radius: 10px 75px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .tl_container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .tl_container::before {
+  left: 60px;
+  border: medium solid rgb(0, 0, 0);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(49, 47, 47) transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .tl_left::after, .tl_right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .tl_right {
+  left: 0%;
+  }
+}
+
+/** Navigation Bar Section */
+
+.navbar-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: linear-gradient(135deg,#9d9993e5, #fffdf6, #eae8e1, #e9e5dd, #e0dbd7);
+  background-size: 400%;
+}
+
+.nav-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-links li a {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: 400;
+  color: rgba(99, 97, 97, 0.767);
+}
+
+.nav-links a:hover {
+  color: black;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .toggle-bar {
+  height: 3px;
+  width: 100%;
+  background-color:rgb(79, 77, 74);
+  border-radius: 20px;
+}
+
+
+
+/** About Section */
+#about-me-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#about-me-imgs {
+  padding: 15px;
+}
+
+#about-me-info img {
+  height: 350px;
+  padding: 10px;
+  width: 350px;
+  border-radius: 20px;
+}
+
+#background-info {
+  padding: 15px;
+  text-align: center;
+}
+
+#background-info p {
+  text-align: left;
+}
+
+#banner {
+  background-color:rgb(125, 120, 115);
+  color:rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+}
+
+/* Introduction Section
+   ========================================================================== */
+   
+/**
+ * Index-Introduction
+ */ 
+ 
+ .index-introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+ /**
+  * Centering introduction Flex Box Content
+  */ 
+
+ .introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/**
+  * Introduction's Author Name
+  */
+ .index-introduction h1 b {
+  color:rgb(125, 120, 115);
+}
+
+.index-introduction h1 :hover {
+  background-color: #272932;
+  transition: all ease 0.8s;
+}
+
+@keyframes blinking {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: black;
+  }
+}
+
+/**
+ * Salutation
+ */
+
+ .salutation {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/**
+ * Type
+ */
+ .salutation #type {
+  animation: blinking 0.9s infinite;
+}
+
+
+
+/* Buttons
+   ========================================================================== */
+
+/**
+ * I
+ */
+
+ .btn-outline-dark {
+  color: #212529;
+  border-color: #212529;
+}
+
+/* Skills Section
+   ========================================================================== */
+
+/**
+ * Banner
+ */ 
+ 
+ #about-n-experience-banner {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/**
+ * Container
+ */ 
+
+ #skills-section {
+  text-align: center;
  }
+
+#skills-section img {
+  width: 100px;
+  height: 100px;
+  padding-left: 0.5%;
+  padding-right:0.5%;
+  margin-bottom: 1.0%;
+  margin-top: 1.0%;
+}
+
+
+/**
+ * Animated Icons
+ */ 
+ #up {
+  animation: up-anim 3.5s infinite;
+ }
+
+ #down {
+  animation: down-anim 3.1s infinite;
+ }
+
+ #rand {
+  animation: rand-anim 2s infinite;
+ }
+
+ @keyframes up-anim {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+ }
+
+ @keyframes down-anim {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+ }
+
+ @keyframes rand-anim {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+ 
+/* Responsive Layout
+   ========================================================================== */
+
+/**
+ * Media queries for screens smaller than 801px
+ */  
+
+@media only screen and (max-width: 800px) {
+
+/** 
+ * Responsive Author Container
+ */
+
+ .authorContainer {
+  margin: 0px 50% 0px 50%;
+ }
+  
+  .authorText {
+  font-size: 1.5rem;
+}
+
+/** 
+ * Responsive Navigation Bar 
+ */
+
+.toggle-button {
+  display: flex;
+}
+
+.nav-links {
+  display: none;
+  width: 100%;
+}
+
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar-home {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-links ul {
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-links ul li {
+  text-align: center;
+}
+
+.nav-links.active {
+  display: flex;
+  
+}
+
+.nav-links li:hover {
+  background-color: #d3d2d24f;
+}
+
+  /**responsive index*/
+  .index-introduction {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .index-introduction .introduction {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 60%;
+  }
+
+  .index-introduction .salutation {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .index-introduction h5 {
+    font-size: 14px;
+  }
+
+  .introduction {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+/* Responsive About Section */
+#about-me-info {
+  text-align: center;
+  flex-direction: column;
+}
+
+}
+/** ---------------------------------- **/
