@@ -401,7 +401,7 @@ a:visited {
 }
 
 #banner {
-  background-color:rgb(125, 120, 115);
+  background-color:rgb(0, 0, 0);
   color:rgb(255, 255, 255);
   width: 100%;
   text-align: center;
@@ -439,12 +439,15 @@ a:visited {
   * Introduction's Author Name
   */
  .index-introduction h1 b {
-  color:rgb(125, 120, 115);
+  color:rgb(177, 175, 174);
 }
 
 .index-introduction h1 :hover {
-  background-color: #272932;
+  background-color: #d1ceca;
   transition: all ease 0.8s;
+  color:#212529;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 @keyframes blinking {
