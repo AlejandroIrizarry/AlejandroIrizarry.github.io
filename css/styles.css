@@ -127,7 +127,7 @@ footer > div {
 .authorText {
   white-space: nowrap; 
   color: rgb(255, 255, 255);
-  font-size: 1.5rem;
+  font-size: 200%;
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -589,7 +589,7 @@ a:visited {
  }
   
   .authorText {
-  font-size: 1.5vh;
+  font-size: 5vmax;
 }
 
 .h1, h1 {
