@@ -589,7 +589,7 @@ a:visited {
  }
   
   .authorText {
-  font-size: 5vmax;
+  font-size: 100%;
 }
 
 .h1, h1 {
