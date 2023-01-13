@@ -580,6 +580,12 @@ a:visited {
 
 @media only screen and (max-width: 1300px) {
 
+
+@media only screen and (max-width: 600px) {
+  .authorText {
+    font-size: 100% !important;
+  }
+}
 /** 
  * Responsive Author Container
  */
@@ -589,7 +595,7 @@ a:visited {
  }
   
   .authorText {
-  font-size: 100%;
+  font-size: 200%;
 }
 
 .h1, h1 {
