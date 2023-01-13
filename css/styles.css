@@ -440,6 +440,8 @@ a:visited {
   */
  .index-introduction h1 b {
   color:rgb(177, 175, 174);
+    /* HOVER OFF */
+    -webkit-transition: padding 2s;
 }
 
 .index-introduction h1 :hover {
