@@ -674,6 +674,10 @@ a:visited {
     margin-bottom: 5%;
   }
 
+  .introduction-name {
+    display: block
+  }
+
 /* Responsive About Section */
 #about-me-info {
   text-align: center;
