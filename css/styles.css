@@ -3,7 +3,7 @@
 
 html {
   background-color:rgb(0, 0, 0);
-  overflow:hidden;
+  overflow-x:hidden;
 }
 
 *, ::after, ::before {
