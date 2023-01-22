@@ -361,6 +361,15 @@ footer {
       }
     }
 
+
+/** 
+ * Responsive Header
+ */
+
+header {
+      font-size: 1.5rem;
+}
+
 /** 
  * Responsive Author Container
  */
@@ -430,10 +439,14 @@ footer {
     font-size: 50%;
 }
 
-.intro-section .intro-info {
+.intro-section {
     margin-top: 15px;
     margin-right: 15px;
     text-align: center;
+}
+
+.intro-info h4 {
+  font-size: 1rem;
 }
 
 .intro-container {
@@ -450,14 +463,47 @@ section #welcome {
   flex-direction: column;
 }
 
-section #skills {
-  flex-direction: column;
+#welcome-img img {
+  height: auto;
+  max-width: 100%;
 }
+
+ 
+/**
+ * Responsive  Sections
+ */
+
+ section {
+  margin-bottom: 100px;
+ }
 
 .section-info {
   margin-right: 50px;
   margin-left: 50px;
 }
+
+.section-info h2 {
+  font-size: 30px;
+  text-align: left;
+}
+
+.section-info p {
+  font-size: 15px;
+  text-align: left;
+}
+
+/**
+ * Responsive About Section
+ */
+
+section#about {
+  margin-bottom: 100px;
+}
+/**
+ * Responsive Skills Section
+ */
+
+
 
 #skills-img {
   display: inline-block;
