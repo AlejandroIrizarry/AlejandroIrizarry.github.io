@@ -29,7 +29,7 @@ body {
     scroll-behavior: smooth;
     display: block;
     min-width: 320px;
-    max-width: 2000px;
+    max-width: 2800px;
     background-color: black;
 }
 
@@ -473,14 +473,6 @@ section #welcome {
  * Responsive  Sections
  */
 
- section {
-  margin-bottom: 100px;
- }
-
-.section-info {
-  margin-right: 50px;
-  margin-left: 50px;
-}
 
 .section-info h2 {
   font-size: 30px;
@@ -493,17 +485,8 @@ section #welcome {
 }
 
 /**
- * Responsive About Section
- */
-
-section#about {
-  margin-bottom: 100px;
-}
-/**
  * Responsive Skills Section
  */
-
-
 
 #skills-img {
   display: inline-block;
@@ -520,12 +503,6 @@ section {
     place-items: center;
     align-content: center;
     min-height: 100vh;
-}
-
-#experience, #skills, #about  {
-  justify-content: center;
-  align-items: center;
-  margin: 0 20%;
 }
 
 .hidden {
@@ -582,12 +559,6 @@ section {
   50%{transform: translateY(10%);transition: ease 0.5s;}
 }
 
-#welcome {
-  display: flex;
-  flex-direction: row;
-  margin-left: 50px;
-  margin-right: 50px;
-}
 
 .section-container {
   display: flex;
