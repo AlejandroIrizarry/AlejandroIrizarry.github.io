@@ -458,9 +458,10 @@ header {
 /**
  * Responsive Welcome Section
  */
-section #welcome {
+
+#welcome {
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 #welcome-img img {
@@ -569,4 +570,10 @@ section {
 
 .section-info {
   text-align: center;
+}
+
+
+#welcome {
+  display: flex;
+  flex-direction: row;
 }
