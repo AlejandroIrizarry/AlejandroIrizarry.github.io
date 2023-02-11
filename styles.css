@@ -262,6 +262,7 @@ footer {
     transition: all ease 0.8s;
     color:#212529;
     border-radius: 10px;
+    font-size: 30px;
   }
 
 .intro-container h1 {
