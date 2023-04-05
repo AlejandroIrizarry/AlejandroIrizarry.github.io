@@ -53,17 +53,10 @@ h3 {
 
 /* Dates */
 .date {
-    color: rgba(139, 138, 138, 0.787);
+    color: rgba(55, 53, 53, 0.787);
     font-size: 15px;
     position: absolute;
     right: 10px;
-}
-
-/* Comapanies Span */
-.company {
-    margin-left: 5px;
-    margin-right: 20%;
-    font-size: 1rem;
 }
 
 /* Images */
