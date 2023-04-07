@@ -583,3 +583,71 @@ section {
   display: flex;
   flex-direction: row;
 }
+
+/* Experiences Section 
+======================================================================*/
+.journey-section {
+  display: flex;
+  justify-content: center;
+}
+
+.timeline {
+  position: relative;
+  width: 500px;
+}
+
+/* line for timeline */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  background-color: rgb(161, 16, 16);
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* timeline bubbles adjustment */
+.timeline-bubble {
+  padding: 10px 40px;
+  position: relative;
+  width: 51%;
+  margin: 50px 0;
+}
+.timeline-bubble::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  right: -10px;
+  border-radius: 50%;
+  background-color: white;
+  top: 15px;
+  z-index: 1;
+}
+
+/* left bubbles */
+.left { left: 0; }
+/* right bubbles */
+.right { left: 50%; }
+.right::after { left: -10px; }
+
+.bubble-content {
+  padding: 15px 15px 15px 17px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 4px;
+}
+
+.bubble-content h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.bubble-content p {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 2px;
+}
