@@ -591,6 +591,7 @@ section {
   justify-content: center;
 }
 
+
 .timeline {
   position: relative;
   width: 500px;
@@ -611,7 +612,7 @@ section {
 .timeline-bubble {
   padding: 10px 40px;
   position: relative;
-  width: 51%;
+  width: 50%;
   margin: 50px 0;
 }
 .timeline-bubble::after {
@@ -621,7 +622,7 @@ section {
   height: 25px;
   right: -10px;
   border-radius: 50%;
-  background-color: white;
+  background-color: rgb(125, 120, 115);
   top: 15px;
   z-index: 1;
 }
