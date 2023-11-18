@@ -1,9 +1,10 @@
+
 {
+  "homepage": "http://alejandroirizarry.github.io/AlejandroIrizarry.github.io",
   "name": "alejandroiri-site",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://alejandroirizarry.github.io",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
