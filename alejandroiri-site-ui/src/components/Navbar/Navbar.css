@@ -1,0 +1,66 @@
+/* Navigation Bar Section ======================================================================*/
+.navbar {
+    background-color: var(--dark-gray);
+    width: 100%;
+    height: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    color: var(--yellow);
+    flex-wrap: wrap;
+    font-size: 1.5em;
+}
+
+.nav-links li {
+    padding: 5vw;
+}
+
+.nav-links li a span:hover {
+    color: var(--clear-yellow);
+}
+
+/* Navigation Links Animation ======================================================================*/
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: var(--yellow);
+  }
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--yellow);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+@media only screen and (max-width: 400px) {
+ .nav-links {
+    font-size: 0.5em;
+ }
+}

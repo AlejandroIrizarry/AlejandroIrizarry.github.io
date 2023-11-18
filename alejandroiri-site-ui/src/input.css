@@ -1,0 +1,67 @@
+/* This file is used to add style onto the website */
+
+/* Imports
+   ========================================================================== */
+   @import url('https://fonts.googleapis.com/css?family=Inter');
+
+   :root { font-family: 'Inter', sans-serif; }
+   @supports (font-variation-settings: normal) {
+     :root { font-family: 'Inter var', sans-serif; }
+   }
+   
+/* Colors: CSS Hex (Coolors.com) 252930
+   ========================================================================== */
+   :root {
+    --yellow: #FFDE6A;
+    --dark-gray: #151515;
+    --medium-gray: #0c0c0d;
+    --light-gray: rgb(18, 18, 18);
+    --clear-yellow: #ffdf6aa9;
+ }
+ 
+ /* General ========================================================================== */
+
+ html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: var(--yellow);
+    overflow-x:hidden;
+ }
+
+ body {
+    margin: 0;
+    display: block;
+    background: var(--medium-gray) !important;
+  }
+
+  *,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: 'Inter';
+}
+
+ul {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+a:visited, a:active, a:link { 
+  text-decoration: none; 
+  color: var(--yellow);
+  cursor: pointer;
+ }
+
+
+ p {
+    color: white;
+ }
+
+ .markup {
+   color: var(--yellow);
+}
