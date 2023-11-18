@@ -25,19 +25,25 @@ export default function About() {
    * Scrolling Animation
   */
   
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if(entry.isIntersecting) {
-        entry.target.classList.add('show');
-      } else {
-         entry.target.classList .remove('show');
-      }
-    });
-  });
-  
-  
-  const hiddenElements = document.querySelectorAll('.hidden');
-  hiddenElements.forEach((el) => observer.observe(el));
+      useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+            } else {
+              entry.target.classList.remove('show');
+            }
+          });
+        });
+      
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+      
+        // Clean up the observer when the component unmounts
+        return () => {
+          hiddenElements.forEach((el) => observer.unobserve(el));
+        };
+      }, []); // The empty dependency array ensures that this effect runs only once after the initial render.
   
      return (
         <div id="about" className="about">

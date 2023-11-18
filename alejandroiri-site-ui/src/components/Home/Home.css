@@ -12,7 +12,7 @@
     padding: 2rem;
     width: 100%;
     justify-content: center;
-    margin-top: 5vw;
+    margin-top: 10em;
 }
 
 .hero-content {
@@ -42,7 +42,7 @@
 }
 
 .arrow a img {
-    width: 5vw;
+    width: 5em;
 }
 
 #up-arrow {
@@ -83,16 +83,13 @@ color: #FFFF;
 }
 
 .hero-img {
-    margin-left: 3rem;
-    width: 80%;
     border-width: 3px;
     border-radius: 50%;
-    border-color: var(--yellow)
-    
+    border-color: var(--yellow);
 }
 .hero-img img {
     border-radius: 50%;
-    width: 70vw;
+    width: 60vw;
     height: 30vw;
 }
 
@@ -110,28 +107,55 @@ color: #FFFF;
     margin-right: 2em;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 850px) {
+
+    .hero {
+        justify-content: center;
+    }
     .hero-info {
         text-align: center;
     }
+
+    .hero-info h2 {
+        font-size: 1em;
+    }
+
+    .hero-info h3 {
+        font-size: 0.5em;
+    }
+
     .hero-content {
+        display: flex;
         flex-direction: column;
-        justify-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .hero-img {
         margin-top: 2em;
-        width: 50%;
     }
 
     .hero-img img {
             border-radius: 50%;
-            width:100em;
-            height: 9em;
+            width:15em;
+            height: 15em;
     }
 
     .hero-info p {
-        font-size: 1.5vw;
+        font-size: 0.5em;
+    }
+
+    .hero-btns button {
+        background-color: var(--medium-gray);
+        border-radius: 15px;
+        padding: 1em 3em;
+        width: 200px;
+        margin-top: 2em;
+        font-size: 0.5em;
+    }
+
+    .arrow a img {
+        width: 3em;
     }
 
 }
@@ -148,6 +172,25 @@ color: #FFFF;
 
     .hero-info p {
         font-size: 1vw;
+    }
+
+    .hero-img {
+        margin-left: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+
+ 
+    .hero-img img {
+        width: 100vw;
+        height: 50vw;
+    }
+
+    .hero-btns button {
+        width: 20em;
+        font-size: 0.3em;
     }
 
 
@@ -194,3 +237,4 @@ div button span:nth-child(1) {
 div button span:nth-child(2) {
     --n: 2;
 }
+
