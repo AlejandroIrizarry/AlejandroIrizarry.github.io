@@ -36,7 +36,7 @@ border-radius: 0 500px 500px 0;
     display: flex;
     justify-content: center;
     font-size: 2.5vw;
-    width: 30vw;;
+    width: 30vw;
 }
 
 .about-section-media {
@@ -52,10 +52,8 @@ border-radius: 0 500px 500px 0;
     font-weight: bold;
     display: flex;
     flex-direction: row;
-    width: 70%;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
     align-items: center;
 
 }
@@ -64,7 +62,6 @@ border-radius: 0 500px 500px 0;
     display: flex;
     justify-content: center;
     font-size: 2.5vw;
-    width: 30vw;;
 }
 
 .contact-section-media a img {
@@ -73,7 +70,7 @@ border-radius: 0 500px 500px 0;
 
 .contact-section-media {
     display: flex;
-    
+    justify-content: center;
 }
 
 #company-left {
@@ -193,3 +190,95 @@ border-radius: 0 500px 500px 0;
     text-align: center;
     padding: 0 0 5vw 0;
   }
+
+  @media only screen and (max-width: 850px) {
+
+    .about-section {
+        justify-content: centers;
+    }
+
+    .about-section-text {
+        font-size: 2em;
+        width: 10em;
+    }
+
+    .about-section-media {
+        width: 20em;
+    }
+
+
+    .contact-section-media a img {
+        width: 4em;
+    }
+
+    .contact-section-text {
+        font-size: 2em;
+    }
+
+    #copyright {
+        width: 100%;
+        font-size: 1.3em;
+        padding: 2em 3em 2em 3em;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .about-section {
+        flex-direction: column;
+        padding: 5em
+    }
+
+    .about-section-text {
+        font-size: 1.5em;
+        width: 10em;
+    }
+
+    .about-section-media {
+        width: 15em;
+    }
+
+    .about-section-media img {
+        width: 100em;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-section-text {
+        font-size: 2em;
+    }
+
+    .contact-section-media a img {
+        width: 3em;
+    }
+
+    .float-area {
+        height: 15vh;
+    }
+
+    #copyright {
+        width: 100%;
+        font-size: 0.8em;
+        padding: 2em 3em 2em 3em;
+    }
+
+    .about-section:nth-child(even) {
+        border-radius: 0;
+        }
+
+  }
+
+  @media only screen and (max-width: 300px) {
+
+ 
+    .contact-section-media {
+        flex-wrap: wrap;
+    }
+
+
+}

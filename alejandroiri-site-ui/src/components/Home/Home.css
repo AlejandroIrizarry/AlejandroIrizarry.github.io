@@ -79,7 +79,7 @@ color: #FFFF;
 }
 
 .hero-info p {
-    font-size: 1.5vw;
+    font-size: 10em;
 }
 
 .hero-img {
@@ -160,7 +160,7 @@ color: #FFFF;
 
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
     .hero-info h1 {
         font-weight: bolder;
         font-size: 4vw;
@@ -178,6 +178,20 @@ color: #FFFF;
         margin-left: 20px;
     }
 
+}
+
+@media only screen and (min-width: 300px) {
+    .hero-info h1 {
+        font-size: 3em;
+    }
+
+    .hero-info h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-info p {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (max-width: 300px) {

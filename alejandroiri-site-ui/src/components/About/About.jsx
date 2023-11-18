@@ -99,14 +99,14 @@ export default function About() {
                 <LottieAnimation animationData={projects} />
                 </div>
                 <div className="about-section-text">
-                    <h2>Check out<span className="markup"> my projects</span><br/> by <a href="/projects" id="click"><span className="markup">clicking here</span></a> 👀</h2>
+                    <h2>Check out<span className="markup"> my projects</span><br/> by <Link to="/projects" id="click"><span className="markup">clicking here</span></Link> 👀</h2>
                 </div>
             </div>
 
 
 
             <footer id="contact" className="animation contact-section">
-            <div className="contact-section-text">
+                <div className="contact-section-text">
                     <h2>Don't be a stanger,<br/><span className="markup"> Let's connect</span>! 🤝</h2>
                 </div>
                 <div className="contact-section-media float-area">
@@ -122,7 +122,8 @@ export default function About() {
             <div id="up-arrow" className="arrow floating-image-up"><a href="#home"><img src={up_arrow}/></a></div>
             <div id="copyright">
                 <h4>© 2023 – Site designed and developed by <span className="markup">Alejandro Irizarry</span>.</h4>
-                <h5>Updated on November 16, 2023 🌐</h5>
+                <h5> Updated on November 16, 2023 🌐</h5>
+                <h5>Built with React 🚀</h5>
             </div>
         </div>
      )
