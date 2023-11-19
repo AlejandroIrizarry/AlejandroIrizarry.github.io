@@ -25,7 +25,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     background-color: var(--yellow);
-    min-width: 250px;
  }
 
  body {
