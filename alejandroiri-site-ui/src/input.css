@@ -24,8 +24,8 @@
  html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-color: var(--yellow);
     overflow-x:hidden;
+    min-width: 250px;
  }
 
  body {
