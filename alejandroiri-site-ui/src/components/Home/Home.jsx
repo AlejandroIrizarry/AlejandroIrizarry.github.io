@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from "react";
 import "./Home.css";
 import { Link, Navigate } from "react-router-dom";
 import lottie from "lottie-web";
-import hero_avatar from "/src/assets/me.jpg"
+import hero_avatar from "/src/assets/me.png"
 import About from "../About/About.jsx"
 import down_arrow from "../../assets/down-arrow.svg"
 import resume from "/src/assets/resume.pdf"
