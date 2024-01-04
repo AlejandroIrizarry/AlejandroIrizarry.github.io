@@ -1,163 +1,187 @@
 .projects {
-    background-color: black;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background-color: black;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .projects h1 {
-    font-weight: bolder;
-    font-size: 3em;
-    margin: 3em 1.5em 1em 1.5em;
+  font-weight: bolder;
+  font-size: 3em;
+  margin: 3em 1.5em 1em 1.5em;
 }
 
 .project-section {
-    display: flex;
-    flex-direction: row;
-    margin: 10em 0em;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: 10em 0em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .project-media {
-    background-color: var(--light-gray);
-    border-radius: 15px;
-    margin-right: 50px;
-    width: 50em;
-    height: 100%;
+  background-color: var(--light-gray);
+  border-radius: 15px;
+  margin-right: 50px;
+  width: 50em;
+  height: 100%;
 }
 
-.project-media iframe {
-    border-radius: 15px 15px 2px 2px;
+.project-media iframe,
+.project-media img {
+  border-radius: 15px 15px 2px 2px;
+}
+
+.project-title a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.link_arrow {
+  width: 500px;
+}
+
+.contributors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contributor {
+  margin-left: 1em;
+  margin-top: 1em;
 }
 
 .project-title a:hover {
-    color: var(--clear-yellow);
+  color: var(--clear-yellow);
 }
 
+.link_arrow .floating svg {
+  justify-content: end;
+}
 
-.project-info {
-    width: 40vw;
+.link_arrow .floating {
+  height: 100 !important;
+  width: 100 !important;
 }
 
 .project-info {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    justify-content: flex-start;
+  width: 40vw;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: flex-start;
 }
 
 .project-info h3 {
-    color: var(--yellow);
-    font-weight: bolder;
-    font-size: 4vw;
-    white-space: pre-wrap;
+  color: var(--yellow);
+  font-weight: bolder;
+  font-size: 4vw;
+  white-space: pre-wrap;
 }
 
 .project-info h4 {
-    color: var(--clear-yellow);
-    font-weight: regular;
-    font-size: 1vw;
-    white-space: pre-wrap;
+  color: var(--clear-yellow);
+  font-weight: regular;
+  font-size: 1vw;
+  white-space: pre-wrap;
 }
 
 .project-button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .project-button {
-    border-radius: 15px;
-    padding: 0.5em;
-    width: 10em;
-    height: auto;
-    font-size: 0.8em;
-    margin: 1em;
+  border-radius: 15px;
+  padding: 0.5em;
+  width: 10em;
+  height: auto;
+  font-size: 0.8em;
+  margin: 1em;
 }
 
 @media only screen and (max-width: 1415px) {
+  .project-media img {
+    width: 50em;
+  }
 
-    .project-media img {
-        width: 50em;
-    }
+  .project-info {
+    width: 100%;
+  }
 
-    .project-info {
-        width: 100%;
-    }
+  .project-info h3 {
+    font-size: 2em;
+  }
+  .project-info h4 {
+    font-size: 1em;
+  }
 
-    .project-info h3 {
-        font-size: 2em
-    }
-    .project-info h4 {
-        font-size: 1em
-    }
+  .project-media {
+    margin-right: 0px;
+  }
 
-    .project-media {
-        margin-right: 0px;
-    }
-
-    .project-info {
-        margin: 3em;
-    }
-    
-
-
+  .project-info {
+    margin: 3em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .projects h1 {
+  .projects h1 {
+    font-size: 10vw;
+    margin: 3em 1.5em 1em 1.5em;
+  }
 
-        font-size: 10vw;
-        margin: 3em 1.5em 1em 1.5em;
-    }
-
-    .project-button-container {
-        justify-content: center;
-    }
+  .project-button-container {
+    justify-content: center;
+  }
 }
 
 div button {
-    color: var(--yellow);
-    border: 0.3em solid var(--yellow);
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    transition: 2s;
+  color: var(--yellow);
+  border: 0.3em solid var(--yellow);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 2s;
 }
 
 div button span {
-    position: absolute;
-    width: 50%;
-    height: 80%;
-    background-color: var(--yellow);
-    transform: translateY(150%);
-    border-radius: 50%;
-    left: calc((var(--n) - 1) * 25%);
-    transition: 0.8s;
-    transition-delay: calc((var(--n) - 1) * 0.1s);
-    z-index: -1;
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  background-color: var(--yellow);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.8s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
 }
 
 div button:hover {
-    color: black;
+  color: black;
 }
 
 div button:hover span {
-    transform: translateY(0) scale(2);
+  transform: translateY(0) scale(2);
 }
 
 div button span:nth-child(1) {
-    --n: 1;
+  --n: 1;
 }
 
 div button span:nth-child(2) {
-    --n: 2;
+  --n: 2;
 }
