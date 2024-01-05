@@ -1,18 +1,11 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import {
-  useNavigate,
-  Link,
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { useState } from "react";
 import "./Project.css";
-import codequest from "/src/assets/codequest.png";
 import poster from "/src/assets/poster.pdf";
 import link_arrow from "/src/assets/link_arrow.json";
+
 import LottieAnimation from "../AnimationComponent/AnimationComponent";
+
 import hero_avatar from "/src/assets/me.png";
 import pyspace from "/src/assets/pyspace.png";
 
@@ -29,6 +22,8 @@ import {
   Text,
 } from "@chakra-ui/react";
 
+import { Collapse, Button } from "@chakra-ui/react";
+
 export default function Project() {
   const [tabIndex, setTabIndex] = useState(0);
 
@@ -40,18 +35,24 @@ export default function Project() {
     setTabIndex(index);
   };
 
+  const [show, setShow] = React.useState(false);
+  const handleToggle = () => setShow(!show);
+
   return (
     <div className="projects">
       <h1>⚙️ Projects ⚙️</h1>
       <Box align="center">
         <input
+          className="range-slider"
           type="range"
           min="0"
-          max="2"
+          max="1"
           value={tabIndex}
           onChange={handleSliderChange}
+          color="#FFDE6A"
+          bg="#FFDE6A"
+          colorScheme="#FFDE6A"
         />
-
         <Tabs
           index={tabIndex}
           onChange={handleTabsChange}
@@ -60,6 +61,7 @@ export default function Project() {
         >
           <TabList>
             <Tab
+              className="tab-name"
               _selected={{ color: "black", bg: "#FFDE6A" }}
               _hover={{ color: "black", bg: "#ffdf6aa9" }}
               color="#ffff"
@@ -67,6 +69,7 @@ export default function Project() {
               Web Development
             </Tab>
             <Tab
+              className="tab-name"
               _selected={{ color: "black", bg: "#FFDE6A" }}
               _hover={{ color: "black", bg: "#ffdf6aa9" }}
               color="#ffff"
@@ -74,6 +77,7 @@ export default function Project() {
               Programming
             </Tab>
             <Tab
+              className="tab-name"
               _selected={{ color: "black", bg: "#FFDE6A" }}
               _hover={{ color: "black", bg: "#ffdf6aa9" }}
               color="#ffff"
@@ -120,7 +124,11 @@ export default function Project() {
                 </div>
                 <div className="project-info">
                   <h3 className="project-title">
-                    <a href="https://www.codequest.academy/" target="_blank">
+                    <a
+                      id="codequest"
+                      href="https://www.codequest.academy/"
+                      target="_blank"
+                    >
                       CodeQuest
                       <span class="link_arrow">
                         <LottieAnimation animationData={link_arrow} />
@@ -138,21 +146,32 @@ export default function Project() {
                     6-10 in an exciting and interactive manner. 🚀 This
                     application was built for my Software Engineering
                     pre-internship at Salesforce.
-                    <br />
-                    <br />
-                    <h4>What is CodeQuest Academy?</h4>The platform transforms
-                    learning into a thrilling adventure by incorporating
-                    gamified elements, turning coding exercises into engaging
-                    challenges. 🎮 With a user-friendly interface, kids unlock
-                    the power of Python while developing problem-solving skills
-                    through hands-on activities. 🌟 CodeQuest goes beyond
-                    coding, nurturing creativity and encouraging collaboration
-                    through mentorship and teamwork. 🌈 As young learners
-                    progress, they earn badges and rewards, creating a sense of
-                    accomplishment and celebrating their coding journey. 👩‍💻 Join
-                    us at CodeQuest to empower your child with the gift of
-                    coding and open the door to a world of endless possibilities
-                    in a fun and inspiring way. 🏆{" "}
+                    <Collapse startingHeight={20} in={show}>
+                      <br />
+                      <h4>What is CodeQuest Academy?</h4>The platform transforms
+                      learning into a thrilling adventure by incorporating
+                      gamified elements, turning coding exercises into engaging
+                      challenges. 🎮 With a user-friendly interface, kids unlock
+                      the power of Python while developing problem-solving
+                      skills through hands-on activities. 🌟 CodeQuest goes
+                      beyond coding, nurturing creativity and encouraging
+                      collaboration through mentorship and teamwork. 🌈 As young
+                      learners progress, they earn badges and rewards, creating
+                      a sense of accomplishment and celebrating their coding
+                      journey. 👩‍💻 Join us at CodeQuest to empower your child
+                      with the gift of coding and open the door to a world of
+                      endless possibilities in a fun and inspiring way. 🏆{" "}
+                    </Collapse>
+                    <Button
+                      size="sm"
+                      bg="black"
+                      color="#ffde6a"
+                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      onClick={handleToggle}
+                      mt="1rem"
+                    >
+                      Show {show ? "Less" : "More"}
+                    </Button>
                   </p>
                   <br />
                   <h4>Contributors</h4>
@@ -171,7 +190,6 @@ export default function Project() {
                         </Box>
                       </Flex>
                     </span>
-
                     <br />
                     <span className="contributor">
                       <Flex>
@@ -204,7 +222,6 @@ export default function Project() {
                   </span>
                 </div>
               </section>
-
               <section className="project-section">
                 <div className="project-media">
                   <iframe
@@ -267,14 +284,26 @@ export default function Project() {
                     local storage for persistent authentication.
                     <br />
                     <br />
-                    <h4>What is the LifeTracker App?</h4>Everywhere around us is
-                    data waiting to be collected and utilized. In recent years,
-                    we've seen the rise of applications and services that exist
-                    to quantify concepts that were previously hard to capture.
-                    FitBit, Apple Health, and Woop are all $1 billion dollar
-                    services to offer tracking statistics about how we live our
-                    lives. The LifeTracker app will do exactly that - track your
-                    life by quantifying your activity.
+                    <Collapse startingHeight={1} in={show}>
+                      <h4>What is the LifeTracker App?</h4>Everywhere around us
+                      is data waiting to be collected and utilized. In recent
+                      years, we've seen the rise of applications and services
+                      that exist to quantify concepts that were previously hard
+                      to capture. FitBit, Apple Health, and Woop are all $1
+                      billion dollar services to offer tracking statistics about
+                      how we live our lives. The LifeTracker app will do exactly
+                      that - track your life by quantifying your activity.
+                    </Collapse>
+                    <Button
+                      size="sm"
+                      bg="black"
+                      color="#ffde6a"
+                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      onClick={handleToggle}
+                      mt="1rem"
+                    >
+                      Show {show ? "Less" : "More"}
+                    </Button>
                   </p>
                   <br />
                   <h4>Contributors</h4>
@@ -296,7 +325,6 @@ export default function Project() {
                   </span>
                 </div>
               </section>
-
               <section className="project-section">
                 <div className="project-media">
                   <iframe
@@ -372,14 +400,27 @@ export default function Project() {
                     </a>
                     <br />
                     <br />
-                    <h4>What is CodePath Student Store?</h4>Selling merchandise
-                    in the modern era requires digital solutions. For this
-                    project, I was tasked with designing and constructing an
-                    online student store for the College of CodePath. The web
-                    app consists of a frontend user interface for potential
-                    customers to browse available goods and a backend API to
-                    handle data management. The API was built with Node and
-                    Express, and the UI was built with React.
+                    <Collapse startingHeight={1} in={show}>
+                      <h4>What is CodePath Student Store?</h4>Selling
+                      merchandise in the modern era requires digital solutions.
+                      For this project, I was tasked with designing and
+                      constructing an online student store for the College of
+                      CodePath. The web app consists of a frontend user
+                      interface for potential customers to browse available
+                      goods and a backend API to handle data management. The API
+                      was built with Node and Express, and the UI was built with
+                      React.
+                    </Collapse>
+                    <Button
+                      size="sm"
+                      bg="black"
+                      color="#ffde6a"
+                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      onClick={handleToggle}
+                      mt="1rem"
+                    >
+                      Show {show ? "Less" : "More"}
+                    </Button>
                   </p>
                   <br />
                   <h4>Contributors</h4>
@@ -401,7 +442,6 @@ export default function Project() {
                   </span>
                 </div>
               </section>
-
               <section className="project-section">
                 <div className="project-media">
                   <iframe
@@ -474,20 +514,33 @@ export default function Project() {
                     seamless user experience across devices.
                     <br />
                     <br />
-                    <h4>What is Flixster?</h4>
-                    Flixster is a crafted dynamic website showcasing the latest
-                    movies currently playing in theaters, seamlessly integrating
-                    the Movie Database API to fetch an up-to-date list of films.
-                    Utilizing HTML, CSS, and JavaScript, the website provides an
-                    engaging and user-friendly interface for users to explore
-                    and stay informed about the latest cinematic releases. The
-                    Movie Database API was used to fetch the movies:{" "}
-                    <a
-                      href="https://developer.themoviedb.org/docs/getting-started"
-                      target="_blank"
+                    <Collapse startingHeight={1} in={show}>
+                      <h4>What is Flixster?</h4>
+                      Flixster is a crafted dynamic website showcasing the
+                      latest movies currently playing in theaters, seamlessly
+                      integrating the Movie Database API to fetch an up-to-date
+                      list of films. Utilizing HTML, CSS, and JavaScript, the
+                      website provides an engaging and user-friendly interface
+                      for users to explore and stay informed about the latest
+                      cinematic releases. The Movie Database API was used to
+                      fetch the movies:{" "}
+                      <a
+                        href="https://developer.themoviedb.org/docs/getting-started"
+                        target="_blank"
+                      >
+                        https://developer.themoviedb.org/docs/getting-started
+                      </a>
+                    </Collapse>
+                    <Button
+                      size="sm"
+                      bg="black"
+                      color="#ffde6a"
+                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      onClick={handleToggle}
+                      mt="1rem"
                     >
-                      https://developer.themoviedb.org/docs/getting-started
-                    </a>
+                      Show {show ? "Less" : "More"}
+                    </Button>
                   </p>
                   <br />
                   <h4>Contributors</h4>
@@ -510,7 +563,6 @@ export default function Project() {
                 </div>
               </section>
             </TabPanel>
-
             <TabPanel>
               <section className="project-section">
                 <div className="project-media">
@@ -585,26 +637,38 @@ export default function Project() {
                     streamlined and efficient instant messaging experience.
                     <br />
                     <br />
-                    <h4>What is MessageMate?</h4>
-                    In the contemporary era of pervasive digital connectivity,
-                    this project focuses on developing a dynamic chat
-                    application that combines network programming and graphical
-                    user interface design. The aim is to create a versatile
-                    platform that enables instant communication while embodying
-                    the complexities of a robust client-server architecture.
-                    Recognizing the pivotal role of effective communication in
-                    today's fast-paced world, the project aligns with societal
-                    trends, serving as a hands-on exploration of network
-                    protocols and user interface design intricacies. By
-                    addressing challenges such as concurrency, data
-                    synchronization, and user-friendly interface design, the
-                    project contributes to the broader discussion on how
-                    technology can enhance and simplify human connections. The
-                    subsequent sections of the scientific poster will detail
-                    specific objectives, design principles, tools used, and
-                    conclusions drawn from the successful implementation of
-                    MessageMate, showcasing not only technical proficiency but
-                    also a commitment to advancing communication technology.
+                    <Collapse startingHeight={1} in={show}>
+                      <h4>What is MessageMate?</h4>
+                      In the contemporary era of pervasive digital connectivity,
+                      this project focuses on developing a dynamic chat
+                      application that combines network programming and
+                      graphical user interface design. The aim is to create a
+                      versatile platform that enables instant communication
+                      while embodying the complexities of a robust client-server
+                      architecture. Recognizing the pivotal role of effective
+                      communication in today's fast-paced world, the project
+                      aligns with societal trends, serving as a hands-on
+                      exploration of network protocols and user interface design
+                      intricacies. By addressing challenges such as concurrency,
+                      data synchronization, and user-friendly interface design,
+                      the project contributes to the broader discussion on how
+                      technology can enhance and simplify human connections. The
+                      subsequent sections of the scientific poster will detail
+                      specific objectives, design principles, tools used, and
+                      conclusions drawn from the successful implementation of
+                      MessageMate, showcasing not only technical proficiency but
+                      also a commitment to advancing communication technology.
+                    </Collapse>
+                    <Button
+                      size="sm"
+                      bg="black"
+                      color="#ffde6a"
+                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      onClick={handleToggle}
+                      mt="1rem"
+                    >
+                      Show {show ? "Less" : "More"}
+                    </Button>
                   </p>
                   <br />
                   <h4>Contributors</h4>
@@ -654,7 +718,6 @@ export default function Project() {
                   </span>
                 </div>
               </section>
-
               <section className="project-section">
                 <div className="project-media">
                   <img src={pyspace} />
@@ -702,15 +765,27 @@ export default function Project() {
                     Externship program.
                     <br />
                     <br />
-                    <h4>What is PySpace?</h4>A python game where your main
-                    objective is to protect the space stations by shooting
-                    arrows to enemy fleets. Will you be able to prove yourself
-                    as the best space defender? Let's find out! <br />
-                    <br />
-                    <b>Instructions:</b> <br />
-                    Defend the space stations from enemy fleets til the timer
-                    reaches 00:00. Controls to move ship: W - Up S - Down A -
-                    Left D - Right
+                    <Collapse startingHeight={1} in={show}>
+                      <h4>What is PySpace?</h4>A python game where your main
+                      objective is to protect the space stations by shooting
+                      arrows to enemy fleets. Will you be able to prove yourself
+                      as the best space defender? Let's find out! <br />
+                      <br />
+                      <b>Instructions:</b> <br />
+                      Defend the space stations from enemy fleets til the timer
+                      reaches 00:00. Controls to move ship: W - Up S - Down A -
+                      Left D - Right
+                    </Collapse>
+                    <Button
+                      size="sm"
+                      bg="black"
+                      color="#ffde6a"
+                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      onClick={handleToggle}
+                      mt="1rem"
+                    >
+                      Show {show ? "Less" : "More"}
+                    </Button>
                   </p>
                   <br />
                   <h4>Contributors</h4>
@@ -733,7 +808,6 @@ export default function Project() {
                 </div>
               </section>
             </TabPanel>
-
             <TabPanel>
               <section className="project-section">
                 <div className="project-media">
@@ -790,19 +864,31 @@ export default function Project() {
                     pre-internship at Salesforce.
                     <br />
                     <br />
-                    <h4>What is CodeQuest Academy?</h4>The platform transforms
-                    learning into a thrilling adventure by incorporating
-                    gamified elements, turning coding exercises into engaging
-                    challenges. 🎮 With a user-friendly interface, kids unlock
-                    the power of Python while developing problem-solving skills
-                    through hands-on activities. 🌟 CodeQuest goes beyond
-                    coding, nurturing creativity and encouraging collaboration
-                    through mentorship and teamwork. 🌈 As young learners
-                    progress, they earn badges and rewards, creating a sense of
-                    accomplishment and celebrating their coding journey. 👩‍💻 Join
-                    us at CodeQuest to empower your child with the gift of
-                    coding and open the door to a world of endless possibilities
-                    in a fun and inspiring way. 🏆{" "}
+                    <Collapse startingHeight={1} in={show}>
+                      <h4>What is CodeQuest Academy?</h4>The platform transforms
+                      learning into a thrilling adventure by incorporating
+                      gamified elements, turning coding exercises into engaging
+                      challenges. 🎮 With a user-friendly interface, kids unlock
+                      the power of Python while developing problem-solving
+                      skills through hands-on activities. 🌟 CodeQuest goes
+                      beyond coding, nurturing creativity and encouraging
+                      collaboration through mentorship and teamwork. 🌈 As young
+                      learners progress, they earn badges and rewards, creating
+                      a sense of accomplishment and celebrating their coding
+                      journey. 👩‍💻 Join us at CodeQuest to empower your child
+                      with the gift of coding and open the door to a world of
+                      endless possibilities in a fun and inspiring way. 🏆{" "}
+                    </Collapse>
+                    <Button
+                      size="sm"
+                      bg="black"
+                      color="#ffde6a"
+                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      onClick={handleToggle}
+                      mt="1rem"
+                    >
+                      Show {show ? "Less" : "More"}
+                    </Button>
                   </p>
                   <br />
                   <h4>Contributors</h4>
@@ -824,7 +910,6 @@ export default function Project() {
                   </span>
                 </div>
               </section>
-
               <section className="project-section">
                 <div className="project-media">
                   <iframe
@@ -880,19 +965,31 @@ export default function Project() {
                     pre-internship at Salesforce.
                     <br />
                     <br />
-                    <h4>What is CodeQuest Academy?</h4>The platform transforms
-                    learning into a thrilling adventure by incorporating
-                    gamified elements, turning coding exercises into engaging
-                    challenges. 🎮 With a user-friendly interface, kids unlock
-                    the power of Python while developing problem-solving skills
-                    through hands-on activities. 🌟 CodeQuest goes beyond
-                    coding, nurturing creativity and encouraging collaboration
-                    through mentorship and teamwork. 🌈 As young learners
-                    progress, they earn badges and rewards, creating a sense of
-                    accomplishment and celebrating their coding journey. 👩‍💻 Join
-                    us at CodeQuest to empower your child with the gift of
-                    coding and open the door to a world of endless possibilities
-                    in a fun and inspiring way. 🏆{" "}
+                    <Collapse startingHeight={1} in={show}>
+                      <h4>What is CodeQuest Academy?</h4>The platform transforms
+                      learning into a thrilling adventure by incorporating
+                      gamified elements, turning coding exercises into engaging
+                      challenges. 🎮 With a user-friendly interface, kids unlock
+                      the power of Python while developing problem-solving
+                      skills through hands-on activities. 🌟 CodeQuest goes
+                      beyond coding, nurturing creativity and encouraging
+                      collaboration through mentorship and teamwork. 🌈 As young
+                      learners progress, they earn badges and rewards, creating
+                      a sense of accomplishment and celebrating their coding
+                      journey. 👩‍💻 Join us at CodeQuest to empower your child
+                      with the gift of coding and open the door to a world of
+                      endless possibilities in a fun and inspiring way. 🏆{" "}
+                    </Collapse>
+                    <Button
+                      size="sm"
+                      bg="black"
+                      color="#ffde6a"
+                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      onClick={handleToggle}
+                      mt="1rem"
+                    >
+                      Show {show ? "Less" : "More"}
+                    </Button>
                   </p>
                   <br />
                   <h4>Contributors</h4>
