@@ -46,7 +46,7 @@ export default function Navbar(props) {
               </a>
             </li>
             <li>
-              <a href="#about">
+              <a href="/#about">
                 <span className="hover-underline-animation">About</span>
               </a>
             </li>

@@ -70,6 +70,50 @@ h1 {
   left: calc((var(--n) - 1) * 25%);
 }
 
+.css-ez23ye {
+  padding: 1em 3em !important;
+  min-width: 0 !important;
+  vertical-align: baseline !important;
+  outline: none !important;
+  outline-offset: 0px !important;
+  display: flex;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -webkit-align-items: baseline !important;
+  -webkit-box-align: baseline !important;
+  -ms-flex-align: none !important;
+  align-items: center !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: none !important;
+  -webkit-justify-content: center !important;
+  justify-content: center !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: baseline !important;
+  outline: 0 !important;
+  outline-offset: 0 !important;
+  line-height: 1.2 !important;
+  border-radius: 15px !important;
+  font-weight: bold !important;
+  transition-property: none !important;
+  transition-duration: 0s !important;
+  height: auto;
+  min-width: 0 !important;
+  font-size: 0;
+  -webkit-padding-start: 0 !important;
+  padding-inline-start: 0 !important;
+  -webkit-padding-end: 0 !important;
+  padding-inline-end: 0 !important;
+  background: #000 !important;
+  color: white;
+}
+
 .hero-info h2 {
   font-size: 3vw;
 }
@@ -97,7 +141,8 @@ h1 {
   height: 32vw;
 }
 
-.hero-btns button {
+.hero-btns .button {
+  height: auto !important;
   background-color: var(--medium-gray);
   border-radius: 15px;
   padding: 1em 3em;
@@ -107,7 +152,7 @@ h1 {
   font-weight: bold;
 }
 
-.hero-btns button:nth-child(1) {
+.hero-btns .button:nth-child(1) {
   margin-right: 2em;
 }
 
@@ -148,7 +193,7 @@ h1 {
     font-size: 0.5em;
   }
 
-  .hero-btns button {
+  .hero-btns .button {
     background-color: var(--medium-gray);
     border-radius: 15px;
     padding: 1em 3em;
@@ -201,13 +246,13 @@ h1 {
     height: 50vw;
   }
 
-  .hero-btns button {
+  .hero-btns .button {
     width: 20em;
     font-size: 0.3em;
   }
 }
 
-div button {
+div .button {
   color: var(--yellow);
   border: 0.3em solid var(--yellow);
   text-transform: uppercase;
@@ -219,32 +264,41 @@ div button {
   transition: 2s;
 }
 
-div button span {
+div .button span {
   position: absolute;
-  width: 50%;
-  height: 80%;
+  width: 50% !important;
+  height: 80 !important;
   background-color: var(--yellow);
   transform: translateY(150%);
   border-radius: 50%;
   left: calc((var(--n) - 1) * 25%);
-  transition: 0.8s;
+  transition: 0.5s;
   transition-delay: calc((var(--n) - 1) * 0.1s);
   z-index: -1;
 }
 
-div button:hover {
+.chakra-modal__content-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: justify;
+  justify-content: center;
+}
+
+div .button:hover {
   color: black;
 }
 
-div button:hover span {
-  transform: translateY(0) scale(2);
+div .button:hover span {
+  transform: translateY(0) scale(3);
 }
 
-div button span:nth-child(1) {
+div .button span:nth-child(1) {
   --n: 1;
 }
 
-div button span:nth-child(2) {
+div .button span:nth-child(2) {
   --n: 2;
 }
 
@@ -765,4 +819,9 @@ body {
   to {
     transform: translateX(-100%);
   }
+}
+
+.modal-button:hover {
+  color: black !important;
+  background-color: var(--yellow) !important;
 }

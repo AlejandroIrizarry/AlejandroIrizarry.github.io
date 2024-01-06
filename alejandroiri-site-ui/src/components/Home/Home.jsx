@@ -1,38 +1,75 @@
 import React, { useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Home.css";
 import hero_avatar from "/src/assets/me.png";
 import About from "../About/About.jsx";
 import down_arrow from "../../assets/down-arrow.svg";
 import resume from "/src/assets/resume.pdf";
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  Button,
+  useDisclosure,
+} from "@chakra-ui/react";
 
 export default function Home() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const navigate = useNavigate();
+
+  const handleGetResumeClick = () => {
+    const pdfUrl = "/src/assets/resume.pdf";
+
+    // Open the PDF file in a new tab
+    window.open(pdfUrl, "_blank");
+  };
+
+  const handleExperiencesClick = () => {
+    // Close the modal
+    onClose();
+
+    // Navigate to the desired URL
+    navigate("/#experiences");
+
+    // Scroll to the #experiences section
+    setTimeout(() => {
+      const experiencesSection = document.getElementById("experiences");
+      if (experiencesSection) {
+        experiencesSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 300); // Adjust the delay as needed
+  };
+
   return (
     <span>
-      <div class="bubbles">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
+      <div className="bubbles">
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
       </div>
       <div id="home" className="home">
         <div className="hero">
@@ -48,23 +85,80 @@ export default function Home() {
                 Rico <span id="tags">‹/›</span>
               </p>
               <div className="hero-btns">
-                <a href={resume} download>
-                  <button type="button">
-                    Get Resume<span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </button>
-                </a>
-                <a href="#about">
-                  <button type="button">
-                    About Me
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </button>
-                </a>
+                <Button className="button" onClick={handleGetResumeClick}>
+                  Get Resume
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </Button>
+                <Button className="button" onClick={onOpen}>
+                  About Me
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </Button>
+
+                <Modal isOpen={isOpen} onClose={onClose}>
+                  <ModalOverlay />
+                  <ModalContent
+                    style={{
+                      color: "#ffde6a",
+                      backgroundColor: "var(--medium-gray)",
+                    }}
+                  >
+                    <ModalHeader>Who I am 🧑‍💻</ModalHeader>
+                    <ModalCloseButton />
+                    <ModalBody>
+                      Hello, there! I'm <b>Alejandro Irizarry Negrón</b>, a born
+                      and raised Puerto Rican who is proud to be Latino and
+                      Boricua 🇵🇷!
+                      <br />
+                      <br />
+                      🎓 I'm currently pursuing undergraduate studies in a
+                      Bachelors Degree in Science under the Computer Science
+                      major at the
+                      <b> University of Puerto Rico - Bayamon Campus</b> (Class
+                      of 2025).
+                      <br />
+                      <br />
+                      🚀 My interests are heavily focused on{" "}
+                      <b>
+                        full-stack web programming and advancing the
+                        representation of Latinx+ people in the tech industry.{" "}
+                      </b>
+                      I find pleasure in solving problems and working with
+                      others to do so. Feel free to check out the whole site
+                      that I developed with lots of 💛!
+                    </ModalBody>
+
+                    <ModalFooter>
+                      <Button
+                        style={{ color: "#ffde6a", backgroundColor: "black" }}
+                        colorScheme="#ffde6a"
+                        mr={3}
+                        onClick={onClose}
+                        _hover={{
+                          color: "black",
+                          backgroundColor: "var(--clear-yellow)",
+                        }}
+                        className="modal-button"
+                      >
+                        Close
+                      </Button>
+                      <Button
+                        style={{ color: "#ffde6a", backgroundColor: "black" }}
+                        colorScheme="#ffde6a"
+                        variant="ghost"
+                        onClick={handleExperiencesClick}
+                        className="modal-button"
+                      >
+                        Experiences
+                      </Button>
+                    </ModalFooter>
+                  </ModalContent>
+                </Modal>
               </div>
             </div>
             <div className="hero-img">

@@ -123,6 +123,7 @@ export default function About() {
         </div>
       </div>
 
+      <span id="experiences"></span>
       <VerticalTimeline animate={true} lineColor={"#ffde6a"}>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
