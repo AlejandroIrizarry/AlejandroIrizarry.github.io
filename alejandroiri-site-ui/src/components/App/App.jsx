@@ -18,7 +18,7 @@ export default function App() {
   return (
     <>
       <div className="App">
-        <Router basename="/AlejandroIrizarry.github.io">
+        <Router>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
