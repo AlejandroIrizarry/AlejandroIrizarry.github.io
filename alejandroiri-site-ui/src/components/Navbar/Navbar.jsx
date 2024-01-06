@@ -3,6 +3,10 @@ import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Navbar(props) {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   const navigate = useNavigate();
   const [navbarVisible, setNavbarVisible] = useState(true);
 
@@ -33,13 +37,33 @@ export default function Navbar(props) {
     <>
       <div className={`navbar ${navbarVisible ? "visible" : "hidden"}`}>
         {/* Your existing navbar content */}
-        <div className="nav-content" >
+        <div className="nav-content">
           <div className="nav-logo"></div>
           <ul className="nav-links">
-            <li><a href="/"><span className="hover-underline-animation">Home</span></a></li>
-            <li><a href="/#about"><span className="hover-underline-animation">About</span></a></li>
-            <li><Link className="hover-underline-animation" to="/projects"><span>Projects</span></Link></li>
-            <li><a href="/#contact"><span className="hover-underline-animation">Contact</span></a></li>
+            <li>
+              <a href="/">
+                <span className="hover-underline-animation">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                <span className="hover-underline-animation">About</span>
+              </a>
+            </li>
+            <li>
+              <Link
+                className="hover-underline-animation"
+                to="/projects"
+                onClick={scrollToTop}
+              >
+                <span>Projects</span>
+              </Link>
+            </li>
+            <li>
+              <a href="/#contact">
+                <span className="hover-underline-animation">Contact</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>

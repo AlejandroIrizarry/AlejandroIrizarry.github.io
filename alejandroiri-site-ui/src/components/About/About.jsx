@@ -26,10 +26,13 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 export default function About() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   /*
    * Scrolling Animation
    */
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -264,9 +267,9 @@ export default function About() {
             <p>
               Built a full-stack application for the capstone with 2 other
               interns. The application is{" "}
-              <a href="https://alejandroirizarry.github.io/projects/#codequest/">
+              <Link onClick={scrollToTop} to="/projects">
                 <b>CodeQuest</b>
-              </a>
+              </Link>
               , a platform to teach kids to code in Python in a fun and
               interactive way.
             </p>
@@ -504,7 +507,7 @@ export default function About() {
           <h2>
             Check out<span className="markup"> my projects</span>
             <br /> by{" "}
-            <Link to="/projects" id="click">
+            <Link to="/projects" id="click" onClick={scrollToTop}>
               <span className="markup">clicking here</span>
             </Link>{" "}
             👀
@@ -515,7 +518,7 @@ export default function About() {
       <footer id="contact" className="animation contact-section">
         <div className="contact-section-text">
           <h2>
-            Don't be a stanger,
+            Don't be a stranger,
             <br />
             <span className="markup"> Let's connect</span>! 🤝
           </h2>
@@ -559,7 +562,7 @@ export default function About() {
         </div>
       </footer>
       <div id="up-arrow" className="arrow floating-image-up">
-        <a href="#home">
+        <a href="#home" onClick={scrollToTop}>
           <img src={up_arrow} />
         </a>
       </div>
@@ -568,7 +571,7 @@ export default function About() {
           © 2023 – Site designed and developed by{" "}
           <span className="markup">Alejandro Irizarry</span>.
         </h4>
-        <h5> Updated on November 16, 2023 🌐</h5>
+        <h5> Updated on January 5, 2024 🌐</h5>
         <h5>Built with React 🚀</h5>
       </div>
     </div>

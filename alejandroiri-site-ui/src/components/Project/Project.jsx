@@ -54,6 +54,7 @@ export default function Project() {
           colorScheme="#FFDE6A"
         />
         <Tabs
+          id="projects"
           index={tabIndex}
           onChange={handleTabsChange}
           align="center"
