@@ -111,7 +111,7 @@ export default function About() {
           <h2>
             I've been able to <br /> secure{" "}
             <span className="markup">experiences</span> at <br />
-            <span className="markup">Big Tech</span> companies 👉
+            <span className="markup">Big Tech</span> companies.
           </h2>
         </div>
         <div className="about-section-media" id="companies">
@@ -510,8 +510,7 @@ export default function About() {
             <br /> by{" "}
             <Link to="/projects" id="click" onClick={scrollToTop}>
               <span className="markup">clicking here</span>
-            </Link>{" "}
-            👀
+            </Link>
           </h2>
         </div>
       </div>

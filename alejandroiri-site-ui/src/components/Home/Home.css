@@ -196,10 +196,10 @@ h1 {
   .hero-btns .button {
     background-color: var(--medium-gray);
     border-radius: 15px;
-    padding: 1em 3em;
+    padding: 1.5em 3.5em;
     width: 200px;
     margin-top: 2em;
-    font-size: 0.5em;
+    font-size: 1em;
   }
 
   .arrow a img {

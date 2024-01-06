@@ -85,20 +85,24 @@ export default function Home() {
                 Rico <span id="tags">‹/›</span>
               </p>
               <div className="hero-btns">
-                <Button className="button" onClick={handleGetResumeClick}>
-                  Get Resume
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </Button>
-                <Button className="button" onClick={onOpen}>
-                  About Me
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </Button>
+                <a href="">
+                  <Button className="button" onClick={handleGetResumeClick}>
+                    Get Resume
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </Button>
+                </a>
+                <a>
+                  <Button className="button" onClick={onOpen}>
+                    About Me
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </Button>
+                </a>
 
                 <Modal isOpen={isOpen} onClose={onClose}>
                   <ModalOverlay />
@@ -110,7 +114,7 @@ export default function Home() {
                   >
                     <ModalHeader>Who I am 🧑‍💻</ModalHeader>
                     <ModalCloseButton />
-                    <ModalBody>
+                    <ModalBody style={{ color: "var(--clear-yellow)" }}>
                       Hello, there! I'm <b>Alejandro Irizarry Negrón</b>, a born
                       and raised Puerto Rican who is proud to be Latino and
                       Boricua 🇵🇷!
