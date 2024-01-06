@@ -9,7 +9,6 @@ import {
   Navigate,
 } from "react-router-dom";
 import "./App.css";
-import DrawerExample from "./Drawer";
 import Navbar from "../Navbar/Navbar.jsx";
 import Home from "../Home/Home.jsx";
 import Project from "../Project/Project.jsx";

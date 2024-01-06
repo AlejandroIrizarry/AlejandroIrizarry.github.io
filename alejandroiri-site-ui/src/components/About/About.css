@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30vh;
+  z-index: 2;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -102,6 +103,10 @@
   width: 25vw;
 }
 
+footer {
+  z-index: 2;
+}
+
 /* Scrolling Animation */
 
 .animation {
@@ -152,6 +157,7 @@
 
 #up-arrow {
   transform: scale(1, -1) !important;
+  z-index: 2;
 }
 
 .floating-image-up img {
@@ -198,6 +204,7 @@
   justify-content: center;
   text-align: center;
   padding: 0 0 5vw 0;
+  z-index: 2;
 }
 
 @media only screen and (max-width: 850px) {
@@ -278,6 +285,10 @@
 }
 
 /* Timeline Styling */
+.vertical-timeline {
+  z-index: 2;
+}
+
 .vertical-timeline-element-icon.bounce-in {
   display: flex;
   justify-content: center;
