@@ -152,10 +152,6 @@ h1 {
   font-weight: bold;
 }
 
-.hero-btns .button:nth-child(1) {
-  margin-right: 2em;
-}
-
 @media only screen and (max-width: 850px) {
   .hero {
     justify-content: center;
@@ -206,7 +202,11 @@ h1 {
     width: 3em;
   }
 }
-
+@media only screen and (min-width: 572px) {
+  .hero-btns .button:nth-child(1) {
+    margin-right: 2em;
+  }
+}
 @media only screen and (min-width: 850px) {
   .hero-info h1 {
     font-weight: bolder;

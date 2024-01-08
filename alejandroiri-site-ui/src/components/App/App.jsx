@@ -1,13 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import {
-  useNavigate,
-  Link,
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "../Navbar/Navbar.jsx";
 import Home from "../Home/Home.jsx";

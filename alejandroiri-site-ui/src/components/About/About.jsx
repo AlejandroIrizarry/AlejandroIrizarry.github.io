@@ -18,6 +18,10 @@ import up_arrow from "/src/assets/up-arrow.svg";
 import UPR_LOGO from "/src/assets/UPR_LOGO.svg";
 import capitalone from "/src/assets/capitalone.svg";
 import star from "/src/assets/star.svg";
+import google_ale from "/src/assets/google_ale.png";
+import lsls from "/src/assets/lsls.jpg";
+import salesforce_ale from "/src/assets/salesforce_ale.jpg";
+import ftl from "/src/assets/ftl.jpg";
 
 import {
   VerticalTimeline,
@@ -259,14 +263,14 @@ export default function About() {
           <small>Salesforce • San Francisco, California</small>
           <p>
             Full-Stack Web Development using the PERN Stack (PostgreSQL,
-            Express, React, Node) at 10 weeks Software Engineering
+            Express, React, Node) at the 10 weeks Software Engineering
             <a href="https://info.codepath.org/futureforce-tech-launchpad">
               <b> Futureforce Tech Launchpad </b>
             </a>
-            pre-internship program powered by Salesforce and CodePath.org.
+            pre-internship program.
             <br />
             <p>
-              Built a full-stack application for the capstone with 2 other
+              Built a full-stack web application for the capstone with 2 other
               interns. The application is{" "}
               <Link onClick={scrollToTop} to="/projects">
                 <b>CodeQuest</b>
@@ -274,6 +278,10 @@ export default function About() {
               , a platform to teach kids to code in Python in a fun and
               interactive way.
             </p>
+            <span className="timeline-img-container">
+              <img className="timeline-img" src={salesforce_ale} />
+              <img className="timeline-img" src={ftl} />
+            </span>
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -285,7 +293,7 @@ export default function About() {
           contentArrowStyle={{
             borderRight: "7px solid  white",
           }}
-          date="Apr 2023 - Jul 2023 • 3 mos"
+          date="Apr 2023 - Jul 2023 • 4 mos"
           iconStyle={{
             display: "flex",
             background: "white",
@@ -300,7 +308,7 @@ export default function About() {
           <br />
           <br />
           <h3 className="vertical-timeline-element-title">
-            Software Engineering Extern
+            Software Engineering Extern <small>• 3 mos</small>
             <br />
             <small>Google Buddy Program</small>
           </h3>
@@ -314,7 +322,7 @@ export default function About() {
           </p>
           <br />
           <h3 className="vertical-timeline-element-title">
-            Google Latinx Student Leadership Scholar
+            Google Latinx Student Leadership Scholar <small>• 2 mos</small>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Prestigious Student Program
@@ -322,9 +330,19 @@ export default function About() {
           <p>
             Built solutions with Googlers to increase Latinx+ representation in
             tech. Selected as one of the 50 student leaders, from 1500+
-            applicants, to attend the 7th cohort of the Latinx Student
-            Leadership Summit.
+            applicants, to attend the 7th cohort of the{" "}
+            <a
+              href="https://buildyourfuture.withgoogle.com/events/latinxstudentleadershipsummit"
+              target="_blank"
+            >
+              <b>Latinx Student Leadership Summit</b>
+            </a>
+            .
           </p>
+          <span className="timeline-img-container">
+            <img className="timeline-img" src={google_ale} />
+            <img className="timeline-img" src={lsls} />
+          </span>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -388,7 +406,6 @@ export default function About() {
             Participated in workshops for minority students to gain skills in
             finance & tech
           </p>
-          <img src="https://media.licdn.com/dms/image/D4E2DAQHe5KQRl3b9iQ/profile-treasury-image-shrink_800_800/0/1699740260365?e=1705093200&v=beta&t=gDPK20AKwz1ZWyNXxOPWwpt99SPMt3yFqAOSv447MyA" />
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -402,7 +419,7 @@ export default function About() {
           <br />
           <br />
           <h3 className="vertical-timeline-element-title">
-            Information Systems Officer
+            Information Systems Officer <small>• 4 mos</small>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Full-Time</h4>
           <p>
@@ -411,7 +428,7 @@ export default function About() {
           </p>
           <br />
           <h3 className="vertical-timeline-element-title">
-            Information Systems Intern
+            Information Systems Intern <small>• 3 mos</small>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
 
@@ -434,23 +451,25 @@ export default function About() {
           <p>
             <ul>
               <li>
-                ☑ Successfully completed an immerse training with Capital One’s
+                • Successfully completed an immerse training with Capital One’s
                 Tech organization.
               </li>
               <li>
-                ☑ Gained skills in Agile, Cyber Security, Data Engineering,
+                • Gained skills in Agile, Cyber Security, Data Engineering,
                 Machine Learning & AI, Mobile Development, and Software
                 Engineering.
               </li>
               <li>
-                ☑ Gained opportunities for mentorship and training to build on
+                • Gained opportunities for mentorship and training to build on
                 current skills in topics like Software Development, Agile
-                framework, Machine Learning, Cyber and more ☑ Received soft
-                skill training in teamwork, communication, mentorship and
-                imposter syndrome
+                framework, Machine Learning, Cyber and more{" "}
+                <li>
+                  • Received soft skill training in teamwork, communication,
+                  mentorship and imposter syndrome
+                </li>
               </li>
               <li>
-                ☑ Grew my network by connecting with Capital One leaders and
+                • Grew my network by connecting with Capital One leaders and
                 facilitators via LinkedIn
               </li>
             </ul>
@@ -472,13 +491,13 @@ export default function About() {
           <p>
             <b>Extraccuricular:</b>
             <ul>
-              <li>☑ Honors Studies Program (President)</li>
-              <li>☑ National Society of Collegiate Scholars</li>
+              <li>• Honors Studies Program (President)</li>
+              <li>• National Society of Collegiate Scholars</li>
               <li>
-                ☑ Association for Computer Science Students (Association for
+                • Association for Computer Science Students (Association for
                 Computing Machinery Chapter)
               </li>
-              <li>☑ CodePath.org Campus Ambassador</li>
+              <li>• CodePath.org Campus Ambassador</li>
             </ul>
             <br />
             <b>
@@ -568,11 +587,11 @@ export default function About() {
       </div>
       <div id="copyright">
         <h4>
-          © 2023 – Site designed and developed by{" "}
-          <span className="markup">Alejandro Irizarry</span>.
+          Site designed and developed by{" "}
+          <span className="markup">Alejandro Irizarry</span> © 2024.
         </h4>
-        <h5> Updated on January 5, 2024 🌐</h5>
-        <h5>Built with React 🚀</h5>
+        <h5> Updated on January 7, 2024 🌐</h5>
+        <h5>Built with React.js 🚀</h5>
       </div>
     </div>
   );
