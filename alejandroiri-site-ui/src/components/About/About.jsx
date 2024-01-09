@@ -186,11 +186,11 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Empowers: LGBTQ+ In Tech Scholar
+            Empowers Scholar
             <br />
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Prestigious Student Program
+            Student Program
           </h4>
           <small>Bloomberg • New York City Metropolitian Area</small>
           <p>
@@ -325,7 +325,7 @@ export default function About() {
             Google Latinx Student Leadership Scholar <small>• 2 mos</small>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Prestigious Student Program
+            Student Program
           </h4>
           <p>
             Built solutions with Googlers to increase Latinx+ representation in
