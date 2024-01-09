@@ -1,6 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+  Button,
+} from "@chakra-ui/react";
 
 export default function Navbar(props) {
   const scrollToTop = () => {
@@ -10,47 +21,100 @@ export default function Navbar(props) {
   const navigate = useNavigate();
   const [navbarVisible, setNavbarVisible] = useState(true);
 
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 850);
+
   useEffect(() => {
     let prevScrollPos = window.scrollY || window.pageYOffset;
 
     const handleScroll = () => {
       let currentScrollPos = window.scrollY || window.pageYOffset;
 
-      if (prevScrollPos > currentScrollPos) {
-        setNavbarVisible(true);
+      if (isSmallScreen) {
+        setNavbarVisible(prevScrollPos > currentScrollPos);
       } else {
-        setNavbarVisible(false);
+        // On larger screens, always show the navbar
+        if (prevScrollPos > currentScrollPos) {
+          setNavbarVisible(true);
+        } else {
+          setNavbarVisible(false);
+        }
       }
 
       prevScrollPos = currentScrollPos;
     };
 
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 850);
+      // Always show the navbar on resize
+      setNavbarVisible(true);
+    };
+
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      // Cleanup the event listener when the component is unmounted
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
-  }, []); // Empty dependency array ensures that this effect runs only once on mount
+  }, [isSmallScreen]);
 
   return (
     <>
       <div className={`navbar ${navbarVisible ? "visible" : "hidden"}`}>
-        {/* Your existing navbar content */}
         <div className="nav-content">
           <div className="nav-logo"></div>
+
           <ul className="nav-links">
-            <li>
+            <li id="hamburger-btn" className="hamburger-menu">
+              <Menu id="menu">
+                <MenuButton as={Button} colorScheme="black"></MenuButton>
+                <MenuList>
+                  <MenuGroup title="Menu">
+                    <MenuItem as="a" href="/" className="menu-item">
+                      Home
+                    </MenuItem>
+                    <MenuItem as="a" href="/#about" className="menu-item">
+                      About
+                    </MenuItem>
+                    <MenuDivider />
+                    <MenuItem as="a" href="/#experiences" className="menu-item">
+                      Experiences
+                    </MenuItem>
+                    <MenuItem as="a" href="/#contact" className="menu-item">
+                      Contact
+                    </MenuItem>
+                    <MenuItem as="a" href="/projects" className="menu-item">
+                      <Link
+                        id="menu-projects"
+                        to="/projects"
+                        onClick={scrollToTop}
+                      >
+                        Projects
+                      </Link>
+                    </MenuItem>
+
+                    <MenuItem
+                      as="a"
+                      href="https://drive.google.com/file/d/1rto40o7eyLStj3louYiAUTVHJ5OLHqeE/view?usp=sharing"
+                      className="menu-item"
+                    >
+                      Resume
+                    </MenuItem>
+                  </MenuGroup>
+                </MenuList>
+              </Menu>
+            </li>
+            <li className="nav-item">
               <a href="/">
                 <span className="hover-underline-animation">Home</span>
               </a>
             </li>
-            <li>
+            <li className="nav-item">
               <a href="/#about">
                 <span className="hover-underline-animation">About</span>
               </a>
             </li>
-            <li>
+            <li className="nav-item">
               <Link
                 className="hover-underline-animation"
                 to="/projects"
@@ -59,7 +123,7 @@ export default function Navbar(props) {
                 <span>Projects</span>
               </Link>
             </li>
-            <li>
+            <li className="nav-item">
               <a href="/#contact">
                 <span className="hover-underline-animation">Contact</span>
               </a>
