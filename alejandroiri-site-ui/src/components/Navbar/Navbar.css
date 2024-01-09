@@ -39,7 +39,6 @@
 
 #menu-button-menu span {
   width: 100px !important;
-  font-size: 1em;
   color: var(--yellow);
 }
 
@@ -51,9 +50,7 @@
 .menu-item {
   background: var(--dark-gray) !important;
   border-style: none;
-}
-.menu-item a {
-  font-size: 0.7em;
+  font-size: 2em;
 }
 
 #menu-list-menu {
@@ -69,7 +66,7 @@
 }
 
 .chakra-menu__group__title {
-  font-size: 1em !important;
+  font-size: 3em !important;
   color: var(--clear-yellow);
 }
 
