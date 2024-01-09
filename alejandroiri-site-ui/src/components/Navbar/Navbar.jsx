@@ -71,17 +71,17 @@ export default function Navbar(props) {
                 <MenuList>
                   <MenuGroup title="Menu">
                     <MenuItem as="a" href="/" className="menu-item">
-                      Home
+                      🏠 Home
                     </MenuItem>
                     <MenuItem as="a" href="/#about" className="menu-item">
-                      About
+                      🧑‍💻 About
                     </MenuItem>
                     <MenuDivider />
                     <MenuItem as="a" href="/#experiences" className="menu-item">
-                      Experiences
+                      🚀 Experiences
                     </MenuItem>
                     <MenuItem as="a" href="/#contact" className="menu-item">
-                      Contact
+                      📞 Contact
                     </MenuItem>
                     <MenuItem as="a" href="/projects" className="menu-item">
                       <Link
@@ -89,7 +89,7 @@ export default function Navbar(props) {
                         to="/projects"
                         onClick={scrollToTop}
                       >
-                        Projects
+                        ⚙️ Projects
                       </Link>
                     </MenuItem>
 
@@ -98,7 +98,7 @@ export default function Navbar(props) {
                       href="https://drive.google.com/file/d/1rto40o7eyLStj3louYiAUTVHJ5OLHqeE/view?usp=sharing"
                       className="menu-item"
                     >
-                      Resume
+                      🪪 Resume
                     </MenuItem>
                   </MenuGroup>
                 </MenuList>
