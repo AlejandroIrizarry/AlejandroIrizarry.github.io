@@ -3,11 +3,13 @@ import { useState } from "react";
 import "./Project.css";
 import poster from "/src/assets/poster.pdf";
 import link_arrow from "/src/assets/link_arrow.json";
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LottieAnimation from "../AnimationComponent/AnimationComponent";
 
 import hero_avatar from "/src/assets/me.png";
 import pyspace from "/src/assets/pyspace.png";
+
+import Birthday from "../Birthday/Birthday.jsx";
 
 import {
   Tabs,
@@ -563,6 +565,98 @@ export default function Project() {
                   </span>
                 </div>
               </section>
+              <section className="project-section">
+                <div className="project-media">
+                  <iframe
+                    src="/projects/birthday"
+                    frameborder="0"
+                    width="100%"
+                    height="400"
+                    webkitallowfullscreen
+                    mozallowfullscreen
+                    allowfullscreen
+                  ></iframe>
+                  <br />
+                  <span className="project-button-container">
+                    <a
+                      href="https://github.com/AlejandroIrizarry/AlejandroIrizarry.github.io/tree/main/alejandroiri-site-ui/src/components/Birthday"
+                      target="_blank"
+                    >
+                      <button className="project-button">
+                        Source Code<span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                    </a>
+                    <a href="/projects/birthday" target="_blank">
+                      <button className="project-button">
+                        Demo<span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                    </a>
+                  </span>
+                </div>
+                <div className="project-info">
+                  <h3 className="project-title">
+                    <a href="/projects/birthday" target="_blank">
+                      Gift
+                      <span class="link_arrow">
+                        <LottieAnimation animationData={link_arrow} />
+                      </span>
+                    </a>
+                  </h3>
+                  <h4 className="project-skills">
+                    <b>Tools: </b>(HTML, CSS, JavaScript, ChakraUI, Lottie
+                    Animation, Render)
+                  </h4>
+                  <p className="project-desc">
+                    <b>Gift </b>
+                    is a special project I built for my partner as a birthday
+                    gift card. Feel free to use this template if you like. You
+                    will need to install lottie and import the Lottie Animations
+                    to your project. Also, you must use ChakraUI for the
+                    Timeline Component.
+                    <br />
+                    <br />
+                    <Collapse startingHeight={1} in={show}>
+                      <h4>What is Birthday Gift Card Site?</h4>A template site
+                      that can be used as a digital birthday gift card for your
+                      friends, family or that very special person.
+                    </Collapse>
+                    <Button
+                      size="sm"
+                      bg="black"
+                      color="#ffde6a"
+                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      onClick={handleToggle}
+                      mt="1rem"
+                    >
+                      Show {show ? "Less" : "More"}
+                    </Button>
+                  </p>
+                  <br />
+                  <h4>Contributors</h4>
+                  <span className="contributors">
+                    <span className="contributor">
+                      <Flex>
+                        <Avatar src={hero_avatar} />
+                        <Box ml="3">
+                          <Text fontWeight="bold">
+                            Alejandro Irizarry
+                            <Badge ml="1" colorScheme="yellow">
+                              he/him
+                            </Badge>
+                          </Text>
+                          <Text fontSize="sm">Software Engineer</Text>
+                        </Box>
+                      </Flex>
+                    </span>
+                  </span>
+                </div>
+              </section>
             </TabPanel>
             <TabPanel>
               <section className="project-section">
@@ -1016,6 +1110,9 @@ export default function Project() {
           </TabPanels>
         </Tabs>
       </Box>
+      <Routes>
+        <Route path="*/birthday" element={<Birthday />} />
+      </Routes>
     </div>
   );
 }

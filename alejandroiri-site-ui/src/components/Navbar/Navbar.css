@@ -45,12 +45,19 @@
 #menu-button-menu:hover {
   transform: translateY(0) scale(1);
   border-color: var(--clear-yellow);
+  background-color: rgba(75, 62, 6, 0.585);
 }
 
 .menu-item {
   background: var(--dark-gray) !important;
   border-style: none;
-  font-size: 2em;
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 530px) {
+  .menu-item {
+    font-size: 2.5em;
+  }
 }
 
 #menu-list-menu {
@@ -66,7 +73,7 @@
 }
 
 .chakra-menu__group__title {
-  font-size: 3em !important;
+  font-size: 2em !important;
   color: var(--clear-yellow);
 }
 

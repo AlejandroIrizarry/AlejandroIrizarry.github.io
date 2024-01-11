@@ -10,8 +10,10 @@ import {
   MenuGroup,
   MenuOptionGroup,
   MenuDivider,
-  Button,
+  IconButton,
 } from "@chakra-ui/react";
+
+import { HamburgerIcon, PhoneIcon } from "@chakra-ui/icons";
 
 export default function Navbar(props) {
   const scrollToTop = () => {
@@ -67,7 +69,13 @@ export default function Navbar(props) {
           <ul className="nav-links">
             <li id="hamburger-btn" className="hamburger-menu">
               <Menu id="menu">
-                <MenuButton as={Button} colorScheme="black"></MenuButton>
+                <MenuButton
+                  as={IconButton}
+                  icon={<HamburgerIcon />}
+                  variant="outline"
+                  colorScheme="var(--yellow)"
+                  style={{ color: "var(--yellow)", borderWidth: "3px" }}
+                ></MenuButton>
                 <MenuList>
                   <MenuGroup title="Menu">
                     <MenuItem as="a" href="/" className="menu-item">
@@ -81,7 +89,8 @@ export default function Navbar(props) {
                       🚀 Experiences
                     </MenuItem>
                     <MenuItem as="a" href="/#contact" className="menu-item">
-                      📞 Contact
+                      <PhoneIcon paddingRight={1} />
+                      Contact
                     </MenuItem>
                     <MenuItem as="a" href="/projects" className="menu-item">
                       <Link
