@@ -15,7 +15,6 @@ import gmail from "/src/assets/gmail-logo.svg";
 import linkedin from "/src/assets/linkedin-logo.svg";
 import twitter from "/src/assets/twitter.svg";
 import up_arrow from "/src/assets/up-arrow.svg";
-import UPR_LOGO from "/src/assets/UPR_LOGO.svg";
 import capitalone from "/src/assets/capitalone.svg";
 import star from "/src/assets/star.svg";
 import google_ale from "/src/assets/google_ale.png";
@@ -479,7 +478,12 @@ export default function About() {
           className="vertical-timeline-element--education"
           date="Aug 2019 - May 2025 • 6 yrs"
           iconStyle={{ background: "white", color: "#fff" }}
-          icon={<img src={UPR_LOGO} />}
+          icon={
+            <img
+              style={{ borderRadius: "50px" }}
+              src="https://media.licdn.com/dms/image/D4E0BAQGdLzrOS2UklQ/company-logo_200_200/0/1667502406126/university_of_puerto_rico_logo?e=1712793600&v=beta&t=VvJ56yn8n2ph5QaAr2oevYh0mtrtnjlRGbO-t3EC3-A"
+            />
+          }
         >
           <h3 className="vertical-timeline-element-title">
             Bachelor of Science in Computer Science
