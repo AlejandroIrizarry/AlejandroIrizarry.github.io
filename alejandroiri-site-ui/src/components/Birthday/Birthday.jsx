@@ -161,7 +161,7 @@ export default function Birthday() {
                       Primeras aventuras...
                       <br />
                     </h3>
-                    <p>
+                    <p className="birthday-tl-message">
                       Aquí nos empezamos a conocer. Marzo 13 nos vimos en
                       persona y me lleve el primer hoodie tuyo jaja! Pasamos por
                       altas y bajas al principio, pero con todo y eso, nuestra
@@ -198,7 +198,7 @@ export default function Birthday() {
                     <h3 className="vertical-timeline-element-title">
                       Volvimos de verano...
                     </h3>
-                    <p>
+                    <p className="birthday-tl-message">
                       Paso un verano largo sin verte y ahora volvimos a vernos
                       después de un tiempito. Estaba loco de verte ya. Contaba
                       los días en California y por fin llegue. Si, tuvimos una
@@ -235,7 +235,7 @@ export default function Birthday() {
                     <h3 className="vertical-timeline-element-title">
                       Nos casamos ;3
                     </h3>
-                    <p>
+                    <p className="birthday-tl-message">
                       Mentira, pero nos llamaste oficialmente parejas :3 Si
                       supieras lo enchulao que ya estaba a este punto xd. Cuando
                       me confirmaste, literalmente quería llorar de la emoción
