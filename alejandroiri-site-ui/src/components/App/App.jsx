@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "../Navbar/Navbar.jsx";
 import Home from "../Home/Home.jsx";
 import Project from "../Project/Project.jsx";
+import Birthday from "../Birthday/Birthday.jsx";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Project />} />
+            <Route path="/birthday" element={<Birthday />} />
           </Routes>
         </Router>
       </div>

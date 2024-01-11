@@ -1,0 +1,147 @@
+/* Font family */
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+
+/* Font family */
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+
+.birthday {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Change height to min-height */
+  overflow: auto; /* Change to auto to enable scrolling */
+  transition: background-color 1s;
+}
+
+/* ... (rest of your styles) */
+
+.gift-page {
+  background-color: #f9e8b5; /* Set the background color for the gift page */
+}
+
+.content-page {
+  background-color: rgb(
+    181,
+    218,
+    208
+  ); /* Set the background color for the content page */
+}
+
+.present {
+  margin: 0em 10em 10em 10em;
+}
+
+.highlight-red {
+  color: rgba(232, 65, 65, 0.732);
+  font-family: "Salsa", sans-serif;
+}
+
+.highlight-orange {
+  color: rgba(232, 157, 65, 0.732);
+  font-family: "Salsa", sans-serif;
+}
+
+.gift-container {
+  cursor: pointer;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 1s;
+  margin-top: 10em;
+}
+
+.gift-container.fade-out {
+  opacity: 0;
+}
+
+p {
+  font-size: 50px;
+  margin-top: 20px;
+  color: black;
+  font-weight: bolder;
+  font-family: "Salsa", sans-serif;
+}
+
+/* Add this for the scrolling animation */
+.content-page .lottie-animation {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.content-page .lottie-animation.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gift Cards */
+
+.gift-cards-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30em;
+  margin-bottom: 30em;
+  justify-content: center;
+}
+
+.gift-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.gift-card-left {
+  width: 50%;
+}
+
+.gift-card-right {
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5em;
+  width: 50%;
+  font-family: "Salsa", sans-serif;
+  padding: 2em;
+  border-color: white;
+  border-style: dotted;
+  border-width: 10px;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+@media only screen and (max-width: 850px) {
+  .gift-card {
+    flex-direction: column;
+  }
+
+  .gift-card-left {
+    width: 100%;
+  }
+  .gift-card-right {
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+.yes-button,
+.no-button {
+  border-color: rgb(255, 226, 226);
+  color: white;
+  font-weight: bolder;
+  border-style: double;
+  margin: 2em 5px 5px 5px;
+}
+
+.yes-button:hover,
+.no-button:hover {
+  color: blanchedalmond;
+}
+
+.rotate {
+  transform: rotate(3.142rad);
+}
+
+.timeline-img {
+  width: 200px !important;
+  height: 200px !important;
+}
