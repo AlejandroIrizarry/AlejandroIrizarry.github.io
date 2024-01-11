@@ -52,6 +52,7 @@
   background: var(--dark-gray) !important;
   border-style: none;
   font-size: 1em;
+  color: var(--clear-yellow) !important;
 }
 
 @media only screen and (max-width: 530px) {
@@ -70,11 +71,12 @@
   font-weight: normal;
   text-transform: none;
   font-size: 1em;
+  color: var(--clear-yellow) !important;
 }
 
 .chakra-menu__group__title {
   font-size: 2em !important;
-  color: var(--clear-yellow);
+  color: var(--yellow);
 }
 
 .chakra-menu__group {

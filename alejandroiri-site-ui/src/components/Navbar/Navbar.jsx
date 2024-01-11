@@ -13,8 +13,15 @@ import {
   IconButton,
 } from "@chakra-ui/react";
 
-import { HamburgerIcon, PhoneIcon } from "@chakra-ui/icons";
-
+import {
+  HamburgerIcon,
+  PhoneIcon,
+  InfoIcon,
+  SettingsIcon,
+  Search2Icon,
+  CalendarIcon,
+  StarIcon,
+} from "@chakra-ui/icons";
 export default function Navbar(props) {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -79,17 +86,19 @@ export default function Navbar(props) {
                 <MenuList>
                   <MenuGroup title="Menu">
                     <MenuItem as="a" href="/" className="menu-item">
-                      🏠 Home
+                      <StarIcon paddingRight={1} color={"var(--yellow)"} /> Home
                     </MenuItem>
                     <MenuItem as="a" href="/#about" className="menu-item">
-                      🧑‍💻 About
+                      <InfoIcon paddingRight={1} color={"var(--yellow)"} />
+                      About
                     </MenuItem>
                     <MenuDivider />
                     <MenuItem as="a" href="/#experiences" className="menu-item">
-                      🚀 Experiences
+                      <Search2Icon paddingRight={1} color={"var(--yellow)"} />
+                      Experiences
                     </MenuItem>
                     <MenuItem as="a" href="/#contact" className="menu-item">
-                      <PhoneIcon paddingRight={1} />
+                      <PhoneIcon paddingRight={1} color={"var(--yellow)"} />
                       Contact
                     </MenuItem>
                     <MenuItem as="a" href="/projects" className="menu-item">
@@ -98,7 +107,11 @@ export default function Navbar(props) {
                         to="/projects"
                         onClick={scrollToTop}
                       >
-                        ⚙️ Projects
+                        <SettingsIcon
+                          paddingRight={1}
+                          color={"var(--yellow)"}
+                        />
+                        Projects
                       </Link>
                     </MenuItem>
 
@@ -107,7 +120,8 @@ export default function Navbar(props) {
                       href="https://drive.google.com/file/d/1rto40o7eyLStj3louYiAUTVHJ5OLHqeE/view?usp=sharing"
                       className="menu-item"
                     >
-                      🪪 Resume
+                      <CalendarIcon paddingRight={1} color={"var(--yellow)"} />
+                      Resume
                     </MenuItem>
                   </MenuGroup>
                 </MenuList>
