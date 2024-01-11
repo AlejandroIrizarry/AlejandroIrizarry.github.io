@@ -99,18 +99,6 @@ export default function Home() {
                   <span></span>
                   <span></span>
                 </Button>
-
-                <Link to="/birthday">
-                  <Button
-                    className="button"
-                    style={{ color: "white", borderColor: "pink" }}
-                    _hover={{
-                      backgroundColor: "pink",
-                    }}
-                  >
-                    Kevin's Birthday
-                  </Button>
-                </Link>
               </div>
 
               <Modal isOpen={isOpen} onClose={onClose}>
