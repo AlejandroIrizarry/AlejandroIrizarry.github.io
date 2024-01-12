@@ -54,7 +54,7 @@
 
 .hero-info h2:nth-child(1),
 h1 {
-  color: #ffff;
+  color: var(--yellow);
 }
 
 .hero-info h1 {
@@ -63,7 +63,7 @@ h1 {
 }
 
 .hero-info h1:hover {
-  color: var(--yellow);
+  color: #fff;
   transition: 0.5s;
   transition-delay: calc((var(--n) - 1) * 0.1s);
   transform: translateY(-4%);
