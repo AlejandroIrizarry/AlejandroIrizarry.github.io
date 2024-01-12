@@ -45,14 +45,14 @@
 #menu-button-menu:hover {
   transform: translateY(0) scale(1);
   border-color: var(--clear-yellow);
-  background-color: rgba(75, 62, 6, 0.585);
+  background-color: var(--medium-gray);
 }
 
 .menu-item {
   background: var(--dark-gray) !important;
   border-style: none;
   font-size: 1em;
-  color: var(--clear-yellow) !important;
+  color: var(--medium-gray) !important;
 }
 
 @media only screen and (max-width: 530px) {
@@ -71,12 +71,13 @@
   font-weight: normal;
   text-transform: none;
   font-size: 1em;
-  color: var(--clear-yellow) !important;
+  color: var(--medium-gray) !important;
 }
 
 .chakra-menu__group__title {
   font-size: 2em !important;
-  color: var(--yellow);
+  color: var(--medium-gray);
+  font-weight: bolder;
 }
 
 .chakra-menu__group {

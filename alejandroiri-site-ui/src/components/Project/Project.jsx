@@ -6,7 +6,7 @@ import link_arrow from "/src/assets/link_arrow.json";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LottieAnimation from "../AnimationComponent/AnimationComponent";
 
-import hero_avatar from "/src/assets/me.png";
+import hero_avatar from "/src/assets/me.jpg";
 import pyspace from "/src/assets/pyspace.png";
 
 import Birthday from "../Birthday/Birthday.jsx";
@@ -23,6 +23,8 @@ import {
   Avatar,
   Text,
 } from "@chakra-ui/react";
+
+import { SettingsIcon, InfoIcon } from "@chakra-ui/icons";
 
 import { Collapse, Button } from "@chakra-ui/react";
 
@@ -42,7 +44,9 @@ export default function Project() {
 
   return (
     <div className="projects">
-      <h1>⚙️ Projects ⚙️</h1>
+      <h1>
+        <SettingsIcon /> Projects <SettingsIcon />
+      </h1>
       <Box align="center">
         <input
           className="range-slider"
@@ -65,16 +69,25 @@ export default function Project() {
           <TabList>
             <Tab
               className="tab-name"
-              _selected={{ color: "black", bg: "var(--yellow)" }}
-              _hover={{ color: "black", bg: "#ffdf6aa9" }}
+              _selected={{
+                color: "var(--medium-gray) !important",
+                bg: "var(--yellow)",
+              }}
+              _hover={{
+                color: "var(--medium-gray) !important",
+                bg: "var(--dark-gray)",
+              }}
               color="#ffff"
             >
               Web Development
             </Tab>
             <Tab
               className="tab-name"
-              _selected={{ color: "black", bg: "var(--yellow)" }}
-              _hover={{ color: "black", bg: "#ffdf6aa9" }}
+              _selected={{
+                color: "var(--medium-gray) !important",
+                bg: "var(--yellow)",
+              }}
+              _hover={{ color: "black", bg: "var(--dark-gray)" }}
               color="#ffff"
             >
               Programming
@@ -82,7 +95,7 @@ export default function Project() {
             <Tab
               className="tab-name"
               _selected={{ color: "black", bg: "var(--yellow)" }}
-              _hover={{ color: "black", bg: "#ffdf6aa9" }}
+              _hover={{ color: "black", bg: "var(--dark-gray)" }}
               color="#ffff"
               isDisabled
             >
@@ -167,9 +180,9 @@ export default function Project() {
                     </Collapse>
                     <Button
                       size="sm"
-                      bg="black"
+                      bg="var(--medium-gray)"
                       color="var(--yellow)"
-                      _hover={{ color: "black", bg: "var(--yellow)" }}
+                      _hover={{ color: "black", bg: "var(--dark-gray)" }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -185,7 +198,7 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" colorScheme="yellow">
+                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
                               he/him
                             </Badge>
                           </Text>
@@ -200,7 +213,7 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Kennedy Parks
-                            <Badge ml="1" colorScheme="blue">
+                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
                               they/them
                             </Badge>
                           </Text>
@@ -214,7 +227,7 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Favour Onukogu
-                            <Badge ml="1" colorScheme="purple">
+                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
                               she/her
                             </Badge>
                           </Text>
@@ -317,7 +330,7 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" colorScheme="yellow">
+                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
                               he/him
                             </Badge>
                           </Text>
@@ -434,7 +447,7 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" colorScheme="yellow">
+                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
                               he/him
                             </Badge>
                           </Text>
@@ -554,7 +567,7 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" colorScheme="yellow">
+                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
                               he/him
                             </Badge>
                           </Text>
@@ -646,7 +659,7 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" colorScheme="yellow">
+                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
                               he/him
                             </Badge>
                           </Text>
@@ -774,7 +787,7 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" colorScheme="yellow">
+                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
                               he/him
                             </Badge>
                           </Text>
@@ -788,7 +801,7 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Jillian Alvarez
-                            <Badge ml="1" colorScheme="pink">
+                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
                               she/her
                             </Badge>
                           </Text>
@@ -802,7 +815,7 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Ricardo Hernandez
-                            <Badge ml="1" colorScheme="green">
+                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
                               he/him
                             </Badge>
                           </Text>
@@ -891,7 +904,7 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" colorScheme="yellow">
+                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
                               he/him
                             </Badge>
                           </Text>
@@ -994,7 +1007,7 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" colorScheme="yellow">
+                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
                               he/him
                             </Badge>
                           </Text>
@@ -1095,7 +1108,7 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" colorScheme="yellow">
+                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
                               he/him
                             </Badge>
                           </Text>

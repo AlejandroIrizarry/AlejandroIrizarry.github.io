@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Home.css";
-import hero_avatar from "/src/assets/me.png";
+import hero_avatar from "/src/assets/me.jpg";
 import About from "../About/About.jsx";
 import down_arrow from "../../assets/down-arrow.svg";
 import {
@@ -75,7 +75,7 @@ export default function Home() {
         <div className="hero">
           <div className="hero-content">
             <div className="hero-info">
-              <h2>HI THERE 👋! I'M</h2>
+              <h2>HI THERE 👋🏻! I'M</h2>
               <h1>Alejandro Irizarry</h1>
               <h2>
                 Software Engineer <span>•</span> Developer
@@ -138,7 +138,7 @@ export default function Home() {
                     <Button
                       style={{
                         color: "var(--yellow)",
-                        backgroundColor: "black",
+                        backgroundColor: "var(--medium-gray)",
                       }}
                       colorScheme="var(--yellow)"
                       mr={3}
@@ -154,7 +154,7 @@ export default function Home() {
                     <Button
                       style={{
                         color: "var(--yellow)",
-                        backgroundColor: "black",
+                        backgroundColor: "var(--medium-gray)",
                       }}
                       colorScheme="var(--yellow)"
                       variant="ghost"

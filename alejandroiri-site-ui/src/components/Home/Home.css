@@ -110,7 +110,7 @@ h1 {
   padding-inline-start: 0 !important;
   -webkit-padding-end: 0 !important;
   padding-inline-end: 0 !important;
-  background: #000 !important;
+  background: var(--medium-gray) !important;
   color: white;
 }
 
@@ -123,7 +123,7 @@ h1 {
 }
 
 .hero-info span {
-  color: #6dff6a;
+  color: white;
 }
 
 .hero-info p {
@@ -264,6 +264,10 @@ div .button {
   transition: 2s;
 }
 
+div button {
+  color: white !important;
+}
+
 div .button span {
   position: absolute;
   width: 50% !important;
@@ -287,7 +291,7 @@ div .button span {
 }
 
 div .button:hover {
-  color: black;
+  color: var(--medium-gray);
 }
 
 div .button:hover span {
@@ -300,11 +304,6 @@ div .button span:nth-child(1) {
 
 div .button span:nth-child(2) {
   --n: 2;
-}
-
-body {
-  background: #5e9eff;
-  margin: 0;
 }
 
 .bubbles {
@@ -334,7 +333,7 @@ body {
   left: 0;
   width: 50%;
   height: 50%;
-  background: #ffdf6ac1;
+  background: var(--light-gray);
   border-radius: inherit;
   animation: var(--bubble-sway-type) var(--bubble-sway-duration)
     var(--bubble-sway-delay) ease-in-out alternate infinite;
@@ -822,6 +821,6 @@ body {
 }
 
 .modal-button:hover {
-  color: black !important;
+  color: var(--medium-gray) !important;
   background-color: var(--yellow) !important;
 }

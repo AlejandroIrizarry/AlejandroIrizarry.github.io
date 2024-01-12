@@ -86,7 +86,7 @@ export default function About() {
         <div className="about-section-text">
           <h2>
             <span className="markup">Web Development</span> is <br />
-            my <span className="markup">passion</span> 🧑‍💻
+            my <span className="markup">passion</span> 🧑🏻‍💻
           </h2>
         </div>
         <div className="about-section-media">
@@ -591,11 +591,10 @@ export default function About() {
       </div>
       <div id="copyright">
         <h4>
-          Site designed and developed by{" "}
-          <span className="markup">Alejandro Irizarry</span> © 2024.
+          Developed by <span className="markup">Alejandro Irizarry</span> © 2024
         </h4>
-        <h5> Updated on January 7, 2024 🌐</h5>
-        <h5>Built with React.js 🚀</h5>
+        <h5> Updated on January 12, 2024.</h5>
+        <h5>Built with React.js ☕️</h5>
       </div>
     </div>
   );
