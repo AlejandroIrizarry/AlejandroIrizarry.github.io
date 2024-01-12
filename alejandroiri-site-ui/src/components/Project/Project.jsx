@@ -51,9 +51,9 @@ export default function Project() {
           max="1"
           value={tabIndex}
           onChange={handleSliderChange}
-          color="#FFDE6A"
-          bg="#FFDE6A"
-          colorScheme="#FFDE6A"
+          color="var(--yellow)"
+          bg="var(--yellow)"
+          colorScheme="var(--yellow)"
         />
         <Tabs
           id="projects"
@@ -65,7 +65,7 @@ export default function Project() {
           <TabList>
             <Tab
               className="tab-name"
-              _selected={{ color: "black", bg: "#FFDE6A" }}
+              _selected={{ color: "black", bg: "var(--yellow)" }}
               _hover={{ color: "black", bg: "#ffdf6aa9" }}
               color="#ffff"
             >
@@ -73,7 +73,7 @@ export default function Project() {
             </Tab>
             <Tab
               className="tab-name"
-              _selected={{ color: "black", bg: "#FFDE6A" }}
+              _selected={{ color: "black", bg: "var(--yellow)" }}
               _hover={{ color: "black", bg: "#ffdf6aa9" }}
               color="#ffff"
             >
@@ -81,7 +81,7 @@ export default function Project() {
             </Tab>
             <Tab
               className="tab-name"
-              _selected={{ color: "black", bg: "#FFDE6A" }}
+              _selected={{ color: "black", bg: "var(--yellow)" }}
               _hover={{ color: "black", bg: "#ffdf6aa9" }}
               color="#ffff"
               isDisabled
@@ -168,8 +168,8 @@ export default function Project() {
                     <Button
                       size="sm"
                       bg="black"
-                      color="#ffde6a"
-                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      color="var(--yellow)"
+                      _hover={{ color: "black", bg: "var(--yellow)" }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -300,8 +300,8 @@ export default function Project() {
                     <Button
                       size="sm"
                       bg="black"
-                      color="#ffde6a"
-                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      color="var(--yellow)"
+                      _hover={{ color: "black", bg: "var(--yellow)" }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -417,8 +417,8 @@ export default function Project() {
                     <Button
                       size="sm"
                       bg="black"
-                      color="#ffde6a"
-                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      color="var(--yellow)"
+                      _hover={{ color: "black", bg: "var(--yellow)" }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -537,8 +537,8 @@ export default function Project() {
                     <Button
                       size="sm"
                       bg="black"
-                      color="#ffde6a"
-                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      color="var(--yellow)"
+                      _hover={{ color: "black", bg: "var(--yellow)" }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -629,8 +629,8 @@ export default function Project() {
                     <Button
                       size="sm"
                       bg="black"
-                      color="#ffde6a"
-                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      color="var(--yellow)"
+                      _hover={{ color: "black", bg: "var(--yellow)" }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -757,8 +757,8 @@ export default function Project() {
                     <Button
                       size="sm"
                       bg="black"
-                      color="#ffde6a"
-                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      color="var(--yellow)"
+                      _hover={{ color: "black", bg: "var(--yellow)" }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -874,8 +874,8 @@ export default function Project() {
                     <Button
                       size="sm"
                       bg="black"
-                      color="#ffde6a"
-                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      color="var(--yellow)"
+                      _hover={{ color: "black", bg: "var(--yellow)" }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -977,8 +977,8 @@ export default function Project() {
                     <Button
                       size="sm"
                       bg="black"
-                      color="#ffde6a"
-                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      color="var(--yellow)"
+                      _hover={{ color: "black", bg: "var(--yellow)" }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -1078,8 +1078,8 @@ export default function Project() {
                     <Button
                       size="sm"
                       bg="black"
-                      color="#ffde6a"
-                      _hover={{ color: "black", bg: "#ffde6a" }}
+                      color="var(--yellow)"
+                      _hover={{ color: "black", bg: "var(--yellow)" }}
                       onClick={handleToggle}
                       mt="1rem"
                     >

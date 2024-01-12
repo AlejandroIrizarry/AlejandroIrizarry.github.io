@@ -105,7 +105,7 @@ export default function Home() {
                 <ModalOverlay />
                 <ModalContent
                   style={{
-                    color: "#ffde6a",
+                    color: "var(--yellow)",
                     backgroundColor: "var(--medium-gray)",
                   }}
                 >
@@ -136,8 +136,11 @@ export default function Home() {
 
                   <ModalFooter>
                     <Button
-                      style={{ color: "#ffde6a", backgroundColor: "black" }}
-                      colorScheme="#ffde6a"
+                      style={{
+                        color: "var(--yellow)",
+                        backgroundColor: "black",
+                      }}
+                      colorScheme="var(--yellow)"
                       mr={3}
                       onClick={onClose}
                       _hover={{
@@ -149,8 +152,11 @@ export default function Home() {
                       Close
                     </Button>
                     <Button
-                      style={{ color: "#ffde6a", backgroundColor: "black" }}
-                      colorScheme="#ffde6a"
+                      style={{
+                        color: "var(--yellow)",
+                        backgroundColor: "black",
+                      }}
+                      colorScheme="var(--yellow)"
                       variant="ghost"
                       onClick={handleExperiencesClick}
                       className="modal-button"

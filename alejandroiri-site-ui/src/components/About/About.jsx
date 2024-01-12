@@ -127,7 +127,7 @@ export default function About() {
       </div>
 
       <span id="experiences"></span>
-      <VerticalTimeline animate={true} lineColor={"#ffde6a"}>
+      <VerticalTimeline animate={true} lineColor={"var(--yellow)"}>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
@@ -516,7 +516,7 @@ export default function About() {
         <VerticalTimelineElement
           className="timeline-element"
           iconStyle={{
-            background: "#ffde6a",
+            background: "var(--yellow)",
             color: "#fff",
           }}
           icon={<img src={star} />}
