@@ -146,7 +146,7 @@ export default function Project() {
                       target="_blank"
                     >
                       CodeQuest
-                      <span class="link_arrow">
+                      <span className="link_arrow">
                         <LottieAnimation animationData={link_arrow} />
                       </span>
                     </a>
@@ -280,7 +280,7 @@ export default function Project() {
                       target="_blank"
                     >
                       LifeTracker
-                      <span class="link_arrow">
+                      <span className="link_arrow">
                         <LottieAnimation animationData={link_arrow} />
                       </span>
                     </a>
@@ -391,7 +391,7 @@ export default function Project() {
                       target="_blank"
                     >
                       Store
-                      <span class="link_arrow">
+                      <span className="link_arrow">
                         <LottieAnimation animationData={link_arrow} />
                       </span>
                     </a>
@@ -508,7 +508,7 @@ export default function Project() {
                   <h3 className="project-title">
                     <a href="https://flixster.onrender.com/" target="_blank">
                       Flixster
-                      <span class="link_arrow">
+                      <span className="link_arrow">
                         <LottieAnimation animationData={link_arrow} />
                       </span>
                     </a>
@@ -628,7 +628,7 @@ export default function Project() {
                   <h3 className="project-title">
                     <a href="/projects/birthday" target="_blank">
                       Gift
-                      <span class="link_arrow">
+                      <span className="link_arrow">
                         <LottieAnimation animationData={link_arrow} />
                       </span>
                     </a>
@@ -731,7 +731,7 @@ export default function Project() {
                       target="_blank"
                     >
                       MessageMate
-                      <span class="link_arrow">
+                      <span className="link_arrow">
                         <LottieAnimation animationData={link_arrow} />
                       </span>
                     </a>
@@ -877,7 +877,7 @@ export default function Project() {
                       target="_blank"
                     >
                       PySpace
-                      <span class="link_arrow">
+                      <span className="link_arrow">
                         <LottieAnimation animationData={link_arrow} />
                       </span>
                     </a>
@@ -976,7 +976,7 @@ export default function Project() {
                   <h3 className="project-title">
                     <a href="https://www.codequest.academy/" target="_blank">
                       CodeQuest
-                      <span class="link_arrow">
+                      <span className="link_arrow">
                         <LottieAnimation animationData={link_arrow} />
                       </span>
                     </a>
@@ -1080,7 +1080,7 @@ export default function Project() {
                   <h3 className="project-title">
                     <a href="https://www.codequest.academy/" target="_blank">
                       CodeQuest
-                      <span class="link_arrow">
+                      <span className="link_arrow">
                         <LottieAnimation animationData={link_arrow} />
                       </span>
                     </a>

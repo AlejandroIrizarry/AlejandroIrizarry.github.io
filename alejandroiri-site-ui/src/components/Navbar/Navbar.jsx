@@ -86,19 +86,23 @@ export default function Navbar(props) {
                 <MenuList>
                   <MenuGroup title="Menu">
                     <MenuItem as="a" href="/" className="menu-item">
-                      <StarIcon paddingRight={1} color={"var(--yellow)"} /> Home
+                      <StarIcon paddingRight={1} color={"var(--light-gray)"} />{" "}
+                      Home
                     </MenuItem>
                     <MenuItem as="a" href="/#about" className="menu-item">
-                      <InfoIcon paddingRight={1} color={"var(--yellow)"} />
+                      <InfoIcon paddingRight={1} color={"var(--light-gray)"} />
                       About
                     </MenuItem>
                     <MenuDivider />
                     <MenuItem as="a" href="/#experiences" className="menu-item">
-                      <Search2Icon paddingRight={1} color={"var(--yellow)"} />
+                      <Search2Icon
+                        paddingRight={1}
+                        color={"var(--light-gray)"}
+                      />
                       Experiences
                     </MenuItem>
                     <MenuItem as="a" href="/#contact" className="menu-item">
-                      <PhoneIcon paddingRight={1} color={"var(--yellow)"} />
+                      <PhoneIcon paddingRight={1} color={"var(--light-gray)"} />
                       Contact
                     </MenuItem>
                     <MenuItem as="a" href="/projects" className="menu-item">
@@ -109,7 +113,7 @@ export default function Navbar(props) {
                       >
                         <SettingsIcon
                           paddingRight={1}
-                          color={"var(--yellow)"}
+                          color={"var(--light-gray)"}
                         />
                         Projects
                       </Link>
@@ -120,7 +124,10 @@ export default function Navbar(props) {
                       href="https://drive.google.com/file/d/1rto40o7eyLStj3louYiAUTVHJ5OLHqeE/view?usp=sharing"
                       className="menu-item"
                     >
-                      <CalendarIcon paddingRight={1} color={"var(--yellow)"} />
+                      <CalendarIcon
+                        paddingRight={1}
+                        color={"var(--light-gray)"}
+                      />
                       Resume
                     </MenuItem>
                   </MenuGroup>

@@ -111,7 +111,7 @@ export default function Home() {
                 >
                   <ModalHeader>Who I am 🧑‍💻</ModalHeader>
                   <ModalCloseButton />
-                  <ModalBody style={{ color: "var(--clear-yellow)" }}>
+                  <ModalBody style={{ color: "var(--yellow)" }}>
                     Hello, there! I'm <b>Alejandro Irizarry Negrón</b>, a born
                     and raised Puerto Rican who is proud to be Latino and
                     Boricua 🇵🇷!

@@ -16,9 +16,9 @@
 /* Colors: CSS Hex (Coolors.com) 252930
    ========================================================================== */
 :root {
-  --yellow: #e6e1cf;
-  --dark-gray: #897b6f;
-  --medium-gray: #231c18;
+  --yellow: #2f2c27;
+  --dark-gray: #23201b;
+  --medium-gray: #b7b3ae;
   --light-gray: rgb(210, 204, 195);
   --clear-yellow: #b7b3ae;
 }
@@ -62,7 +62,7 @@ a:link {
 }
 
 p {
-  color: var(--clear-yellow);
+  color: var(--yellow);
 }
 
 .markup-dark {

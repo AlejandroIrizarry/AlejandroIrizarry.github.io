@@ -26,7 +26,7 @@
 
 #tags,
 #at {
-  color: var(--yellow);
+  color: var(--yellow) !important;
 }
 
 .hero-info {
@@ -333,7 +333,7 @@ div .button span:nth-child(2) {
   left: 0;
   width: 50%;
   height: 50%;
-  background: var(--light-gray);
+  background: var(--dark-gray);
   border-radius: inherit;
   animation: var(--bubble-sway-type) var(--bubble-sway-duration)
     var(--bubble-sway-delay) ease-in-out alternate infinite;

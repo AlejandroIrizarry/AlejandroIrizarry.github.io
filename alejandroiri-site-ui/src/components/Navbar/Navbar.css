@@ -17,6 +17,13 @@
   height: auto;
 }
 
+.nav-links span {
+  color: var(--light-gray) !important;
+}
+
+.nav-links span:hover {
+  color: rgb(255, 250, 239) !important;
+}
 .nav-links {
   display: flex;
   flex-direction: row;
@@ -27,14 +34,6 @@
 
 .nav-links li {
   padding: 5vw;
-}
-
-.nav-links li a span:hover {
-  color: var(--clear-yellow);
-}
-
-.nav-link-project {
-  color: var(--yellow);
 }
 
 #menu {

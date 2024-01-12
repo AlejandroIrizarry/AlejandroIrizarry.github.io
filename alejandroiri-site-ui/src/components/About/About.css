@@ -81,18 +81,18 @@
 }
 
 #click {
-  background-color: var(--yellow);
+  background-color: var(--light-gray);
   border-radius: 15px;
   padding: 3px 8px;
 }
 
 #click span {
-  color: var(--medium-gray);
+  color: var(--dark-gray);
 }
 
 #click:hover {
   background-color: var(--clear-yellow);
-  font-size: 2vw;
+  padding: 6px 8px;
 }
 
 #companies {
