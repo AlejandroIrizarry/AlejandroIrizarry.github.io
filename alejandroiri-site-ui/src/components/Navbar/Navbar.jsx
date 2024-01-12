@@ -143,7 +143,7 @@ export default function Navbar(props) {
                 to="/projects"
                 onClick={scrollToTop}
               >
-                <span>Projects</span>
+                <span className="nav-link-project">Projects</span>
               </Link>
             </li>
             <li className="nav-item">

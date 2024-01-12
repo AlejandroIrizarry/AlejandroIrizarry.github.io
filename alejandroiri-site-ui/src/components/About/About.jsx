@@ -61,8 +61,8 @@ export default function About() {
       <div className="hidden about-section">
         <div className="about-section-text">
           <h2>
-            I'm a <span className="markup">22</span>-year old{" "}
-            <span className="markup">Software Engineer</span>.
+            I'm a <span className="markup-light">22</span>-year old{" "}
+            <span className="markup-light">Software Engineer</span>.
           </h2>
         </div>
         <div className="about-section-media">
@@ -76,8 +76,8 @@ export default function About() {
         <div className="about-section-text">
           <h2>
             Born and raised at the island of{" "}
-            <span className="markup">Puerto Rico</span>.{" "}
-            <span className="markup">#Boricua</span>InTech
+            <span className="markup-dark">Puerto Rico</span>.{" "}
+            <span className="markup-dark">#Boricua</span>InTech
           </h2>
         </div>
       </div>
@@ -85,8 +85,8 @@ export default function About() {
       <div className="hidden about-section">
         <div className="about-section-text">
           <h2>
-            <span className="markup">Web Development</span> is <br />
-            my <span className="markup">passion</span> 🧑🏻‍💻
+            <span className="markup-light">Web Development</span> is <br />
+            my <span className="markup-light">passion</span> 🧑🏻‍💻
           </h2>
         </div>
         <div className="about-section-media">
@@ -100,7 +100,7 @@ export default function About() {
         <div className="about-section-text">
           <h2>
             I go to the{" "}
-            <span className="markup">
+            <span className="markup-dark">
               University <br />
               of Puerto Rico
             </span>{" "}
@@ -113,8 +113,8 @@ export default function About() {
         <div className="about-section-text">
           <h2>
             I've been able to <br /> secure{" "}
-            <span className="markup">experiences</span> at <br />
-            <span className="markup">Big Tech</span> companies.
+            <span className="markup-light">experiences</span> at <br />
+            <span className="markup-light">Big Tech</span> companies.
           </h2>
         </div>
         <div className="about-section-media" id="companies">
@@ -529,10 +529,10 @@ export default function About() {
         </div>
         <div className="about-section-text">
           <h2>
-            Check out<span className="markup"> my projects</span>
+            Check out<span className="markup-dark"> my projects</span>
             <br /> by{" "}
             <Link to="/projects" id="click" onClick={scrollToTop}>
-              <span className="markup">clicking here</span>
+              <span className="markup-dark">clicking here</span>
             </Link>
           </h2>
         </div>
@@ -543,7 +543,7 @@ export default function About() {
           <h2>
             Don't be a stranger,
             <br />
-            <span className="markup"> Let's connect</span>! 🫱🏻‍🫲🏿
+            <span className="markup-light"> Let's connect</span>! 🫱🏻‍🫲🏿
           </h2>
         </div>
         <div className="contact-section-media float-area">
@@ -591,7 +591,8 @@ export default function About() {
       </div>
       <div id="copyright">
         <h4>
-          Developed by <span className="markup">Alejandro Irizarry</span> © 2024
+          Developed by <span className="markup-light">Alejandro Irizarry</span>{" "}
+          © 2024
         </h4>
         <h5> Updated on January 12, 2024.</h5>
         <h5>Built with React.js ☕️</h5>

@@ -122,7 +122,7 @@ export default function Project() {
                       target="_blank"
                     >
                       <button className="project-button">
-                        Source Code<span></span>
+                        Code<span></span>
                         <span></span>
                         <span></span>
                         <span></span>
@@ -182,7 +182,10 @@ export default function Project() {
                       size="sm"
                       bg="var(--medium-gray)"
                       color="var(--yellow)"
-                      _hover={{ color: "black", bg: "var(--dark-gray)" }}
+                      _hover={{
+                        color: "var(--medium-gray) !important",
+                        bg: "var(--yellow)",
+                      }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -252,7 +255,7 @@ export default function Project() {
                   <br />
                   <span className="project-button-container">
                     <button className="project-button">
-                      Source Code<span></span>
+                      Code<span></span>
                       <span></span>
                       <span></span>
                       <span></span>
@@ -312,9 +315,12 @@ export default function Project() {
                     </Collapse>
                     <Button
                       size="sm"
-                      bg="black"
+                      bg="var(--medium-gray)"
                       color="var(--yellow)"
-                      _hover={{ color: "black", bg: "var(--yellow)" }}
+                      _hover={{
+                        color: "var(--medium-gray) !important",
+                        bg: "var(--yellow)",
+                      }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -359,7 +365,7 @@ export default function Project() {
                       target="_blank"
                     >
                       <button className="project-button">
-                        Source Code<span></span>
+                        Code<span></span>
                         <span></span>
                         <span></span>
                         <span></span>
@@ -429,9 +435,12 @@ export default function Project() {
                     </Collapse>
                     <Button
                       size="sm"
-                      bg="black"
+                      bg="var(--medium-gray)"
                       color="var(--yellow)"
-                      _hover={{ color: "black", bg: "var(--yellow)" }}
+                      _hover={{
+                        color: "var(--medium-gray) !important",
+                        bg: "var(--yellow)",
+                      }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -476,7 +485,7 @@ export default function Project() {
                       target="_blank"
                     >
                       <button className="project-button">
-                        Source Code<span></span>
+                        Code<span></span>
                         <span></span>
                         <span></span>
                         <span></span>
@@ -549,9 +558,12 @@ export default function Project() {
                     </Collapse>
                     <Button
                       size="sm"
-                      bg="black"
+                      bg="var(--medium-gray)"
                       color="var(--yellow)"
-                      _hover={{ color: "black", bg: "var(--yellow)" }}
+                      _hover={{
+                        color: "var(--medium-gray) !important",
+                        bg: "var(--yellow)",
+                      }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -596,7 +608,7 @@ export default function Project() {
                       target="_blank"
                     >
                       <button className="project-button">
-                        Source Code<span></span>
+                        Code<span></span>
                         <span></span>
                         <span></span>
                         <span></span>
@@ -641,9 +653,12 @@ export default function Project() {
                     </Collapse>
                     <Button
                       size="sm"
-                      bg="black"
+                      bg="var(--medium-gray)"
                       color="var(--yellow)"
-                      _hover={{ color: "black", bg: "var(--yellow)" }}
+                      _hover={{
+                        color: "var(--medium-gray) !important",
+                        bg: "var(--yellow)",
+                      }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -690,7 +705,7 @@ export default function Project() {
                       target="_blank"
                     >
                       <button className="project-button">
-                        Source Code<span></span>
+                        Code<span></span>
                         <span></span>
                         <span></span>
                         <span></span>
@@ -769,9 +784,12 @@ export default function Project() {
                     </Collapse>
                     <Button
                       size="sm"
-                      bg="black"
+                      bg="var(--medium-gray)"
                       color="var(--yellow)"
-                      _hover={{ color: "black", bg: "var(--yellow)" }}
+                      _hover={{
+                        color: "var(--medium-gray) !important",
+                        bg: "var(--yellow)",
+                      }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -836,7 +854,7 @@ export default function Project() {
                       target="_blank"
                     >
                       <button className="project-button">
-                        Source Code<span></span>
+                        Code<span></span>
                         <span></span>
                         <span></span>
                         <span></span>
@@ -886,9 +904,12 @@ export default function Project() {
                     </Collapse>
                     <Button
                       size="sm"
-                      bg="black"
+                      bg="var(--medium-gray)"
                       color="var(--yellow)"
-                      _hover={{ color: "black", bg: "var(--yellow)" }}
+                      _hover={{
+                        color: "var(--medium-gray) !important",
+                        bg: "var(--yellow)",
+                      }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -935,7 +956,7 @@ export default function Project() {
                       target="_blank"
                     >
                       <button className="project-button">
-                        Source Code<span></span>
+                        Code<span></span>
                         <span></span>
                         <span></span>
                         <span></span>
@@ -989,9 +1010,12 @@ export default function Project() {
                     </Collapse>
                     <Button
                       size="sm"
-                      bg="black"
+                      bg="var(--medium-gray)"
                       color="var(--yellow)"
-                      _hover={{ color: "black", bg: "var(--yellow)" }}
+                      _hover={{
+                        color: "var(--medium-gray) !important",
+                        bg: "var(--yellow)",
+                      }}
                       onClick={handleToggle}
                       mt="1rem"
                     >
@@ -1036,7 +1060,7 @@ export default function Project() {
                       target="_blank"
                     >
                       <button className="project-button">
-                        Source Code<span></span>
+                        Code<span></span>
                         <span></span>
                         <span></span>
                         <span></span>
@@ -1090,9 +1114,12 @@ export default function Project() {
                     </Collapse>
                     <Button
                       size="sm"
-                      bg="black"
+                      bg="var(--medium-gray)"
                       color="var(--yellow)"
-                      _hover={{ color: "black", bg: "var(--yellow)" }}
+                      _hover={{
+                        color: "var(--medium-gray) !important",
+                        bg: "var(--yellow)",
+                      }}
                       onClick={handleToggle}
                       mt="1rem"
                     >

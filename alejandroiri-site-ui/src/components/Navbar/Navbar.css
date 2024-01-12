@@ -33,6 +33,10 @@
   color: var(--clear-yellow);
 }
 
+.nav-link-project {
+  color: var(--yellow);
+}
+
 #menu {
   background-color: var(--dark-gray);
 }

@@ -291,7 +291,7 @@ div .button span {
 }
 
 div .button:hover {
-  color: var(--medium-gray);
+  color: var(--medium-gray) !important;
 }
 
 div .button:hover span {

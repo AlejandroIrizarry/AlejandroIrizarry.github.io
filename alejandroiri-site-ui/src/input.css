@@ -17,8 +17,8 @@
    ========================================================================== */
 :root {
   --yellow: #e6e1cf;
-  --dark-gray: #908983;
-  --medium-gray: #201d1d;
+  --dark-gray: #897b6f;
+  --medium-gray: #231c18;
   --light-gray: rgb(210, 204, 195);
   --clear-yellow: #b7b3ae;
 }
@@ -57,7 +57,7 @@ a:visited,
 a:active,
 a:link {
   text-decoration: none;
-  color: var(--yellow);
+  color: var(--medium-gray);
   cursor: pointer;
 }
 
@@ -65,6 +65,12 @@ p {
   color: var(--clear-yellow);
 }
 
-.markup {
+.markup-dark {
+  color: var(--medium-gray);
+  font-weight: bolder;
+}
+
+.markup-light {
   color: var(--yellow);
+  font-weight: bolder;
 }

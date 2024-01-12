@@ -111,6 +111,10 @@
   background: var(--medium-gray);
 }
 
+.project-button:hover {
+  color: var(--medium-gray) !important;
+}
+
 @media only screen and (max-width: 1415px) {
   .project-media img {
     width: 50em;
@@ -184,10 +188,6 @@ div button span {
   transition: 0.8s;
   transition-delay: calc((var(--n) - 1) * 0.1s);
   z-index: -1;
-}
-
-div button:hover {
-  color: black;
 }
 
 div button:hover span {
