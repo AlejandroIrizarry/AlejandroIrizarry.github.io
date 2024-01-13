@@ -140,7 +140,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--yellow);
+  background-color: var(--light-gray);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

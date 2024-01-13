@@ -78,11 +78,11 @@ export default function Home() {
               <h2>HI THERE 👋🏻! I'M</h2>
               <h1>Alejandro Irizarry</h1>
               <h2>
-                Software Engineer <span>•</span> Developer
+                Software Engineer <span>•</span> Student
               </h2>
               <p>
                 Computer Science <span id="at">@</span> University of Puerto
-                Rico <span id="tags">‹/›</span>
+                Rico
               </p>
               <div className="hero-btns">
                 <Button className="button" onClick={handleGetResumeClick}>

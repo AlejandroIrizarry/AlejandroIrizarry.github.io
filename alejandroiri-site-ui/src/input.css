@@ -2,15 +2,10 @@
 
 /* Imports
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 :root {
-  font-family: "Inter", sans-serif;
-}
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: "Inter var", sans-serif;
-  }
+  font-family: "Roboto", sans-serif;
 }
 
 /* Colors: CSS Hex (Coolors.com) 252930
