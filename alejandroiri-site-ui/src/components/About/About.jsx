@@ -534,7 +534,7 @@ export default function About() {
             </ul>
             <br />
             <b>
-              Certifications
+              Certifications:
               <br />
             </b>
             <ul className="timeline-certificates">
