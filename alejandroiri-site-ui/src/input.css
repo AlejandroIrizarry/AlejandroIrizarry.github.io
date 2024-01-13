@@ -37,7 +37,7 @@ body {
 *:before,
 *:after {
   box-sizing: inherit;
-  font-family: "Inter";
+  font-family: "Roboto", sans-serif;
 }
 
 ul {

@@ -308,8 +308,8 @@ footer {
 }
 
 .vertical-timeline-element-icon svg {
-  width: 0px;
-  height: 0px;
+  width: 2000px;
+  height: 200px;
   left: 0 !important;
   top: 0 !important;
   margin-left: 0 !important;
@@ -318,21 +318,33 @@ footer {
 
 .timeline-img-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .timeline-img {
-  width: 130px;
-  height: 150px;
   border-radius: 30px;
   margin: 1em 0.5em;
+  justify-content: center;
 }
 
-.timeline-img:nth-child(2) {
-  width: 230px;
-  height: 150px;
-  border-radius: 30px;
-  margin: 1em 0.5em;
+.timeline-cert {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-cert-codepath {
+  width: 138px;
+  display: flex;
+}
+
+.timeline-certificates {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 1169px) {

@@ -18,9 +18,8 @@ import up_arrow from "/src/assets/up-arrow.svg";
 import capitalone from "/src/assets/capitalone.svg";
 import star from "/src/assets/star.svg";
 import google_ale from "/src/assets/google_ale.png";
-import lsls from "/src/assets/lsls.jpg";
 import salesforce_ale from "/src/assets/salesforce_ale.jpg";
-import ftl from "/src/assets/ftl.jpg";
+import web_cert from "/src/assets/web_cert.png";
 
 import {
   VerticalTimeline,
@@ -279,7 +278,6 @@ export default function About() {
             </p>
             <span className="timeline-img-container">
               <img className="timeline-img" src={salesforce_ale} />
-              <img className="timeline-img" src={ftl} />
             </span>
           </p>
         </VerticalTimelineElement>
@@ -340,7 +338,6 @@ export default function About() {
           </p>
           <span className="timeline-img-container">
             <img className="timeline-img" src={google_ale} />
-            <img className="timeline-img" src={lsls} />
           </span>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -493,15 +490,17 @@ export default function About() {
           </h4>
           <small>University of Puerto Rico at Bayamon</small>
           <p>
-            <b>Extraccuricular:</b>
+            <b>Extraccuricular & Organizations:</b>
             <ul>
               <li>• Honors Studies Program (President)</li>
+              <li>• Hispanic Scholarship Fund Scholar</li>
               <li>• National Society of Collegiate Scholars</li>
+              <li>• ColorStack.org Member</li>
+              <li>• CodePath.org Campus Ambassador</li>
               <li>
                 • Association for Computer Science Students (Association for
-                Computing Machinery Chapter)
+                Computing Machinery)
               </li>
-              <li>• CodePath.org Campus Ambassador</li>
             </ul>
             <br />
             <b>
@@ -511,6 +510,71 @@ export default function About() {
             Data Structures, Databases, Commercial Programming, Web App
             Programming, Computer Architecture, Information Security, Data
             Communications
+            <br />
+            <br />
+            <b>
+              Awards:
+              <br />
+            </b>
+            <ul>
+              <li>
+                • Wells Fargo Scholarship:{" "}
+                <small>
+                  Awarded a scholarship to support my college education from a
+                  pool of 124,754 applicants.
+                </small>
+              </li>
+              <li>
+                • NSCS New Member Award:{" "}
+                <small>
+                  Awarded annual scholarship given to 100 outstanding new
+                  members across the country.
+                </small>
+              </li>
+            </ul>
+            <br />
+            <b>
+              Certifications
+              <br />
+            </b>
+            <ul className="timeline-certificates">
+              <span className="timeline-img-container">
+                <li>Web Development</li>
+                <a
+                  href="https://drive.google.com/file/d/1lah7X-TNtnn8lsvbFGmKyj46EXpN9CI4/view?usp=sharing"
+                  target="_blank"
+                >
+                  <img
+                    className="timeline-cert-codepath"
+                    src={web_cert}
+                    alt="codepath web development course certificate"
+                  />
+                </a>
+              </span>
+              <span className="timeline-img-container">
+                <li>Crash Course on Python</li>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/verify/CEJQTUK67W4Y"
+                  target="_blank"
+                >
+                  <img
+                    className="timeline-cert"
+                    src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~CEJQTUK67W4Y/CERTIFICATE_LANDING_PAGE~CEJQTUK67W4Y.jpeg"
+                    alt="google crash course on python certificate"
+                  />
+                </a>
+              </span>
+              <span className="timeline-img-container">
+                <li>Intro to Git and Github</li>
+                <a href="https://www.coursera.org/account/accomplishments/verify/DCKBLLEW5HG2">
+                  <img
+                    className="timeline-cert"
+                    src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~CEJQTUK67W4Y/CERTIFICATE_LANDING_PAGE~CEJQTUK67W4Y.jpeg"
+                    alt="google intro to git and github certificate"
+                  />
+                </a>
+              </span>
+            </ul>
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -594,7 +658,7 @@ export default function About() {
           Developed by <span className="markup-light">Alejandro Irizarry</span>{" "}
           © 2024
         </h4>
-        <h5> Updated on January 12, 2024.</h5>
+        <h5> Updated on January 13, 2024.</h5>
         <h5>Built with React.js ☕️</h5>
       </div>
     </div>
