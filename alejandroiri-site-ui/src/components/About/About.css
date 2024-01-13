@@ -299,7 +299,8 @@ footer {
 }
 
 .vertical-timeline-element-date {
-  color: white;
+  color: var(--yellow);
+  font-weight: bolder !important;
 }
 
 .vertical-timeline-element-title {
