@@ -87,7 +87,10 @@ export default function Project() {
                 color: "var(--medium-gray) !important",
                 bg: "var(--yellow)",
               }}
-              _hover={{ color: "black", bg: "var(--dark-gray)" }}
+              _hover={{
+                color: "var(--medium-gray) !important",
+                bg: "var(--dark-gray)",
+              }}
               color="#ffff"
             >
               Programming
@@ -95,7 +98,10 @@ export default function Project() {
             <Tab
               className="tab-name"
               _selected={{ color: "black", bg: "var(--yellow)" }}
-              _hover={{ color: "black", bg: "var(--dark-gray)" }}
+              _hover={{
+                color: "var(--medium-gray) !important",
+                bg: "var(--dark-gray)",
+              }}
               color="#ffff"
               isDisabled
             >

@@ -81,7 +81,11 @@ export default function Navbar(props) {
                   icon={<HamburgerIcon />}
                   variant="outline"
                   colorScheme="var(--yellow)"
-                  style={{ color: "var(--yellow)", borderWidth: "3px" }}
+                  style={{
+                    color: "var(--yellow)",
+                    backgroundColor: "var(--medium-gray)",
+                    borderWidth: "3px",
+                  }}
                 ></MenuButton>
                 <MenuList>
                   <MenuGroup title="Menu">

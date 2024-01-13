@@ -167,7 +167,7 @@
 }
 
 div button {
-  color: var(--medium-gray);
+  color: var(--yellow) !important;
   border: 0.3em solid var(--yellow);
   text-transform: uppercase;
   font-weight: bold;

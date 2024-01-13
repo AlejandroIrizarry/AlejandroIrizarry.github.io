@@ -47,8 +47,7 @@
 
 #menu-button-menu:hover {
   transform: translateY(0) scale(1);
-  border-color: var(--clear-yellow);
-  background-color: var(--medium-gray);
+  border-color: white;
 }
 
 .menu-item {
