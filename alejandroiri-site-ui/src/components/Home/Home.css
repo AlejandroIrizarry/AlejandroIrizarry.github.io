@@ -123,7 +123,7 @@ h1 {
 }
 
 .hero-info span {
-  color: white;
+  color: var(--light-brown);
 }
 
 .hero-info p {
@@ -265,7 +265,7 @@ div .button {
 }
 
 div button {
-  color: white !important;
+  color: var(--light-brown) !important;
 }
 
 div .button span {

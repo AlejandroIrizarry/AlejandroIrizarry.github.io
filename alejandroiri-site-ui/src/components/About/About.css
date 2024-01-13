@@ -9,7 +9,7 @@
 }
 
 .about-section {
-  color: white;
+  color: var(--light-brown);
   font-weight: bold;
   display: flex;
   flex-direction: row;
@@ -47,7 +47,7 @@
 }
 
 .contact-section {
-  color: white;
+  color: var(--light-brown);
   font-weight: bold;
   display: flex;
   flex-direction: row;
@@ -198,7 +198,7 @@ footer {
 
 #copyright {
   font-size: 1.2vw;
-  color: #ffff;
+  color: var(--light-brown);
   display: flex;
   flex-direction: column;
   justify-content: center;

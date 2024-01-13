@@ -18,9 +18,10 @@
 :root {
   --yellow: #2f2c27;
   --dark-gray: #23201b;
-  --medium-gray: #b7b3ae;
+  --medium-gray: #f0eae3;
   --light-gray: rgb(210, 204, 195);
-  --clear-yellow: #b7b3ae;
+  --clear-yellow: #f0eae3;
+  --light-brown: rgb(113, 108, 102);
 }
 
 /* General ========================================================================== */
