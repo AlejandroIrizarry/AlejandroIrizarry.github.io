@@ -125,7 +125,7 @@ export default function Navbar(props) {
 
                     <MenuItem
                       as="a"
-                      href="https://drive.google.com/file/d/1rto40o7eyLStj3louYiAUTVHJ5OLHqeE/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1UG368ZRQ33QuPmvIlOXbak5d30oDYXw_/view?usp=sharing"
                       className="menu-item"
                     >
                       <CalendarIcon

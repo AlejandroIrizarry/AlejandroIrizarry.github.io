@@ -607,7 +607,7 @@ export default function About() {
           <h2>
             Don't be a stranger,
             <br />
-            <span className="markup-light"> Let's connect</span>! 🫱🏻‍🫲🏿
+            <span className="markup-light"> Let's connect!</span> 🫱🏻‍🫲🏿
           </h2>
         </div>
         <div className="contact-section-media float-area">
