@@ -22,7 +22,7 @@ export default function Home() {
 
   const handleGetResumeClick = () => {
     const pdfUrl =
-      "https://drive.google.com/file/d/1rto40o7eyLStj3louYiAUTVHJ5OLHqeE/view?usp=sharing";
+      "https://drive.google.com/file/d/1UG368ZRQ33QuPmvIlOXbak5d30oDYXw_/view?usp=sharing";
 
     // Open the PDF file in a new tab
     window.open(pdfUrl, "_blank");
