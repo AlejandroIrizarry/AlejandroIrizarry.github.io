@@ -152,7 +152,23 @@ h1 {
   font-weight: bold;
 }
 
+.hero-intro {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.ghibli {
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+}
+
 @media only screen and (max-width: 850px) {
+  .hero-intro {
+    justify-content: center;
+  }
   .hero {
     justify-content: center;
   }

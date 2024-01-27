@@ -4,6 +4,9 @@ import "./Home.css";
 import hero_avatar from "/src/assets/me.png";
 import About from "../About/About.jsx";
 import down_arrow from "../../assets/down-arrow.svg";
+import LottieAnimation from "../AnimationComponent/AnimationComponent";
+import totoro from "/src/assets/totoro.json";
+import noface from "/src/assets/no-face.json";
 import {
   Modal,
   ModalOverlay,
@@ -75,10 +78,20 @@ export default function Home() {
         <div className="hero">
           <div className="hero-content">
             <div className="hero-info">
-              <h2>HI THERE 👋🏻! I'M</h2>
+              <h2 className="hero-intro">
+                HI THERE
+                <span className="ghibli">
+                  <LottieAnimation animationData={noface} />
+                </span>
+                ! I'M
+              </h2>
               <h1>Alejandro Irizarry</h1>
-              <h2>
-                Software Engineer <span>•</span> Student
+              <h2 className="hero-intro">
+                Software Engineer
+                <span className="ghibli">
+                  <LottieAnimation animationData={totoro} />
+                </span>
+                Student
               </h2>
               <p>
                 Computer Science <span id="at">@</span> University of Puerto
