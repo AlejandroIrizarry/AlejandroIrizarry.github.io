@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Home.css";
-import hero_avatar from "/src/assets/me.jpg";
+import hero_avatar from "/src/assets/me.png";
 import About from "../About/About.jsx";
 import down_arrow from "../../assets/down-arrow.svg";
 import {

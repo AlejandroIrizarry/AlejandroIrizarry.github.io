@@ -6,7 +6,7 @@ import link_arrow from "/src/assets/link_arrow.json";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LottieAnimation from "../AnimationComponent/AnimationComponent";
 
-import hero_avatar from "/src/assets/me.jpg";
+import hero_avatar from "/src/assets/me.png";
 import pyspace from "/src/assets/pyspace.png";
 
 import Birthday from "../Birthday/Birthday.jsx";
