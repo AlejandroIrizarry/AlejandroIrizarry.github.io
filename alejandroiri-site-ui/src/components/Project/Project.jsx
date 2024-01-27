@@ -207,7 +207,13 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
                               he/him
                             </Badge>
                           </Text>
@@ -222,7 +228,13 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Kennedy Parks
-                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
                               they/them
                             </Badge>
                           </Text>
@@ -236,7 +248,13 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Favour Onukogu
-                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
                               she/her
                             </Badge>
                           </Text>
@@ -342,7 +360,13 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
                               he/him
                             </Badge>
                           </Text>
@@ -462,7 +486,13 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
                               he/him
                             </Badge>
                           </Text>
@@ -585,7 +615,13 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
                               he/him
                             </Badge>
                           </Text>
@@ -680,7 +716,13 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
                               he/him
                             </Badge>
                           </Text>
@@ -811,7 +853,13 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
                               he/him
                             </Badge>
                           </Text>
@@ -825,7 +873,13 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Jillian Alvarez
-                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
                               she/her
                             </Badge>
                           </Text>
@@ -839,7 +893,13 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Ricardo Hernandez
-                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
                               he/him
                             </Badge>
                           </Text>
@@ -931,7 +991,13 @@ export default function Project() {
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Alejandro Irizarry
-                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
                               he/him
                             </Badge>
                           </Text>
@@ -943,215 +1009,9 @@ export default function Project() {
                 </div>
               </section>
             </TabPanel>
+            {/* Database Projects */}
             <TabPanel>
-              <section className="project-section">
-                <div className="project-media">
-                  <iframe
-                    src="https://codequest.academy"
-                    frameborder="0"
-                    width="100%"
-                    height="400"
-                    webkitallowfullscreen
-                    mozallowfullscreen
-                    allowfullscreen
-                  ></iframe>
-                  <br />
-                  <span className="project-button-container">
-                    <a
-                      href="https://github.com/FTLGroupG/codequest"
-                      target="_blank"
-                    >
-                      <button className="project-button">
-                        Code<span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </button>
-                    </a>
-                    <a href="https://www.codequest.academy/" target="_blank">
-                      <button className="project-button">
-                        Demo<span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </button>
-                    </a>
-                  </span>
-                </div>
-                <div className="project-info">
-                  <h3 className="project-title">
-                    <a href="https://www.codequest.academy/" target="_blank">
-                      CodeQuest
-                      <span className="link_arrow">
-                        <LottieAnimation animationData={link_arrow} />
-                      </span>
-                    </a>
-                  </h3>
-                  <h4 className="project-skills">
-                    <b>Tools:</b> (React.js, Node.js, Express.js, PostgreSQL,
-                    Context API, JSON Web Token, Lottie Animation, Render)
-                  </h4>
-                  <p className="project-desc">
-                    <b>CodeQuest</b> is a groundbreaking full-stack web
-                    application designed to teach Python coding to children aged
-                    6-10 in an exciting and interactive manner. 🚀 This
-                    application was built for my Software Engineering
-                    pre-internship at Salesforce.
-                    <br />
-                    <br />
-                    <Collapse startingHeight={1} in={show}>
-                      <h4>What is CodeQuest Academy?</h4>The platform transforms
-                      learning into a thrilling adventure by incorporating
-                      gamified elements, turning coding exercises into engaging
-                      challenges. 🎮 With a user-friendly interface, kids unlock
-                      the power of Python while developing problem-solving
-                      skills through hands-on activities. 🌟 CodeQuest goes
-                      beyond coding, nurturing creativity and encouraging
-                      collaboration through mentorship and teamwork. 🌈 As young
-                      learners progress, they earn badges and rewards, creating
-                      a sense of accomplishment and celebrating their coding
-                      journey. 👩‍💻 Join us at CodeQuest to empower your child
-                      with the gift of coding and open the door to a world of
-                      endless possibilities in a fun and inspiring way. 🏆{" "}
-                    </Collapse>
-                    <Button
-                      size="sm"
-                      bg="var(--medium-gray)"
-                      color="var(--yellow)"
-                      _hover={{
-                        color: "var(--medium-gray) !important",
-                        bg: "var(--yellow)",
-                      }}
-                      onClick={handleToggle}
-                      mt="1rem"
-                    >
-                      Show {show ? "Less" : "More"}
-                    </Button>
-                  </p>
-                  <br />
-                  <h4>Contributors</h4>
-                  <span className="contributors">
-                    <span className="contributor">
-                      <Flex>
-                        <Avatar src={hero_avatar} />
-                        <Box ml="3">
-                          <Text fontWeight="bold">
-                            Alejandro Irizarry
-                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
-                              he/him
-                            </Badge>
-                          </Text>
-                          <Text fontSize="sm">Software Engineer</Text>
-                        </Box>
-                      </Flex>
-                    </span>
-                  </span>
-                </div>
-              </section>
-              <section className="project-section">
-                <div className="project-media">
-                  <iframe
-                    src="https://codequest.academy"
-                    frameborder="0"
-                    width="100%"
-                    height="400"
-                    webkitallowfullscreen
-                    mozallowfullscreen
-                    allowfullscreen
-                  ></iframe>
-                  <br />
-                  <span className="project-button-container">
-                    <a
-                      href="https://github.com/FTLGroupG/codequest"
-                      target="_blank"
-                    >
-                      <button className="project-button">
-                        Code<span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </button>
-                    </a>
-                    <a href="https://www.codequest.academy/" target="_blank">
-                      <button className="project-button">
-                        Demo<span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </button>
-                    </a>
-                  </span>
-                </div>
-                <div className="project-info">
-                  <h3 className="project-title">
-                    <a href="https://www.codequest.academy/" target="_blank">
-                      CodeQuest
-                      <span className="link_arrow">
-                        <LottieAnimation animationData={link_arrow} />
-                      </span>
-                    </a>
-                  </h3>
-                  <h4 className="project-skills">
-                    <b>Tools:</b> (React.js, Node.js, Express.js, PostgreSQL,
-                    Context API, JSON Web Token, Lottie Animation, Render)
-                  </h4>
-                  <p className="project-desc">
-                    <b>CodeQuest</b> is a groundbreaking full-stack web
-                    application designed to teach Python coding to children aged
-                    6-10 in an exciting and interactive manner. 🚀 This
-                    application was built for my Software Engineering
-                    pre-internship at Salesforce.
-                    <br />
-                    <br />
-                    <Collapse startingHeight={1} in={show}>
-                      <h4>What is CodeQuest Academy?</h4>The platform transforms
-                      learning into a thrilling adventure by incorporating
-                      gamified elements, turning coding exercises into engaging
-                      challenges. 🎮 With a user-friendly interface, kids unlock
-                      the power of Python while developing problem-solving
-                      skills through hands-on activities. 🌟 CodeQuest goes
-                      beyond coding, nurturing creativity and encouraging
-                      collaboration through mentorship and teamwork. 🌈 As young
-                      learners progress, they earn badges and rewards, creating
-                      a sense of accomplishment and celebrating their coding
-                      journey. 👩‍💻 Join us at CodeQuest to empower your child
-                      with the gift of coding and open the door to a world of
-                      endless possibilities in a fun and inspiring way. 🏆{" "}
-                    </Collapse>
-                    <Button
-                      size="sm"
-                      bg="var(--medium-gray)"
-                      color="var(--yellow)"
-                      _hover={{
-                        color: "var(--medium-gray) !important",
-                        bg: "var(--yellow)",
-                      }}
-                      onClick={handleToggle}
-                      mt="1rem"
-                    >
-                      Show {show ? "Less" : "More"}
-                    </Button>
-                  </p>
-                  <br />
-                  <h4>Contributors</h4>
-                  <span className="contributors">
-                    <span className="contributor">
-                      <Flex>
-                        <Avatar src={hero_avatar} />
-                        <Box ml="3">
-                          <Text fontWeight="bold">
-                            Alejandro Irizarry
-                            <Badge ml="1" style={{ backgroundColor: "#fff" }}>
-                              he/him
-                            </Badge>
-                          </Text>
-                          <Text fontSize="sm">Software Engineer</Text>
-                        </Box>
-                      </Flex>
-                    </span>
-                  </span>
-                </div>
-              </section>
+              <section className="project-section"></section>
             </TabPanel>
           </TabPanels>
         </Tabs>

@@ -81,7 +81,7 @@
 }
 
 #click {
-  background-color: var(--light-gray);
+  background-color: var(--medium-gray);
   border-radius: 15px;
   padding: 3px 8px;
 }

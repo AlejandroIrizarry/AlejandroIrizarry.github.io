@@ -11,12 +11,12 @@
 /* Colors: CSS Hex (Coolors.com) 252930
    ========================================================================== */
 :root {
-  --yellow: #2f2c27;
-  --dark-gray: #23201b;
+  --yellow: #566553dc;
+  --dark-gray: #7b8d70;
   --medium-gray: #f0eae3;
   --light-gray: rgb(210, 204, 195);
   --clear-yellow: #f0eae3;
-  --light-brown: rgb(113, 108, 102);
+  --light-brown: rgb(64, 60, 55);
 }
 
 /* General ========================================================================== */
