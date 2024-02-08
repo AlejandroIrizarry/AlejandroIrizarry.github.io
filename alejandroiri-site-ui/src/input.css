@@ -70,3 +70,7 @@ p {
   color: var(--yellow);
   font-weight: bolder;
 }
+
+h4 {
+  color: var(--yellow) !important;
+}
