@@ -79,7 +79,7 @@ export default function Project() {
               }}
               color="#ffff"
             >
-              Web Development
+              Web Programming
             </Tab>
             <Tab
               className="tab-name"
@@ -93,7 +93,7 @@ export default function Project() {
               }}
               color="#ffff"
             >
-              Programming
+              General Programming
             </Tab>
             <Tab
               className="tab-name"
@@ -105,7 +105,7 @@ export default function Project() {
               color="#ffff"
               isDisabled
             >
-              Databases
+              Database Programming
             </Tab>
           </TabList>
           <TabPanels>
@@ -224,7 +224,7 @@ export default function Project() {
                     <br />
                     <span className="contributor">
                       <Flex>
-                        <Avatar src="https://media.licdn.com/dms/image/D5603AQEgG72NCadRjw/profile-displayphoto-shrink_800_800/0/1696655450704?e=1709769600&v=beta&t=D-rOT3uHyUeJe-z9QSKHzclnqyjVPBwK55dRhc7M4zA" />
+                        <Avatar src="https://images.squarespace-cdn.com/content/v1/616344cedcf8b409ba8ec99d/0999b510-194b-480e-a7ff-a6b4c32103ea/IMG_0593.jpg?format=2500w" />
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Kennedy Parks
@@ -244,7 +244,7 @@ export default function Project() {
                     </span>
                     <span className="contributor">
                       <Flex>
-                        <Avatar src="https://media.licdn.com/dms/image/D4E03AQFJa4yWuAQ4cg/profile-displayphoto-shrink_400_400/0/1663283538763?e=1709769600&v=beta&t=BRrAfw3_HniOMQEC7_xgHy6sH7NePlABsKz7-Fqm88E" />
+                        <Avatar src="https://media.licdn.com/dms/image/D4E03AQFJa4yWuAQ4cg/profile-displayphoto-shrink_400_400/0/1663283538763?e=1715817600&v=beta&t=dlxOq4T6gwbD4fcblE2azR5WinSVkxQ7E1mAsonM3wY" />
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Favour Onukogu
@@ -869,7 +869,7 @@ export default function Project() {
                     </span>
                     <span className="contributor">
                       <Flex>
-                        <Avatar src="https://media.licdn.com/dms/image/D4E03AQFwspPLKyKWUQ/profile-displayphoto-shrink_400_400/0/1696024288558?e=1709769600&v=beta&t=AXpHSAJ37kYHK0B3Lbyoe8SvUy0aevcjiKT7XqZlyMM" />
+                        <Avatar src="https://media.licdn.com/dms/image/D4E03AQFwspPLKyKWUQ/profile-displayphoto-shrink_100_100/0/1696024288558?e=1715817600&v=beta&t=Y7cq-FRlxcvOwmsFwh8375DAe_E1kd4F9NP39-2Sfqg" />
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Jillian Alvarez
@@ -889,7 +889,7 @@ export default function Project() {
                     </span>
                     <span className="contributor">
                       <Flex>
-                        <Avatar src="https://media.licdn.com/dms/image/D5603AQE0uSyDjG9UxA/profile-displayphoto-shrink_400_400/0/1694739138045?e=1709769600&v=beta&t=RqQR7X4LUeDfki5JXcpkpPsKVr_wl9f6XnxeIXOn9q8" />
+                        <Avatar src="https://media.licdn.com/dms/image/D5603AQE0uSyDjG9UxA/profile-displayphoto-shrink_100_100/0/1694739138045?e=1715817600&v=beta&t=-lGYQRM_vkCHBBE9ZkK3wnhf43pfdkE4WMH_04wC-oA" />
                         <Box ml="3">
                           <Text fontWeight="bold">
                             Ricardo Hernandez

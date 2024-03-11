@@ -84,8 +84,8 @@ export default function About() {
       <div className="hidden about-section">
         <div className="about-section-text">
           <h2>
-            <span className="markup-light">Web Development</span> is <br />
-            my <span className="markup-light">passion</span> 🧑🏻‍💻
+            <span className="markup-light">Developing</span> web apps <br />
+            is my <span className="markup-light">jam!</span> 🧑🏻‍💻
           </h2>
         </div>
         <div className="about-section-media">
@@ -253,7 +253,7 @@ export default function About() {
           icon={<img src={salesforce} />}
         >
           <h3 className="vertical-timeline-element-title">
-            Software Engineer Pre-Intern
+            Software Engineer Intern
             <br />
             <small>Futureforce Tech Launchpad Program</small>
           </h3>
@@ -307,7 +307,7 @@ export default function About() {
           <h3 className="vertical-timeline-element-title">
             Software Engineering Extern <small>• 3 mos</small>
             <br />
-            <small>Google Buddy Program</small>
+            <small>Google Mentor Program</small>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Externship</h4>
           <p>
@@ -473,7 +473,7 @@ export default function About() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="Aug 2019 - May 2025 • 6 yrs"
+          date="Graduation: May 2025"
           iconStyle={{ background: "white", color: "#fff" }}
           icon={
             <img
@@ -488,7 +488,7 @@ export default function About() {
           <h4 className="vertical-timeline-element-subtitle">
             Bachelors Degree
           </h4>
-          <small>University of Puerto Rico at Bayamon</small>
+          <small>University of Puerto Rico at Bayamon • GPA: 3.9/4.0</small>
           <p>
             <b>Extraccuricular & Organizations:</b>
             <ul>
@@ -656,9 +656,11 @@ export default function About() {
       <div id="copyright">
         <h4>
           Developed by <span className="markup-light">Alejandro Irizarry</span>{" "}
-          © 2024
+          © 2024.
+          <br />
+          <small>All rights reserved.</small>
         </h4>
-        <h5> Updated on January 13, 2024.</h5>
+        <h5> Updated on March 10, 2024.</h5>
         <h5>Built with React.js ☕️</h5>
       </div>
     </div>
