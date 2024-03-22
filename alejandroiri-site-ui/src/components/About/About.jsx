@@ -13,7 +13,7 @@ import codey from "/src/assets/Codey.json";
 import github from "/src/assets/github-logo.svg";
 import gmail from "/src/assets/gmail-logo.svg";
 import linkedin from "/src/assets/linkedin-logo.svg";
-import twitter from "/src/assets/twitter.svg";
+import instagram from "/src/assets/instagram.svg";
 import up_arrow from "/src/assets/up-arrow.svg";
 import capitalone from "/src/assets/capitalone.svg";
 import star from "/src/assets/star.svg";
@@ -642,9 +642,9 @@ export default function About() {
             className="logo hidden floating-image-down"
             target="_blank"
             style={{ "--order": 4 }}
-            href="https://twitter.com/aleirizarryn/"
+            href="https://instagram.com/alejandrocodes/"
           >
-            <img src={twitter} alt="Twitter logo" />
+            <img src={instagram} alt="Instagram logo" />
           </a>
         </div>
       </footer>
