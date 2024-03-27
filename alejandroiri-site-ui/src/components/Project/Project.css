@@ -43,6 +43,10 @@
   color: var(--yellow) !important;
 }
 
+.project-skills {
+  margin-bottom: 1em;
+}
+
 .link_arrow {
   width: 500px;
 }

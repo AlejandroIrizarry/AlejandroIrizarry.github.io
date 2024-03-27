@@ -113,6 +113,354 @@ export default function Project() {
               <section className="project-section">
                 <div className="project-media">
                   <iframe
+                    src="https://dailyu.vercel.app"
+                    frameborder="0"
+                    width="100%"
+                    height="400"
+                    webkitallowfullscreen
+                    mozallowfullscreen
+                    allowfullscreen
+                  ></iframe>
+                  <br />
+                  <span className="project-button-container">
+                    <a
+                      href="https://github.com/AlejandroIrizarry/dailyu-ui"
+                      target="_blank"
+                    >
+                      <button className="project-button">
+                        Code<span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                    </a>
+                    <a href="https://dailyu.vercel.app" target="_blank">
+                      <button className="project-button">
+                        Demo<span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                    </a>
+                  </span>
+                </div>
+                <div className="project-info">
+                  <h3 className="project-title">
+                    <a
+                      id="codequest"
+                      href="https://dailyu.vercel.app"
+                      target="_blank"
+                    >
+                      DailyU
+                      <span className="link_arrow">
+                        <LottieAnimation animationData={link_arrow} />
+                      </span>
+                    </a>
+                  </h3>
+                  <h4 className="project-skills">
+                    <b>Tools:</b> (Supabase, Postgresql, Tailwind CSS, Next.js,
+                    NextUI, Typescript, Vercel)
+                  </h4>
+                  <p className="project-desc">
+                    <b>DailyU</b> © 2024 is an application that helps users to
+                    keep track of their daily tasks. The application is an
+                    initiative for me to learn how to develop fast and modern
+                    responsive web applications using the latest technologies.
+                    The app is built with NextJS, NextUI, Typescript and
+                    Supabase for the backend. The app is currently under
+                    development and is expected to receive more updates in the
+                    future. <br />
+                    <Collapse startingHeight={20} in={show}>
+                      <br />
+                      <h4>
+                        <b>What is DailyU?</b>
+                      </h4>
+                      DailyU is a full-featured Supabaseified NextJS application
+                      for users to keep track of their daily tasks. 🚀
+                    </Collapse>
+                    <Button
+                      size="sm"
+                      bg="var(--medium-gray)"
+                      color="var(--yellow)"
+                      _hover={{
+                        color: "var(--medium-gray) !important",
+                        bg: "var(--yellow)",
+                      }}
+                      onClick={handleToggle}
+                      mt="1rem"
+                    >
+                      Show {show ? "Less" : "More"}
+                    </Button>
+                  </p>
+                  <br />
+                  <h4>Contributors</h4>
+                  <span className="contributors">
+                    <span className="contributor">
+                      <Flex>
+                        <Avatar src={hero_avatar} />
+                        <Box ml="3">
+                          <Text fontWeight="bold">
+                            Alejandro Irizarry
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
+                              he/him
+                            </Badge>
+                          </Text>
+                          <Text fontSize="sm">Software Engineer</Text>
+                        </Box>
+                      </Flex>
+                    </span>
+                  </span>
+                </div>
+              </section>
+
+              <section className="project-section">
+                <div className="project-media">
+                  <iframe
+                    src="https://www.uprbcommunity.com"
+                    frameborder="0"
+                    width="100%"
+                    height="400"
+                    webkitallowfullscreen
+                    mozallowfullscreen
+                    allowfullscreen
+                  ></iframe>
+                  <br />
+                  <span className="project-button-container">
+                    <a
+                      href="https://github.com/AlejandroIrizarry/ConfessionApp"
+                      target="_blank"
+                    >
+                      <button className="project-button">
+                        Code<span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                    </a>
+                    <a href="https://www.uprbcommunity.com/" target="_blank">
+                      <button className="project-button">
+                        Demo<span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                    </a>
+                  </span>
+                </div>
+                <div className="project-info">
+                  <h3 className="project-title">
+                    <a
+                      id="codequest"
+                      href="https://www.uprbcommunity.com/"
+                      target="_blank"
+                    >
+                      UPRBCommunity
+                      <span className="link_arrow">
+                        <LottieAnimation animationData={link_arrow} />
+                      </span>
+                    </a>
+                  </h3>
+                  <h4 className="project-skills">
+                    <b>Tools:</b> (Postgresql, React.js, RESTful API, Node,
+                    Express, Google RECaptcha, Chakra UI, AWS S3 Buckets,
+                    Nodemailer, JWT, JSON, Multer Middleware, Bcrypt, Crypto,
+                    Render)
+                  </h4>
+                  <p className="project-desc">
+                    <b>UPRB Community</b> © 2024 is a social networking web
+                    application, released in April 2024, that allows students
+                    from the UPRB campus to share their confessions, create
+                    discussions and learn about the latest news from the campus.
+                    This was developed from scratch as an effort to increase
+                    social interaction amongst the student community from the
+                    University of Puerto Rico at Bayamon. <br />
+                    <b>Key features:</b> user authentication, hashing with
+                    bcrypt, nodemailer for email verification and password
+                    restoration, modern responsive UI components powered by
+                    Chakra UI, Google ReCAPTCHA, Amazon Web Services S3 Buckets
+                    implementation for large media files uploads (gifs/images),
+                    in-app desktop push notifications, database token cleanup,
+                    profile customization and anonymous/public posting in the
+                    app feed.
+                    <Collapse startingHeight={20} in={show}>
+                      <br />
+                      <h4>
+                        <b>What is UPRB Community?</b>
+                      </h4>
+                      UPRB Community is a social networking platform for
+                      students and faculty from the University of Puerto Rico at
+                      Bayamon Campus to share their confessions and create
+                      discussions in an user-friendly web application. The app
+                      also works as a social media platform for alumnis to meet
+                      other people within their own campus. This application is
+                      currently under production and is expected to receive more
+                      updates. 🚀
+                    </Collapse>
+                    <Button
+                      size="sm"
+                      bg="var(--medium-gray)"
+                      color="var(--yellow)"
+                      _hover={{
+                        color: "var(--medium-gray) !important",
+                        bg: "var(--yellow)",
+                      }}
+                      onClick={handleToggle}
+                      mt="1rem"
+                    >
+                      Show {show ? "Less" : "More"}
+                    </Button>
+                  </p>
+                  <br />
+                  <h4>Contributors</h4>
+                  <span className="contributors">
+                    <span className="contributor">
+                      <Flex>
+                        <Avatar src={hero_avatar} />
+                        <Box ml="3">
+                          <Text fontWeight="bold">
+                            Alejandro Irizarry
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
+                              he/him
+                            </Badge>
+                          </Text>
+                          <Text fontSize="sm">Software Engineer</Text>
+                        </Box>
+                      </Flex>
+                    </span>
+                  </span>
+                </div>
+              </section>
+
+              <section className="project-section">
+                <div className="project-media">
+                  <iframe
+                    src="https://www.aleirizarry.com"
+                    frameborder="0"
+                    width="100%"
+                    height="400"
+                    webkitallowfullscreen
+                    mozallowfullscreen
+                    allowfullscreen
+                  ></iframe>
+                  <br />
+                  <span className="project-button-container">
+                    <a
+                      href="https://github.com/AlejandroIrizarry/AlejandroIrizarry.github.io"
+                      target="_blank"
+                    >
+                      <button className="project-button">
+                        Code<span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                    </a>
+                    <a href="https://www.aleirizarry.com/" target="_blank">
+                      <button className="project-button">
+                        Demo<span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                    </a>
+                  </span>
+                </div>
+                <div className="project-info">
+                  <h3 className="project-title">
+                    <a
+                      id="codequest"
+                      href="https://www.aleirizarry.com/"
+                      target="_blank"
+                    >
+                      Portfolio
+                      <span className="link_arrow">
+                        <LottieAnimation animationData={link_arrow} />
+                      </span>
+                    </a>
+                  </h3>
+                  <h4 className="project-skills">
+                    <b>Tools:</b> (Vite, Create React App, HTML, CSS,
+                    JavaScript, ChakraUI, Lottie Animations, Render)
+                  </h4>
+                  <p className="project-desc">
+                    <b>Portfolio</b> © 2024 is a website to showcase my skills
+                    and projects as a software developer. Here, you can see
+                    projects that I've worked on during my free time or
+                    internships, and you can also take some of your precious
+                    time to learn more about me. The site is 90% built with my
+                    own code, while other parts are built with personalized
+                    ChakraUI components and Lottie Animations.
+                    <Collapse startingHeight={20} in={show}>
+                      <br />
+                      <h4>
+                        <b>What is Portfolio?</b>
+                      </h4>
+                      Portfolio is my personal website to showcase some of the
+                      projects that I've worked throughout the years as part of
+                      my journey of becoming a full-stack software engineer.
+                      Every month, I work on building up my skills to become a
+                      better and more efficient problem solver. I hope you enjoy
+                      my projects and feel free to reach out to me if you have
+                      any questions or would like to collaborate on a project
+                      together. 🚀
+                    </Collapse>
+                    <Button
+                      size="sm"
+                      bg="var(--medium-gray)"
+                      color="var(--yellow)"
+                      _hover={{
+                        color: "var(--medium-gray) !important",
+                        bg: "var(--yellow)",
+                      }}
+                      onClick={handleToggle}
+                      mt="1rem"
+                    >
+                      Show {show ? "Less" : "More"}
+                    </Button>
+                  </p>
+                  <br />
+                  <h4>Contributors</h4>
+                  <span className="contributors">
+                    <span className="contributor">
+                      <Flex>
+                        <Avatar src={hero_avatar} />
+                        <Box ml="3">
+                          <Text fontWeight="bold">
+                            Alejandro Irizarry
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
+                              he/him
+                            </Badge>
+                          </Text>
+                          <Text fontSize="sm">Software Engineer</Text>
+                        </Box>
+                      </Flex>
+                    </span>
+                  </span>
+                </div>
+              </section>
+
+              {/* 2023 */}
+              <section className="project-section">
+                <div className="project-media">
+                  <iframe
                     src="https://codequest.academy"
                     frameborder="0"
                     width="100%"
@@ -163,26 +511,29 @@ export default function Project() {
                     Python Trinket)
                   </h4>
                   <p className="project-desc">
-                    <b>CodeQuest</b> is a groundbreaking full-stack web
+                    <b>CodeQuest</b> © 2023 is a groundbreaking full-stack web
                     application designed to teach Python coding to children aged
                     6-10 in an exciting and interactive manner. 🚀 This
                     application was built for my Software Engineering
                     pre-internship at Salesforce.
                     <Collapse startingHeight={20} in={show}>
                       <br />
-                      <h4>What is CodeQuest Academy?</h4>The platform transforms
-                      learning into a thrilling adventure by incorporating
-                      gamified elements, turning coding exercises into engaging
-                      challenges. 🎮 With a user-friendly interface, kids unlock
-                      the power of Python while developing problem-solving
-                      skills through hands-on activities. 🌟 CodeQuest goes
-                      beyond coding, nurturing creativity and encouraging
-                      collaboration through mentorship and teamwork. 🌈 As young
-                      learners progress, they earn badges and rewards, creating
-                      a sense of accomplishment and celebrating their coding
-                      journey. 👩‍💻 Join us at CodeQuest to empower your child
-                      with the gift of coding and open the door to a world of
-                      endless possibilities in a fun and inspiring way. 🏆{" "}
+                      <h4>
+                        <b>What is CodeQuest Academy?</b>
+                      </h4>
+                      The platform transforms learning into a thrilling
+                      adventure by incorporating gamified elements, turning
+                      coding exercises into engaging challenges. 🎮 With a
+                      user-friendly interface, kids unlock the power of Python
+                      while developing problem-solving skills through hands-on
+                      activities. 🌟 CodeQuest goes beyond coding, nurturing
+                      creativity and encouraging collaboration through
+                      mentorship and teamwork. 🌈 As young learners progress,
+                      they earn badges and rewards, creating a sense of
+                      accomplishment and celebrating their coding journey. 👩‍💻
+                      Join us at CodeQuest to empower your child with the gift
+                      of coding and open the door to a world of endless
+                      possibilities in a fun and inspiring way. 🏆{" "}
                     </Collapse>
                     <Button
                       size="sm"
@@ -314,28 +665,32 @@ export default function Project() {
                     Render)
                   </h4>
                   <p className="project-desc">
-                    <b>LifeTracker</b> includes a robust authentication system
-                    using PostgreSQL and bcrypt, an Express API for user-related
-                    activity storage, and multiple models implementing core
-                    business logic for life tracking. I wrote SQL queries for
-                    user statistics aggregation and summary overviews. The React
-                    frontend communicates with the API using an API service
-                    class, featuring pages and forms that interact with the
-                    server through HTTP requests. The application state is
-                    managed on the frontend using useEffect and useState hooks,
-                    with user-authenticated JWT tokens stored in the browser's
-                    local storage for persistent authentication.
+                    <b>LifeTracker</b> © 2023 includes a robust authentication
+                    system using PostgreSQL and bcrypt, an Express API for
+                    user-related activity storage, and multiple models
+                    implementing core business logic for life tracking. I wrote
+                    SQL queries for user statistics aggregation and summary
+                    overviews. The React frontend communicates with the API
+                    using an API service class, featuring pages and forms that
+                    interact with the server through HTTP requests. The
+                    application state is managed on the frontend using useEffect
+                    and useState hooks, with user-authenticated JWT tokens
+                    stored in the browser's local storage for persistent
+                    authentication.
                     <br />
                     <br />
                     <Collapse startingHeight={1} in={show}>
-                      <h4>What is the LifeTracker App?</h4>Everywhere around us
-                      is data waiting to be collected and utilized. In recent
-                      years, we've seen the rise of applications and services
-                      that exist to quantify concepts that were previously hard
-                      to capture. FitBit, Apple Health, and Woop are all $1
-                      billion dollar services to offer tracking statistics about
-                      how we live our lives. The LifeTracker app will do exactly
-                      that - track your life by quantifying your activity.
+                      <h4>
+                        <b>What is the LifeTracker App?</b>
+                      </h4>
+                      Everywhere around us is data waiting to be collected and
+                      utilized. In recent years, we've seen the rise of
+                      applications and services that exist to quantify concepts
+                      that were previously hard to capture. FitBit, Apple
+                      Health, and Woop are all $1 billion dollar services to
+                      offer tracking statistics about how we live our lives. The
+                      LifeTracker app will do exactly that - track your life by
+                      quantifying your activity.
                     </Collapse>
                     <Button
                       size="sm"
@@ -431,7 +786,7 @@ export default function Project() {
                     Render)
                   </h4>
                   <p className="project-desc">
-                    <b>CodePath Student Store</b> has implemented various
+                    <b>CodePath Student Store</b> © 2023 has implemented various
                     features for an enhanced shopping experience, allowing users
                     to expand the shopping cart in the left navigation,
                     increment and decrement product quantities with intuitive
@@ -453,11 +808,13 @@ export default function Project() {
                     <br />
                     <br />
                     <Collapse startingHeight={1} in={show}>
-                      <h4>What is CodePath Student Store?</h4>Selling
-                      merchandise in the modern era requires digital solutions.
-                      For this project, I was tasked with designing and
-                      constructing an online student store for the College of
-                      CodePath. The web app consists of a frontend user
+                      <h4>
+                        <b>What is CodePath Student Store?</b>
+                      </h4>
+                      Selling merchandise in the modern era requires digital
+                      solutions. For this project, I was tasked with designing
+                      and constructing an online student store for the College
+                      of CodePath. The web app consists of a frontend user
                       interface for potential customers to browse available
                       goods and a backend API to handle data management. The API
                       was built with Node and Express, and the UI was built with
@@ -554,29 +911,31 @@ export default function Project() {
                     Render)
                   </h4>
                   <p className="project-desc">
-                    <b>Flixster </b>
-                    offers users a seamless movie exploration experience by
-                    leveraging The Movie Database API. The grid view, identified
-                    by the movies-grid ID, displays current movies as a grid of
-                    movie cards with the movie-card class. Each card includes
-                    essential details such as the movie title (class:
-                    movie-title), poster image (class: movie-poster), and votes
-                    (class: movie-votes). Users can effortlessly load more
-                    movies by clicking the load-more-movies-btn, dynamically
-                    expanding the list without refreshing the page. The search
-                    functionality is enhanced with a search input (id:
-                    search-input), enabling users to query the API by entering
-                    text and triggering a search request upon hitting 'Enter.'
-                    The search results are presented in a grid view.
-                    Additionally, the close-search-btn (id) allows users to exit
-                    the search, clear results, and return to the display of
-                    current movies. The website prioritizes basic HTML/CSS
-                    accessibility features and ensures responsiveness for a
-                    seamless user experience across devices.
+                    <b>Flixster </b> © 2023 offers users a seamless movie
+                    exploration experience by leveraging The Movie Database API.
+                    The grid view, identified by the movies-grid ID, displays
+                    current movies as a grid of movie cards with the movie-card
+                    class. Each card includes essential details such as the
+                    movie title (class: movie-title), poster image (class:
+                    movie-poster), and votes (class: movie-votes). Users can
+                    effortlessly load more movies by clicking the
+                    load-more-movies-btn, dynamically expanding the list without
+                    refreshing the page. The search functionality is enhanced
+                    with a search input (id: search-input), enabling users to
+                    query the API by entering text and triggering a search
+                    request upon hitting 'Enter.' The search results are
+                    presented in a grid view. Additionally, the close-search-btn
+                    (id) allows users to exit the search, clear results, and
+                    return to the display of current movies. The website
+                    prioritizes basic HTML/CSS accessibility features and
+                    ensures responsiveness for a seamless user experience across
+                    devices.
                     <br />
                     <br />
                     <Collapse startingHeight={1} in={show}>
-                      <h4>What is Flixster?</h4>
+                      <h4>
+                        <b>What is Flixster?</b>
+                      </h4>
                       Flixster is a crafted dynamic website showcasing the
                       latest movies currently playing in theaters, seamlessly
                       integrating the Movie Database API to fetch an up-to-date
@@ -680,18 +1039,20 @@ export default function Project() {
                     Animation, Render)
                   </h4>
                   <p className="project-desc">
-                    <b>Gift </b>
-                    is a special project I built for my partner as a birthday
-                    gift card. Feel free to use this template if you like. You
-                    will need to install lottie and import the Lottie Animations
-                    to your project. Also, you must use ChakraUI for the
-                    Timeline Component.
+                    <b>Gift </b> © 2024 is a special project I built for my
+                    partner as a birthday gift card. Feel free to use this
+                    template if you like. You will need to install lottie and
+                    import the Lottie Animations to your project. Also, you must
+                    use ChakraUI for the Timeline Component.
                     <br />
                     <br />
                     <Collapse startingHeight={1} in={show}>
-                      <h4>What is Birthday Gift Card Site?</h4>A template site
-                      that can be used as a digital birthday gift card for your
-                      friends, family or that very special person.
+                      <h4>
+                        <b>What is Birthday Gift Card Site?</b>
+                      </h4>
+                      A template site that can be used as a digital birthday
+                      gift card for your friends, family or that very special
+                      person.
                     </Collapse>
                     <Button
                       size="sm"
