@@ -2,7 +2,6 @@ import React, { useEffect, useContext } from "react";
 import "./About.css";
 import { Link } from "react-router-dom";
 import LottieAnimation from "../AnimationComponent/AnimationComponent";
-import flag from "/src/assets/Flag.json";
 import programmer from "/src/assets/Programmer.json";
 import react_logo from "/src/assets/React.json";
 import college from "/src/assets/college.json";
@@ -20,6 +19,7 @@ import star from "/src/assets/star.svg";
 import google_ale from "/src/assets/google_ale.png";
 import salesforce_ale from "/src/assets/salesforce_ale.jpg";
 import web_cert from "/src/assets/web_cert.png";
+import astro from "/src/assets/astro-pr.svg";
 
 import {
   VerticalTimeline,
@@ -69,14 +69,14 @@ export default function About() {
         </div>
       </div>
       <div className="hidden about-section">
-        <div className="about-section-media">
-          <LottieAnimation id="pr" animationData={flag} />
+        <div className="about-section-media" id="astro-puerto-rico">
+          <img src={astro} />
         </div>
         <div className="about-section-text">
           <h2>
             Born and raised at the island of{" "}
             <span className="markup-dark">Puerto Rico</span>.{" "}
-            <span className="markup-dark">#Boricua</span>InTech
+            <span className="markup-dark">#Boricua</span>InTech{" "}
           </h2>
         </div>
       </div>

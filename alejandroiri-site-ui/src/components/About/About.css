@@ -76,8 +76,18 @@
   justify-content: flex-end;
   width: 80%;
 }
+
 #codey {
   justify-content: flex-end;
+}
+
+#astro-puerto-rico {
+  display: flex;
+  justify-content: center;
+  width: 20em;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3em;
 }
 
 #click {
