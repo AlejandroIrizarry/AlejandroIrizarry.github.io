@@ -112,6 +112,15 @@ export default function Home() {
                   <span></span>
                   <span></span>
                 </Button>
+                <Link to="/projects">
+                  <Button className="button" onClick={onOpen}>
+                    Projects
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </Button>
+                </Link>
               </div>
 
               <Modal isOpen={isOpen} onClose={onClose}>
@@ -122,7 +131,7 @@ export default function Home() {
                     backgroundColor: "var(--medium-gray)",
                   }}
                 >
-                  <ModalHeader>Who I am 🧑‍💻</ModalHeader>
+                  <ModalHeader>About me:</ModalHeader>
                   <ModalCloseButton />
                   <ModalBody style={{ color: "var(--yellow)" }}>
                     Hello, there! I'm <b>Alejandro Irizarry Negrón</b>, a born
@@ -144,7 +153,7 @@ export default function Home() {
                     </b>
                     I find pleasure in solving problems and working with others
                     to do so. Feel free to check out the whole site that I
-                    developed with lots of 💛!
+                    developed with lots of ♡ and ☕️!
                   </ModalBody>
 
                   <ModalFooter>

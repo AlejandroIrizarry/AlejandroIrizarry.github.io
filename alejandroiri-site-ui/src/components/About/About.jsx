@@ -148,14 +148,15 @@ export default function About() {
           icon={<img src={salesforce} />}
         >
           <h3 className="vertical-timeline-element-title">
-            Software Engineer Intern (Upcoming 2024)
+            Software Engineer Intern
             <br />
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
-          <small>Salesforce • San Francisco, California</small>
+          <small>Salesforce • San Francisco, California (On-site)</small>
           <p>
-            Selected for a 12 weeks Summer 2024 software engineering senior
-            internship.
+            Selected for a 12 weeks Futureforce AMER Summer 2024 software
+            engineering senior internship under the Builder Experience team of
+            Marketing Cloud.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -190,7 +191,7 @@ export default function About() {
           <h4 className="vertical-timeline-element-subtitle">
             Student Program
           </h4>
-          <small>Bloomberg • New York City Metropolitian Area</small>
+          <small>Bloomberg • New York City Metropolitian Area (On-site)</small>
           <p>
             Selected as one of the 30 out of 1200 applicants to participate in a
             software engineering-focused diversity program, exploring the tech
@@ -221,15 +222,26 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Software Engineering Consultant
+            Web Development Consultant
             <br />
             <small>Tech Fellowship Program</small>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Part-Time</h4>
-          <small>CodePath • San Francisco, California</small>
+          <small>CodePath • San Francisco, California (Remote)</small>
           <p>
-            Mentoring students on web development technologies for full-stack
-            applications through a tech fellowship.
+            <ul>
+              <li>
+                • Mentoring students on web development technologies for
+                full-stack applications through a tech fellowship.
+              </li>
+              <li>
+                • Conducting weekly office hours to assist students with their
+                projects.
+              </li>
+              <li>
+                • Performing code reviews and providing feedback to students.
+              </li>
+            </ul>
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -253,28 +265,31 @@ export default function About() {
           icon={<img src={salesforce} />}
         >
           <h3 className="vertical-timeline-element-title">
-            Software Engineer Intern
+            Software Engineering Intern
             <br />
             <small>Futureforce Tech Launchpad Program</small>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
-          <small>Salesforce • San Francisco, California</small>
+          <small>Salesforce • San Francisco, California (On-site)</small>
           <p>
             Full-Stack Web Development using the PERN Stack (PostgreSQL,
             Express, React, Node) at the 10 weeks Software Engineering
-            <a href="https://info.codepath.org/futureforce-tech-launchpad">
+            <a
+              className="dark-link"
+              href="https://info.codepath.org/futureforce-tech-launchpad"
+            >
               <b> Futureforce Tech Launchpad </b>
             </a>
-            pre-internship program.
+            sophomore internship program.
             <br />
             <p>
               Built a full-stack web application for the capstone with 2 other
               interns. The application is{" "}
-              <Link onClick={scrollToTop} to="/projects">
+              <Link className="dark-link" onClick={scrollToTop} to="/projects">
                 <b>CodeQuest</b>
               </Link>
-              , a platform to teach kids to code in Python in a fun and
-              interactive way.
+              , a platform to teach kids to code in Python in a fun and gamified
+              & interactive way.
             </p>
             <span className="timeline-img-container">
               <img className="timeline-img" src={salesforce_ale} />
@@ -301,7 +316,7 @@ export default function About() {
           }}
           icon={<LottieAnimation animationData={google} />}
         >
-          <small>Google • Austin, Texas</small>
+          <small>Google • Austin, Texas (On-site)</small>
           <br />
           <br />
           <h3 className="vertical-timeline-element-title">
@@ -329,6 +344,7 @@ export default function About() {
             tech. Selected as one of the 50 student leaders, from 1500+
             applicants, to attend the 7th cohort of the{" "}
             <a
+              className="dark-link"
               href="https://buildyourfuture.withgoogle.com/events/latinxstudentleadershipsummit"
               target="_blank"
             >
@@ -359,7 +375,7 @@ export default function About() {
             Software Development Intern
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
-          <small>FirstBank • San Juan, Puerto Rico</small>
+          <small>FirstBank • San Juan, Puerto Rico (On-site)</small>
           <p>Comptroller Department developing low-code applications</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -378,7 +394,7 @@ export default function About() {
             Software Development Intern
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
-          <small>MMM Holdings, LLC. • San Juan, Puerto Rico</small>
+          <small>MMM Holdings, LLC. • San Juan, Puerto Rico (On-site)</small>
           <p>Database Management Mapping</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -396,7 +412,7 @@ export default function About() {
             Certification Program
           </h4>
           <small>
-            Bank of America • University of Puerto Rico at Rio Piedras
+            Bank of America • University of Puerto Rico at Rio Piedras (On-site)
           </small>
           <p>
             Participated in workshops for minority students to gain skills in
@@ -411,7 +427,9 @@ export default function About() {
             <img src="https://www.hrzkit.com/wp-content/uploads/2019/08/Professional-Hospital-Trans-200x150.png" />
           }
         >
-          <small>Professional Hospital Guaynabo • Guaynabo, Puerto Rico</small>
+          <small>
+            Professional Hospital Guaynabo • Guaynabo, Puerto Rico (On-site)
+          </small>
           <br />
           <br />
           <h3 className="vertical-timeline-element-title">
@@ -440,10 +458,12 @@ export default function About() {
           icon={<img src={capitalone} />}
         >
           <h3 className="vertical-timeline-element-title">
-            Software Engineering Extern, Tech Mini-Mester
+            Software Engineering Extern
+            <br />
+            <small>Tech Mini-Mester Program</small>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Externship</h4>
-          <small>Capital One • McLean, Virginia</small>
+          <small>Capital One • McLean, Virginia (Remote)</small>
           <p>
             <ul>
               <li>
@@ -509,7 +529,8 @@ export default function About() {
             </b>
             Data Structures, Databases, Commercial Programming, Web App
             Programming, Computer Architecture, Information Security, Data
-            Communications
+            Communications, Calculus, Linear Algebra, Discrete Mathematics,
+            Information Systems, Operating Systems
             <br />
             <br />
             <b>
@@ -660,7 +681,7 @@ export default function About() {
           <br />
           <small>All rights reserved.</small>
         </h4>
-        <h5> Updated on March 10, 2024.</h5>
+        <h5> Updated on April 1, 2024.</h5>
         <h5>Built with React.js ☕️</h5>
       </div>
     </div>
