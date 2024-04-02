@@ -108,6 +108,12 @@ export default function Project() {
               Database Programming
             </Tab>
           </TabList>
+          <a className="github-stats" href="https://git.io/streak-stats">
+            <img
+              src="https://streak-stats.demolab.com?user=AlejandroIrizarry&theme=dayfox&border_radius=40&mode=weekly"
+              alt="GitHub Streak"
+            />
+          </a>
           <TabPanels>
             <TabPanel>
               <section className="project-section">
