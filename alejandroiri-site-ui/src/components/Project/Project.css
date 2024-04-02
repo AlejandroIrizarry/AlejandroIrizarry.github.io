@@ -206,3 +206,7 @@ div button span:nth-child(1) {
 div button span:nth-child(2) {
   --n: 2;
 }
+
+.github-stats {
+  margin: 3em;
+}
