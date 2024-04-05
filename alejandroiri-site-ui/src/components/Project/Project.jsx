@@ -110,7 +110,7 @@ export default function Project() {
           </TabList>
           <a className="github-stats" href="https://git.io/streak-stats">
             <img
-              src="https://streak-stats.demolab.com?user=AlejandroIrizarry&theme=dayfox&border_radius=40&mode=weekly"
+              src="https://camo.githubusercontent.com/f9581cc33038fc180a5e6b988acce8ebf88c70a496a9bf851f15ed89ee581a5f/68747470733a2f2f6769746875622d73746174732d616c7068612e76657263656c2e6170702f6170693f757365726e616d653d416c656a616e64726f4972697a617272792663633d6630656165332674633d3536363535332669633d3536363535332662633d353636353533"
               alt="GitHub Streak"
             />
           </a>
