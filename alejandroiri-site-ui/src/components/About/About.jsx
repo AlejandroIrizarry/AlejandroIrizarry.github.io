@@ -19,7 +19,7 @@ import star from "/src/assets/star.svg";
 import google_ale from "/src/assets/google_ale.png";
 import salesforce_ale from "/src/assets/salesforce_ale.jpg";
 import web_cert from "/src/assets/web_cert.png";
-import astro from "/src/assets/astro-pr.svg";
+import flag from "/src/assets/Flag.json";
 
 import {
   VerticalTimeline,
@@ -69,8 +69,8 @@ export default function About() {
         </div>
       </div>
       <div className="hidden about-section">
-        <div className="about-section-media" id="astro-puerto-rico">
-          <img src={astro} />
+        <div className="about-section-media">
+          <LottieAnimation animationData={flag} />
         </div>
         <div className="about-section-text">
           <h2>
