@@ -116,7 +116,7 @@ export default function Project() {
           </a>
           <TabPanels>
             <TabPanel>
-              <section className="project-section">
+              {/* <section className="project-section">
                 <div className="project-media">
                   <iframe
                     src="https://dailyu.vercel.app"
@@ -223,7 +223,7 @@ export default function Project() {
                     </span>
                   </span>
                 </div>
-              </section>
+              </section> */}
 
               <section className="project-section">
                 <div className="project-media">
