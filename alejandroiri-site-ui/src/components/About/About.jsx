@@ -683,7 +683,7 @@ export default function About() {
           <br />
           <small>All rights reserved.</small>
         </h4>
-        <h5> Updated on April 1, 2024.</h5>
+        <h5> Updated on April 28, 2024.</h5>
         <h5>Built with React.js ☕️</h5>
       </div>
     </div>
