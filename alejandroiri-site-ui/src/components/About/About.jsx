@@ -20,6 +20,8 @@ import google_ale from "/src/assets/google_ale.png";
 import salesforce_ale from "/src/assets/salesforce_ale.jpg";
 import web_cert from "/src/assets/web_cert.png";
 import flag from "/src/assets/Flag.json";
+import firstbank from "/src/assets/firstbank.png";
+import uprb from "/src/assets/uprb.png";
 
 import {
   VerticalTimeline,
@@ -145,7 +147,9 @@ export default function About() {
             alignItems: "center",
             textAlign: "center",
           }}
-          icon={<img src={salesforce} />}
+          icon={
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" />
+          }
         >
           <h3 className="vertical-timeline-element-title">
             Software Engineer Intern
@@ -262,7 +266,9 @@ export default function About() {
             alignItems: "center",
             textAlign: "center",
           }}
-          icon={<img src={salesforce} />}
+          icon={
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" />
+          }
         >
           <h3 className="vertical-timeline-element-title">
             Software Engineering Intern
@@ -367,7 +373,7 @@ export default function About() {
                 height: "100%",
                 width: "100%",
               }}
-              src="https://media.licdn.com/dms/image/D560BAQF-5aZrWqbSmA/company-logo_100_100/0/1686091059961/firstbankpr_logo?e=1712793600&v=beta&t=gib-8uwhvitj851O9nFbkrez3MMp2ErGdV-8fObNmjY"
+              src={firstbank}
             />
           }
         >
@@ -495,12 +501,7 @@ export default function About() {
           className="vertical-timeline-element--education"
           date="Graduation: May 2025"
           iconStyle={{ background: "white", color: "#fff" }}
-          icon={
-            <img
-              style={{ borderRadius: "50px" }}
-              src="https://media.licdn.com/dms/image/D4E0BAQGdLzrOS2UklQ/company-logo_200_200/0/1667502406126/university_of_puerto_rico_logo?e=1712793600&v=beta&t=VvJ56yn8n2ph5QaAr2oevYh0mtrtnjlRGbO-t3EC3-A"
-            />
-          }
+          icon={<img style={{ borderRadius: "50px" }} src={uprb} />}
         >
           <h3 className="vertical-timeline-element-title">
             Bachelor of Science in Computer Science
@@ -521,6 +522,7 @@ export default function About() {
                 • Association for Computer Science Students (Association for
                 Computing Machinery)
               </li>
+              <li>• The Internet Society</li>
             </ul>
             <br />
             <b>
@@ -529,7 +531,7 @@ export default function About() {
             </b>
             Data Structures, Databases, Commercial Programming, Web App
             Programming, Computer Architecture, Information Security, Data
-            Communications, Calculus, Linear Algebra, Discrete Mathematics,
+            Communications, Calculus, Linear Programming, Discrete Mathematics,
             Information Systems, Operating Systems
             <br />
             <br />
