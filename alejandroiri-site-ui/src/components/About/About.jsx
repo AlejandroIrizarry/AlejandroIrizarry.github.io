@@ -158,9 +158,32 @@ export default function About() {
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
           <small>Salesforce • San Francisco, California (On-site)</small>
           <p>
-            Selected for a 12 weeks Futureforce AMER Summer 2024 software
-            engineering senior internship under the Builder Experience team of
-            Marketing Cloud.
+            <ul>
+              <li>
+                • Performing end-to-end development in the Flow Builder
+                Experience Team for the Automation Services platform in
+                Salesforce Marketing Cloud.
+              </li>
+              <li>
+                • During 12 weeks, I was working on a project to enhance the web
+                accesisbility of the Flow Builder platform. This project inolved
+                working with the team to identify areas of improvement,
+                implement changes, and test the changes to ensure they meet the
+                web accessibility standards. As part of the features, I worked
+                on improving the keyboard shortcuts for the platform. This
+                involved working with the team to identify the current keyboard
+                shortcuts, identify spots that could be enhanced, and implement
+                changes to make the platform more accessible to users who rely
+                on keyboard navigation.
+              </li>
+              <li>
+                • Participated in daily stand-ups, sprint planning, and code
+                reviews with the team to ensure the quality of the codebase and
+                the features being developed are in line with the team's goals
+                and the company's standards for quality and performance of the
+                platform.
+              </li>
+            </ul>
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
