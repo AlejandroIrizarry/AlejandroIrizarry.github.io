@@ -166,8 +166,8 @@ export default function About() {
               </li>
               <li>
                 • During 12 weeks, I was working on a project to enhance the web
-                accesisbility of the Flow Builder platform. This project inolved
-                working with the team to identify areas of improvement,
+                accessibility of the Flow Builder platform. This project
+                involved working with the team to identify areas of improvement,
                 implement changes, and test the changes to ensure they meet the
                 web accessibility standards. As part of the features, I worked
                 on improving the keyboard shortcuts for the platform. This
@@ -706,7 +706,7 @@ export default function About() {
           <br />
           <small>All rights reserved.</small>
         </h4>
-        <h5> Updated on April 28, 2024.</h5>
+        <h5> Updated on June 25, 2024.</h5>
         <h5>Built with React.js ☕️</h5>
       </div>
     </div>
