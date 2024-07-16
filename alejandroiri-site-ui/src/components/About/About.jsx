@@ -249,7 +249,7 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Web Development Consultant
+            Software Engineering Consultant
             <br />
             <small>Tech Fellowship Program</small>
           </h3>
@@ -401,7 +401,7 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Software Development Intern
+            Software Engineering Intern
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
           <small>FirstBank • San Juan, Puerto Rico (On-site)</small>
@@ -420,7 +420,7 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Software Development Intern
+            Software Engineering Intern
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
           <small>MMM Holdings, LLC. • San Juan, Puerto Rico (On-site)</small>
