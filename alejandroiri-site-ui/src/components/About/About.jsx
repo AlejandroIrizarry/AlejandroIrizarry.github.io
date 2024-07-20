@@ -160,28 +160,33 @@ export default function About() {
           <p>
             <ul>
               <li>
-                • Performing end-to-end development in the Flow Builder
-                Experience Team for the Automation Services platform in
+                • Performing end-to-end development, for 12 weeks, in the Flow
+                Builder Experience Team for the Automation Services platform in
                 Salesforce Marketing Cloud.
               </li>
               <li>
-                • During 12 weeks, I was working on a project to enhance the web
-                accessibility of the Flow Builder platform. This project
-                involved working with the team to identify areas of improvement,
-                implement changes, and test the changes to ensure they meet the
-                web accessibility standards. As part of the features, I worked
-                on improving the keyboard shortcuts for the platform. This
-                involved working with the team to identify the current keyboard
-                shortcuts, identify spots that could be enhanced, and implement
-                changes to make the platform more accessible to users who rely
-                on keyboard navigation.
+                • Resolved critical bugs, raising and merging 5+ PRs, while
+                significantly enhancing the UI for the Flow Builder Platform by
+                leveraging TypeScript and Lightning Web Components, ensuring
+                seamless and intuitive interactions.
               </li>
               <li>
-                • Participated in daily stand-ups, sprint planning, and code
-                reviews with the team to ensure the quality of the codebase and
-                the features being developed are in line with the team's goals
-                and the company's standards for quality and performance of the
-                platform.
+                • Implemented comprehensive web accessibility features,
+                including intuitive keyboard shortcuts for undo, redo, and save
+                actions, boosting tool accessibility by 30% and ensuring a more
+                inclusive user experience.
+              </li>
+              <li>
+                • Documented development processes, identified 6+ critical bugs
+                during bug bashes, and ensured streamlined workflows and
+                effective knowledge transfer in scrum meetings.
+              </li>
+              <li>
+                • Engineered a unified dashboard on the Salesforce Data Cloud
+                platform, consolidating customer engagement data from email and
+                SMS campaigns, resulting in a 40% increase in data accessibility
+                and a 25% boost in campaign performance insights for all
+                Salesforce customers.
               </li>
             </ul>
           </p>
@@ -320,6 +325,26 @@ export default function About() {
               , a platform to teach kids to code in Python in a fun and gamified
               & interactive way.
             </p>
+            <ul>
+              <li>
+                • Handpicked among the top 2.4%, of 2,500+ candidates for the
+                esteemed Futureforce Tech Launchpad, a 10- week intensive
+                full-stack web development internship, collaborating with
+                leading software engineers.
+              </li>
+              <li>
+                • Spearheaded the development of a cutting-edge coding education
+                app during an intensive 6-week period full of sprints,
+                delivering a fully functional full-stack application (CodeQuest
+                App in Projects Section).
+              </li>
+              <li>
+                • Demonstrated proficiency in database architecture, front-end &
+                back-end, rigorous testing and seamless deployment through the
+                development of five apps, while leading daily scrum meetings to
+                reach milestones.
+              </li>
+            </ul>
             <span className="timeline-img-container">
               <img className="timeline-img" src={salesforce_ale} />
             </span>
@@ -706,7 +731,7 @@ export default function About() {
           <br />
           <small>All rights reserved.</small>
         </h4>
-        <h5> Updated on July 15, 2024.</h5>
+        <h5> Updated on July 19, 2024.</h5>
         <h5>Built with React.js ☕️</h5>
       </div>
     </div>
