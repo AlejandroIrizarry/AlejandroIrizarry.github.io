@@ -189,7 +189,7 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Here to Observe (H2O) Planetary Division Program Apprentice
+            Here to Observe (H2O) Planetary Science Division Program
             <br />
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Apprenticeship</h4>
