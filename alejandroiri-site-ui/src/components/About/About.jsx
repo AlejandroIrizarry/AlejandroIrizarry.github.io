@@ -155,7 +155,7 @@ export default function About() {
             Junior Software Engineer
             <br />
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Full-time</h4>
+          <h4 className="vertical-timeline-element-subtitle">Full-Time</h4>
           <small>Salesforce • San Francisco, California (On-site)</small>
           <p>
             <ul>
@@ -344,7 +344,7 @@ export default function About() {
             <br />
             <small>Tech Fellowship Program</small>
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Part-Time</h4>
+          <h4 className="vertical-timeline-element-subtitle">Contract</h4>
           <small>CodePath • San Francisco, California (Remote)</small>
           <p>
             <ul>
@@ -575,7 +575,7 @@ export default function About() {
           <h3 className="vertical-timeline-element-title">
             IT Systems Administrator <small>• 4 mos</small>
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Full-Time</h4>
+          <h4 className="vertical-timeline-element-subtitle">Part-Time</h4>
           <p>
             Systems analysis, IT infrastructure management and respond to user
             queries.
