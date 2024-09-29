@@ -62,7 +62,7 @@ export default function About() {
       <div className="hidden about-section">
         <div className="about-section-text">
           <h2>
-            I'm a <span className="markup-light">22</span>-year old{" "}
+            I'm a <span className="markup-light">23</span>-year old{" "}
             <span className="markup-light">Software Engineer</span>.
           </h2>
         </div>
@@ -138,7 +138,7 @@ export default function About() {
           contentArrowStyle={{
             borderRight: "7px solid  white",
           }}
-          date="May 2024 - Present • 4 mos"
+          date="September 2025 - Present • SOON!"
           iconStyle={{
             display: "flex",
             background: "white",
@@ -152,7 +152,93 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Software Engineer Intern
+            Junior Software Engineer
+            <br />
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">Full-time</h4>
+          <small>Salesforce • San Francisco, California (On-site)</small>
+          <p>
+            <ul>
+              <li>
+                • Flow Builder Experience Team (Software Engineering AMTS - New
+                Grad)
+              </li>
+            </ul>
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{
+            background: "white",
+            color: "black",
+          }}
+          contentArrowStyle={{
+            borderRight: "7px solid  white",
+          }}
+          date="September 2024 - June 2025 • 10 mos"
+          iconStyle={{
+            display: "flex",
+            background: "white",
+            color: "#fff",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+          }}
+          icon={
+            <img src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg" />
+          }
+        >
+          <h3 className="vertical-timeline-element-title">
+            Here to Observe (H2O) Planetary Division Program Apprentice
+            <br />
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">Apprenticeship</h4>
+          <small>NASA • Houston, Texas (Hybrid)</small>
+          <p>
+            <ul>
+              <li>
+                • A STEM engagement initiative by NASA’s Planetary Science
+                Division aimed at increasing the participation of historically
+                underrepresented students in STEM by providing opportunities to
+                observe and interact with NASA mission teams through mentorship,
+                cohort-building, and student-led programs. The program awards
+                eligible institutions up to $75,000 per year to support
+                participation, with the goal of inspiring and maintaining an
+                interest in STEM careers.
+              </li>
+              <a
+                className="dark-link"
+                href="https://science.nasa.gov/planetary-science/programs/here-to-observe-h2o/"
+              >
+                https://science.nasa.gov/planetary-science/programs/here-to-observe-h2o/
+              </a>
+            </ul>
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{
+            background: "white",
+            color: "black",
+          }}
+          contentArrowStyle={{
+            borderRight: "7px solid  white",
+          }}
+          date="May 2024 - Aug 2024 • 4 mos"
+          iconStyle={{
+            display: "flex",
+            background: "white",
+            color: "#fff",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+          }}
+          icon={
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" />
+          }
+        >
+          <h3 className="vertical-timeline-element-title">
+            Frontend Software Engineer Intern
             <br />
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
@@ -217,7 +303,7 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Empowers Scholar
+            Software Engineer Fellow (Empowers Summit)
             <br />
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -254,7 +340,7 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Software Engineering Consultant
+            Software Engineer Consultant
             <br />
             <small>Tech Fellowship Program</small>
           </h3>
@@ -299,7 +385,7 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Software Engineering Intern
+            Software Engineer Intern
             <br />
             <small>Futureforce Tech Launchpad Program</small>
           </h3>
@@ -374,7 +460,7 @@ export default function About() {
           <br />
           <br />
           <h3 className="vertical-timeline-element-title">
-            Software Engineering Extern <small>• 3 mos</small>
+            Software Engineer Extern <small>• 3 mos</small>
             <br />
             <small>Google Mentor Program</small>
           </h3>
@@ -426,7 +512,7 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Software Engineering Intern
+            Software Engineer Intern
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
           <small>FirstBank • San Juan, Puerto Rico (On-site)</small>
@@ -445,7 +531,7 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Software Engineering Intern
+            Software Engineer Intern
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
           <small>MMM Holdings, LLC. • San Juan, Puerto Rico (On-site)</small>
@@ -487,7 +573,7 @@ export default function About() {
           <br />
           <br />
           <h3 className="vertical-timeline-element-title">
-            Information Systems Officer <small>• 4 mos</small>
+            IT Systems Administrator <small>• 4 mos</small>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Full-Time</h4>
           <p>
@@ -496,7 +582,7 @@ export default function About() {
           </p>
           <br />
           <h3 className="vertical-timeline-element-title">
-            Information Systems Intern <small>• 3 mos</small>
+            Laboratory Systems Intern <small>• 3 mos</small>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
 
@@ -512,7 +598,7 @@ export default function About() {
           icon={<img src={capitalone} />}
         >
           <h3 className="vertical-timeline-element-title">
-            Software Engineering Extern
+            Software Engineer Extern
             <br />
             <small>Tech Mini-Mester Program</small>
           </h3>
@@ -552,12 +638,12 @@ export default function About() {
           icon={<img style={{ borderRadius: "50px" }} src={uprb} />}
         >
           <h3 className="vertical-timeline-element-title">
-            Bachelor of Science in Computer Science
+            Bachelor of Science - B.S. Degree
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Bachelors Degree
+            Computer Science
           </h4>
-          <small>University of Puerto Rico at Bayamon • GPA: 3.9/4.0</small>
+          <small>University of Puerto Rico at Bayamon • GPA: 3.89/4.0</small>
           <p>
             <b>Extraccuricular & Organizations:</b>
             <ul>
