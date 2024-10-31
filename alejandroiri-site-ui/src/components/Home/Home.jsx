@@ -87,11 +87,10 @@ export default function Home() {
               </h2>
               <h1>Alejandro Irizarry</h1>
               <h2 className="hero-intro">
-                Software Engineer
+                Full-Stack Software Engineer
                 <span className="ghibli">
                   <LottieAnimation animationData={totoro} />
                 </span>
-                Student
               </h2>
               <p>
                 Computer Science <span id="at">@</span> University of Puerto

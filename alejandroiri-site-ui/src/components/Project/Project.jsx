@@ -110,13 +110,13 @@ export default function Project() {
           </TabList>
           <a className="github-stats" href="https://git.io/streak-stats">
             <img
-              src="https://camo.githubusercontent.com/f9581cc33038fc180a5e6b988acce8ebf88c70a496a9bf851f15ed89ee581a5f/68747470733a2f2f6769746875622d73746174732d616c7068612e76657263656c2e6170702f6170693f757365726e616d653d416c656a616e64726f4972697a617272792663633d6630656165332674633d3536363535332669633d3536363535332662633d353636353533"
+              src="https://camo.githubusercontent.com/a1a7ab00cde3b1aee0d206e1547c9a9b80ec91cf8acf22c4d6fb6d0883e64bd4/68747470733a2f2f6769746875622d73746174732d616c7068612e76657263656c2e6170702f6170693f757365726e616d653d416c656a616e64726f4972697a617272792663633d6630656165332674633d3536363535332669633d3536363535332662633d353636353533"
               alt="GitHub Streak"
             />
           </a>
           <TabPanels>
             <TabPanel>
-              {/* <section className="project-section">
+              <section className="project-section">
                 <div className="project-media">
                   <iframe
                     src="https://dailyu.vercel.app"
@@ -223,7 +223,7 @@ export default function Project() {
                     </span>
                   </span>
                 </div>
-              </section> */}
+              </section>
 
               <section className="project-section">
                 <div className="project-media">
