@@ -20,6 +20,11 @@
   z-index: 2;
 }
 
+.warning {
+  font-size: 10px;
+  color: rgb(171, 164, 160);
+}
+
 .dark-link {
   color: var(--dark-gray) !important;
 }

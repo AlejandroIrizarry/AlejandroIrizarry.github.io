@@ -47,6 +47,27 @@ export default function Project() {
       <h1>
         <SettingsIcon /> Projects <SettingsIcon />
       </h1>
+      <div className="page-desc">
+        <p>
+          <InfoIcon /> Here are some of the projects that I've worked on during
+          my free time or internships. I've worked on a variety of projects,
+          ranging from full-stack web applications to mobile applications and
+          games. I'm always looking for new projects to work on, so if you have
+          any ideas or would like to collaborate on a project together, feel
+          free to reach out at{" "}
+          <a className="dark-link" href="mailto:alejandro.irizarryn@gmail.com">
+            alejandro.irizarryn@gmail.com
+          </a>{" "}
+          or connect with me on{" "}
+          <a
+            className="dark-link"
+            href="https://www.linkedin.com/in/alejandroirizarry"
+          >
+            LinkedIn
+          </a>{" "}
+          ☕️
+        </p>
+      </div>
       <Box align="center">
         <input
           className="range-slider"
@@ -93,19 +114,7 @@ export default function Project() {
               }}
               color="#ffff"
             >
-              General Programming
-            </Tab>
-            <Tab
-              className="tab-name"
-              _selected={{ color: "black", bg: "var(--yellow)" }}
-              _hover={{
-                color: "var(--medium-gray) !important",
-                bg: "var(--dark-gray)",
-              }}
-              color="#ffff"
-              isDisabled
-            >
-              Database Programming
+              Other
             </Tab>
           </TabList>
           <a className="github-stats" href="https://git.io/streak-stats">
@@ -116,6 +125,10 @@ export default function Project() {
           </a>
           <TabPanels>
             <TabPanel>
+              <b className="dark-link">
+                👀 Yoohoo! Here's a tip: Click the app name to visit it, or just
+                play with it through the frames below.
+              </b>
               <section className="project-section">
                 <div className="project-media">
                   <iframe

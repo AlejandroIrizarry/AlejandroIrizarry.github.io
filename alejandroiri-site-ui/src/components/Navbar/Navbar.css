@@ -14,11 +14,13 @@
 .nav-content {
   display: flex;
   flex-direction: row;
+  align-items: center;
   height: auto;
 }
 
 .nav-links span {
   color: var(--light-gray) !important;
+  font-weight: bolder;
 }
 
 .nav-links span:hover {

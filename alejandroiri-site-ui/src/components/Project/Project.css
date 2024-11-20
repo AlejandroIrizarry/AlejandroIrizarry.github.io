@@ -10,7 +10,8 @@
 .projects h1 {
   font-weight: bolder;
   font-size: 3em;
-  margin: 3em 1.5em 1em 1.5em;
+  text-align: center;
+  margin-top: 3em;
   color: var(--yellow);
 }
 
@@ -21,6 +22,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.page-desc {
+  color: var(--yellow);
+  margin: 1em;
 }
 
 .project-media {

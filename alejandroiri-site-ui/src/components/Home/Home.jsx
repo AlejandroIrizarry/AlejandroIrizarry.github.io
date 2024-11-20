@@ -85,41 +85,53 @@ export default function Home() {
                 </span>
                 ! I'M
               </h2>
-              <h1>Alejandro Irizarry</h1>
+              <h1>Alejandro Irizarry,</h1>
               <h2 className="hero-intro">
-                Full-Stack Software Engineer
+                a Software Engineer... and nerd :P
                 <span className="ghibli">
                   <LottieAnimation animationData={totoro} />
                 </span>
               </h2>
-              <p>
-                Computer Science <span id="at">@</span> University of Puerto
-                Rico
-              </p>
               <div className="hero-btns">
-                <Button className="button" onClick={handleGetResumeClick}>
-                  Get Resume
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </Button>
-                <Button className="button" onClick={onOpen}>
-                  About Me
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </Button>
-                <Link to="/projects">
-                  <Button className="button" onClick={onOpen}>
-                    Projects
+                <div>
+                  <Button className="button" onClick={handleGetResumeClick}>
+                    Resume
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
                   </Button>
-                </Link>
+                  <Button className="button" onClick={onOpen}>
+                    Summary
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </Button>
+                </div>
+                <div>
+                  <Link to="/projects">
+                    <Button className="button" onClick={onOpen}>
+                      Portfolio
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </Button>
+                  </Link>
+                  <Link
+                    to="https://github.com/AlejandroIrizarry"
+                    target="_blank"
+                  >
+                    <Button className="button">
+                      GitHub
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </Button>
+                  </Link>
+                </div>
               </div>
 
               <Modal isOpen={isOpen} onClose={onClose}>

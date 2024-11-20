@@ -22,6 +22,7 @@ import {
   CalendarIcon,
   StarIcon,
 } from "@chakra-ui/icons";
+import { Icon } from "@iconify/react";
 export default function Navbar(props) {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -88,16 +89,20 @@ export default function Navbar(props) {
                   }}
                 ></MenuButton>
                 <MenuList>
-                  <MenuGroup title="Menu">
+                  <MenuGroup title="Where to now? 🐾">
                     <MenuItem as="a" href="/" className="menu-item">
-                      <StarIcon paddingRight={1} color={"var(--light-gray)"} />{" "}
-                      Home
+                      <Icon
+                        icon="flowbite:home-solid"
+                        color={"var(--light-gray)"}
+                        width={40}
+                      />
+                      aleirizarry.com
                     </MenuItem>
+                    <MenuDivider />
                     <MenuItem as="a" href="/#about" className="menu-item">
                       <InfoIcon paddingRight={1} color={"var(--light-gray)"} />
                       About
                     </MenuItem>
-                    <MenuDivider />
                     <MenuItem as="a" href="/#experiences" className="menu-item">
                       <Search2Icon
                         paddingRight={1}
@@ -140,7 +145,9 @@ export default function Navbar(props) {
             </li>
             <li className="nav-item">
               <a href="/">
-                <span className="hover-underline-animation">Home</span>
+                <span className="hover-underline-animation">
+                  <Icon icon="flowbite:home-solid" width={40} />
+                </span>
               </a>
             </li>
             <li className="nav-item">

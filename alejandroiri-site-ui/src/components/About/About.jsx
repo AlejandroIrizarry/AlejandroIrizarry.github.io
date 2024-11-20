@@ -62,8 +62,10 @@ export default function About() {
       <div className="hidden about-section">
         <div className="about-section-text">
           <h2>
-            I'm a <span className="markup-light">23</span>-year old{" "}
-            <span className="markup-light">Software Engineer</span>.
+            It's great having you here! I'm a{" "}
+            <span className="markup-light">Gen-Z (2001)</span>{" "}
+            <span className="markup-light">Software Developer</span>, but I'm
+            also gamer and a dog & cat owner :D
           </h2>
         </div>
         <div className="about-section-media">
@@ -86,8 +88,11 @@ export default function About() {
       <div className="hidden about-section">
         <div className="about-section-text">
           <h2>
-            <span className="markup-light">Developing</span> web apps <br />
-            is my <span className="markup-light">jam!</span> 🧑🏻‍💻
+            <span className="markup-light">Creating</span> meaningful web or
+            mobile apps <br />& enjoying some{" "}
+            <span className="markup-light">Studio Ghibli</span> or{" "}
+            <span className="markup-light">Star Wars</span> films are amongst my
+            favorite things to do! 🧑🏻‍💻
           </h2>
         </div>
         <div className="about-section-media">
@@ -105,7 +110,8 @@ export default function About() {
               University <br />
               of Puerto Rico
             </span>{" "}
-            at the Bayamon Campus.
+            at the Bayamon Campus, pursuing a{" "}
+            <span className="markup-dark">B.s. in Computer Science</span>.
           </h2>
         </div>
       </div>
@@ -138,7 +144,7 @@ export default function About() {
           contentArrowStyle={{
             borderRight: "7px solid  white",
           }}
-          date="September 2025 - Present • SOON!"
+          date="Starting Fall 2025"
           iconStyle={{
             display: "flex",
             background: "white",
@@ -152,17 +158,14 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Junior Software Engineer
+            Associate Software Engineer
             <br />
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Full-Time</h4>
           <small>Salesforce • San Francisco, California (On-site)</small>
           <p>
             <ul>
-              <li>
-                • Flow Builder Experience Team (Software Engineering AMTS - New
-                Grad)
-              </li>
+              <li>Software Engineering AMTS - New Grad</li>
             </ul>
           </p>
         </VerticalTimelineElement>
@@ -189,8 +192,9 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Here to Observe (H2O) Planetary Science Division Program
+            Software Engineering Apprentice
             <br />
+            <small>Here to Observe (H2O) Program</small>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Apprenticeship</h4>
           <small>NASA • Houston, Texas (Hybrid)</small>
@@ -238,7 +242,7 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Frontend Software Engineer Intern
+            Software Engineer Intern
             <br />
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
@@ -340,7 +344,7 @@ export default function About() {
           }
         >
           <h3 className="vertical-timeline-element-title">
-            Software Engineer Consultant
+            Contract Software Engineer
             <br />
             <small>Tech Fellowship Program</small>
           </h3>
@@ -387,7 +391,7 @@ export default function About() {
           <h3 className="vertical-timeline-element-title">
             Software Engineer Intern
             <br />
-            <small>Futureforce Tech Launchpad Program</small>
+            <small>Futureforce Tech Launchpad</small>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
           <small>Salesforce • San Francisco, California (On-site)</small>
@@ -573,7 +577,7 @@ export default function About() {
           <br />
           <br />
           <h3 className="vertical-timeline-element-title">
-            IT Systems Administrator <small>• 4 mos</small>
+            Information System Analyst <small>• 4 mos</small>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Part-Time</h4>
           <p>
@@ -582,7 +586,7 @@ export default function About() {
           </p>
           <br />
           <h3 className="vertical-timeline-element-title">
-            Laboratory Systems Intern <small>• 3 mos</small>
+            Information Systems Intern <small>• 3 mos</small>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Internship</h4>
 
@@ -817,8 +821,14 @@ export default function About() {
           <br />
           <small>All rights reserved.</small>
         </h4>
-        <h5> Updated on July 19, 2024.</h5>
-        <h5>Built with React.js ☕️</h5>
+        <h5>Built with React and ☕️</h5>
+        <small> Last update: November 2024</small>
+        <small className="warning">
+          Any unauthorized use of the code or content of this site, such as
+          duplication or distribution for personal gain, is a serious violation
+          of the author's rights, and will be subject to legal action if
+          necessary. This site is protected by copyright law.
+        </small>
       </div>
     </div>
   );
