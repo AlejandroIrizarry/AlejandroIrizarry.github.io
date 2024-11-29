@@ -279,7 +279,7 @@ export default function Project() {
                       href="https://www.uprbcommunity.com/"
                       target="_blank"
                     >
-                      UPRBCommunity
+                      MiVaquero
                       <span className="link_arrow">
                         <LottieAnimation animationData={link_arrow} />
                       </span>
