@@ -6,7 +6,7 @@ import link_arrow from "/src/assets/link_arrow.json";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LottieAnimation from "../AnimationComponent/AnimationComponent";
 
-import hero_avatar from "/src/assets/me.jpg";
+import hero_avatar from "/src/assets/me.png";
 import pyspace from "/src/assets/pyspace.png";
 
 import Birthday from "../Birthday/Birthday.jsx";
@@ -132,6 +132,118 @@ export default function Project() {
               <section className="project-section">
                 <div className="project-media">
                   <iframe
+                    src="https://www.mihonoruprb.com"
+                    frameborder="0"
+                    width="100%"
+                    height="400"
+                    webkitallowfullscreen
+                    mozallowfullscreen
+                    allowfullscreen
+                  ></iframe>
+                  <br />
+                  <span className="project-button-container">
+                    <a
+                      href="https://github.com/AlejandroIrizarry/MiHonorUPRB"
+                      target="_blank"
+                    >
+                      <button className="project-button">
+                        Code<span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                    </a>
+                    <a href="https://www.mihonoruprb.com" target="_blank">
+                      <button className="project-button">
+                        Demo<span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                    </a>
+                  </span>
+                </div>
+                <div className="project-info">
+                  <h3 className="project-title">
+                    <a
+                      id="codequest"
+                      href="https://www.mihonoruprb.com"
+                      target="_blank"
+                    >
+                      MiHonorUPRB
+                      <span className="link_arrow">
+                        <LottieAnimation animationData={link_arrow} />
+                      </span>
+                    </a>
+                  </h3>
+                  <h4 className="project-skills">
+                    <b>Tools:</b> (React.js, Postgresql, Express.js, Node.js,
+                    Tailwind CSS, NextUI, NextUI, Javascript, Render, AWS S3
+                    Buckets, Microsoft Azure Auth API, Lottie Animations)
+                  </h4>
+                  <p className="project-desc">
+                    <b>MiHonorUPRB</b> © 2024 is an application for my undergrad
+                    dissertation/capstone project. I helped the University of
+                    Puerto Rico at Bayamon develop a full-stack web application
+                    for the Honors Program so that the program's administration
+                    can accept and handle applications from students interested
+                    in joining the program. Also, it helps serve as a networking
+                    hub and a place to store student academic information and
+                    their progress in the program.
+                    <Collapse startingHeight={20} in={show}>
+                      <br />
+                      <h4>
+                        <b>What is MiHonorUPRB?</b>
+                      </h4>
+                      MiHonorUPRB is a web application that allows students from
+                      the University of Puerto Rico to apply to the UPRB Honor's
+                      Program and keep track of all of their relevant academic
+                      information related to the program.
+                    </Collapse>
+                    <Button
+                      size="sm"
+                      bg="var(--medium-gray)"
+                      color="var(--yellow)"
+                      _hover={{
+                        color: "var(--medium-gray) !important",
+                        bg: "var(--yellow)",
+                      }}
+                      onClick={handleToggle}
+                      mt="1rem"
+                    >
+                      Show {show ? "Less" : "More"}
+                    </Button>
+                  </p>
+                  <br />
+                  <h4>Contributors</h4>
+                  <span className="contributors">
+                    <span className="contributor">
+                      <Flex>
+                        <Avatar src={hero_avatar} />
+                        <Box ml="3">
+                          <Text fontWeight="bold">
+                            Alejandro Irizarry
+                            <Badge
+                              ml="1"
+                              style={{
+                                backgroundColor: "var(--yellow)",
+                                color: "#fff",
+                              }}
+                            >
+                              he/him
+                            </Badge>
+                          </Text>
+                          <Text fontSize="sm">Software Engineer</Text>
+                        </Box>
+                      </Flex>
+                    </span>
+                  </span>
+                </div>
+              </section>
+
+              {/* <section className="project-section">
+                <div className="project-media">
+                  <iframe
                     src="https://dailyu.vercel.app"
                     frameborder="0"
                     width="100%"
@@ -236,7 +348,7 @@ export default function Project() {
                     </span>
                   </span>
                 </div>
-              </section>
+              </section> */}
 
               <section className="project-section">
                 <div className="project-media">

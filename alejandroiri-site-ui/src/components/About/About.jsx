@@ -816,19 +816,11 @@ export default function About() {
       </div>
       <div id="copyright">
         <h4>
-          Developed by <span className="markup-light">Alejandro Irizarry</span>{" "}
-          © 2024.
+          © 2024, <span className="markup-light">Alejandro Irizarry</span>.
           <br />
           <small>All rights reserved.</small>
         </h4>
-        <h5>Built with React and ☕️</h5>
-        <small> Last update: November 2024</small>
-        <small className="warning">
-          Any unauthorized use of the code or content of this site, such as
-          duplication or distribution for personal gain, is a serious violation
-          of the author's rights, and will be subject to legal action if
-          necessary. This site is protected by copyright law.
-        </small>
+        <small>☕️ Last update: December 2024</small>
       </div>
     </div>
   );
